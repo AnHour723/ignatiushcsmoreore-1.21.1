@@ -25,7 +25,7 @@ public class HCSounds {
     public static final Supplier<SoundEvent> LANHUAYING = registerSoundEvent("lan_hua_ying");
     public static final ResourceKey<JukeboxSong> LANHUAYING_KEY = createSong("lan_hua_ying");
 
-    
+
     // 创建 歌曲-浮沉
     public static final Supplier<SoundEvent> FUCHEN = registerSoundEvent("fu_chen");
     public static final ResourceKey<JukeboxSong> FUCHEN_KEY = createSong("fu_chen");
