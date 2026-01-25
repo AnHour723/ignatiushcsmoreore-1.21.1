@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:black_crystals_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:black_crystals",
+    "count": 2
+  }
+}
+
+

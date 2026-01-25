@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ignatiushcsmoreore:emperor_s_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_xxx_from_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:xxx"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_xxx_from_helmet"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ignatiushcsmoreore:emperor_s_helmet"
+    ]
+  }
+}

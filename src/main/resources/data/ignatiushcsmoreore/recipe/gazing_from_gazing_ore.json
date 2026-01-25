@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:gazing_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:gazing",
+    "count": 2
+  }
+}
+
+

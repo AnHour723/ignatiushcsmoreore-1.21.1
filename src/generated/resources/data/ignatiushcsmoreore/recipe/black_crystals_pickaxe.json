@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:black_crystals"
+    },
+    "Y": {
+      "item": "ignatiushcsmoreore:seyin_stick"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " Y ",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:black_crystals_pickaxe"
+  }
+}

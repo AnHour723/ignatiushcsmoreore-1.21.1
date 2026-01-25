@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:quantum_ingot"
+    },
+    "Y": {
+      "tag": "ignatiushcsmoreore:glass_key"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XYX",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:quantum_information_sphere"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_quantum_sword_information_sphere": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:quantum_information_sphere"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ignatiushcsmoreore:quantum_sword_information_sphere"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_quantum_sword_information_sphere"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ignatiushcsmoreore:quantum_sword_information_sphere"
+    ]
+  }
+}

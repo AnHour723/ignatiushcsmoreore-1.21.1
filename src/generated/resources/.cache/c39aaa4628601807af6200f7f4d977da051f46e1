@@ -1,0 +1,18 @@
+// 1.21.1	2026-01-24T17:22:59.3617299	Tags for minecraft:item mod id ignatiushcsmoreore
+55d021ee37fe4ddcf34b5e733280ae51aa90d6be data/ignatiushcsmoreore/tags/item/glass_key.json
+03e0b5a0f3a2c3ab8c0902b8dcd75be7080036cc data/ignatiushcsmoreore/tags/item/is_blueprint.json
+05abdd0d8560b0671f8c122f795fcb1bc2155276 data/ignatiushcsmoreore/tags/item/is_fuel.json
+a6e6d16a48d32f0479890e9b7f4c351afbba9390 data/ignatiushcsmoreore/tags/item/sickle.json
+40517c5d526fd03b41575d3959d202d8342b0330 data/minecraft/tags/item/axes.json
+7406c051d6b9f6de32c22117e80f830271b1c59e data/minecraft/tags/item/chest_armor.json
+f7bc49c844b1e73c6a5d12f3a0bf47eb3dc7fb6c data/minecraft/tags/item/enchantable/bow.json
+18f20988aab76791d7f131ae12629dad66a3d5f3 data/minecraft/tags/item/enchantable/fire_aspect.json
+1f7ab5b5a47516854fb8184400894281abaa3f13 data/minecraft/tags/item/foot_armor.json
+4c22a789e9511dcc9200f303fad9c51e18042917 data/minecraft/tags/item/head_armor.json
+2308fa434801ab91efac479423eae9ff27fca32a data/minecraft/tags/item/hoes.json
+fc53df615b630827cabc9f62f0fb89269a04f5b5 data/minecraft/tags/item/leg_armor.json
+ccc984213d575259c203d2efc845ebec0fee1bea data/minecraft/tags/item/pickaxes.json
+b68cfcd2aafeead39fd49858447dc6f4ba4b4f50 data/minecraft/tags/item/shovels.json
+86b1e75aed2b5a98727d033aab69a2d9e9378f8a data/minecraft/tags/item/swords.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/trim_materials.json
+03e0b5a0f3a2c3ab8c0902b8dcd75be7080036cc data/minecraft/tags/item/trim_templates.json

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_precursor_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:hell_s_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ignatiushcsmoreore:hell_s_sickle"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_precursor_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ignatiushcsmoreore:hell_s_sickle"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:active_fire"
+    },{
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:blazing_fire_ingot",
+    "count": 1
+  }
+}
+
+

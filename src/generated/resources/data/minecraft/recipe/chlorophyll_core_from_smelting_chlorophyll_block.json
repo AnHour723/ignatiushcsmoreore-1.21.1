@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "tilama",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:chlorophyll_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:chlorophyll_core"
+  }
+}

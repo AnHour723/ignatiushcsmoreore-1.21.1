@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:quantum_information_sphere"
+    },
+    {
+      "item": "minecraft:diamond_boots"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:quantum_boots_information_sphere"
+  }
+}

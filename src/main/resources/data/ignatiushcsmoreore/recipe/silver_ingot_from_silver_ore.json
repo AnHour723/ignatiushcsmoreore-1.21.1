@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:silver_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:silver_ingot",
+    "count": 2
+  }
+}
+
+

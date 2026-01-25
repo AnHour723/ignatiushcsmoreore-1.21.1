@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:xxx"
+    },
+    {
+      "item": "minecraft:iron_axe"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:emperor_s_axe"
+  }
+}

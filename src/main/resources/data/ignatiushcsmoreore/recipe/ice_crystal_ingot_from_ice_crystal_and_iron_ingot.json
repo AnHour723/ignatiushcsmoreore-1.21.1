@@ -1,0 +1,16 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:ice_crystal"
+    },{
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:ice_crystal_ingot",
+    "count": 1
+  }
+}
+
+

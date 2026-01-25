@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:deepslate_violet_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:violet_gemstone",
+    "count": 2
+  }
+}
+
+

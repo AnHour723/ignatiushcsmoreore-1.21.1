@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:soul_sand"
+    },
+    "O": {
+      "item": "ignatiushcsmoreore:ruby"
+    },
+    "X": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "pattern": [
+    "XOX",
+    "AAA",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:soul_altar"
+  }
+}

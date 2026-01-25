@@ -1,0 +1,12 @@
+{
+  "type": "ignatiushcsmoreore:analysis_room",
+  "ingredient": {
+    "item": "minecraft:blue_ice"
+  },
+  "result": {
+    "id": "ignatiushcsmoreore:ice_crystal"
+  },
+  "analysis_time": 100
+}
+
+

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_dye"
+    },
+    "C": {
+      "item": "minecraft:cyan_dye"
+    },
+    "G": {
+      "item": "minecraft:green_dye"
+    },
+    "K": {
+      "tag": "ignatiushcsmoreore:glass_key"
+    },
+    "O": {
+      "item": "minecraft:orange_dye"
+    },
+    "P": {
+      "item": "minecraft:purple_dye"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
+    },
+    "S": {
+      "item": "ignatiushcsmoreore:prismatic_colorful_fragment"
+    },
+    "Y": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "pattern": [
+    "ROY",
+    "GSC",
+    "BKP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:prismatic_colorful_core"
+  }
+}

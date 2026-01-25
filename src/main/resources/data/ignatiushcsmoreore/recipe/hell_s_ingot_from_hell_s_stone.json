@@ -1,0 +1,16 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:hell_s_stone"
+    },{
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:hell_s_ingot",
+    "count": 1
+  }
+}
+
+

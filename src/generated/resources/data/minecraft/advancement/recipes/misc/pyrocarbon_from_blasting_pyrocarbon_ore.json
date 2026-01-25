@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pyrocarbon_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:pyrocarbon_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pyrocarbon_from_blasting_pyrocarbon_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pyrocarbon_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:pyrocarbon_from_blasting_pyrocarbon_ore"
+    ]
+  }
+}

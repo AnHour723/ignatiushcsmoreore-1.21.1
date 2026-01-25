@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lanhuaying": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:lanhuaying_music_disc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ignatiushcsmoreore:ai_from_lanhuaying"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lanhuaying"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ignatiushcsmoreore:ai_from_lanhuaying"
+    ]
+  }
+}

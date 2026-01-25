@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:titanium_ingot"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XX",
+    "XY",
+    " Y"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:titanium_axe"
+  }
+}

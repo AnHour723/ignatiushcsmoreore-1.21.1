@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ignatiushcsmoreore:block/ore/end_pole_ore"
+  }
+}

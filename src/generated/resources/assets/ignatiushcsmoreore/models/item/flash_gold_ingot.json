@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ignatiushcsmoreore:item/ore/flash_gold_ingot"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "ignatiushcsmoreore:weapon_platform",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:prismatic_colorful_upgrade_template"
+    }, {
+      "item": "ignatiushcsmoreore:precursor_axe"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_core"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:prismatic_colorful_axe",
+    "count": 1
+  }
+}
+
+

@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:titanium_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:titanium_ingot",
+    "count": 2
+  }
+}
+
+

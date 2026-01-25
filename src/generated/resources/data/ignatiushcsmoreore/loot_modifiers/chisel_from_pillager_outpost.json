@@ -1,0 +1,10 @@
+{
+  "type": "ignatiushcsmoreore:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/pillager_outpost"
+    }
+  ],
+  "item": "ignatiushcsmoreore:glass_crystallization_template"
+}

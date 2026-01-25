@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:saltpetre_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:saltpetre",
+    "count": 2
+  }
+}
+
+

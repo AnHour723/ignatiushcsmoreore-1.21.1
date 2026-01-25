@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_black_crystals_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:black_crystals_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:black_crystals_from_smelting_black_crystals_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_black_crystals_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:black_crystals_from_smelting_black_crystals_ore"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:poseidon_ingot"
+    },
+    "Y": {
+      "item": "ignatiushcsmoreore:steel_stick"
+    }
+  },
+  "pattern": [
+    " X ",
+    " Y ",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:poseidon_shovel"
+  }
+}

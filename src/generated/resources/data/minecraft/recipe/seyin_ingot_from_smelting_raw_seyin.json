@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "seyin",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:raw_seyin"
+  },
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:seyin_ingot"
+  }
+}

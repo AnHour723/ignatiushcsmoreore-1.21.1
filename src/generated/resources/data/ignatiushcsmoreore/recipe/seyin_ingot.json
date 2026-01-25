@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:seyin_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ignatiushcsmoreore:seyin_ingot"
+  }
+}

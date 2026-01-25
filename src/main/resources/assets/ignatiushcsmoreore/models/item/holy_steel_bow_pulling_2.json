@@ -1,0 +1,6 @@
+{
+    "parent": "ignatiushcsmoreore:item/holy_steel_bow",
+    "textures": {
+        "layer0": "ignatiushcsmoreore:item/holy_steel_bow_pulling_2"
+    }
+}

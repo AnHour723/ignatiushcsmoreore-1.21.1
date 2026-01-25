@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "precursor",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:precursor_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:precursor_ingot"
+  }
+}

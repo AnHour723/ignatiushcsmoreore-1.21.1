@@ -1,0 +1,18 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:taiji"
+    },{
+      "item": "ignatiushcsmoreore:refined_red_lotus"
+    },{
+      "item": "minecraft:heart_of_the_sea"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:pole_ingot",
+    "count": 2
+  }
+}
+
+

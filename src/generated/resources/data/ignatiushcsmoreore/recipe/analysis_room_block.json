@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "O": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "ignatiushcsmoreore:quantum_domain"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "AOA",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:analysis_room_block"
+  }
+}

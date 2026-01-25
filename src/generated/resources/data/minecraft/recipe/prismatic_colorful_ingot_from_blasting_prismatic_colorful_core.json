@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "unstable_xxx",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:prismatic_colorful_core"
+  },
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:prismatic_colorful_ingot"
+  }
+}

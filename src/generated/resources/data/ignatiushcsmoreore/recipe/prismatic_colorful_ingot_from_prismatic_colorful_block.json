@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:prismatic_colorful_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ignatiushcsmoreore:prismatic_colorful_ingot"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "ignatiushcsmoreore:analysis_room",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:quantum_hoe_information_sphere"
+  },
+  "result": {
+    "id": "ignatiushcsmoreore:quantum_hoe"
+  },
+  "analysis_time": 12000
+}
+
+

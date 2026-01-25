@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_seyin_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:seyin_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:seyin_ingot_from_blasting_seyin_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_seyin_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:seyin_ingot_from_blasting_seyin_ore"
+    ]
+  }
+}

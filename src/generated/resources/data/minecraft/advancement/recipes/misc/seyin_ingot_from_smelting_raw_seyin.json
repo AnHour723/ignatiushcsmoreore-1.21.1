@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_seyin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:raw_seyin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:seyin_ingot_from_smelting_raw_seyin"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_seyin"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:seyin_ingot_from_smelting_raw_seyin"
+    ]
+  }
+}

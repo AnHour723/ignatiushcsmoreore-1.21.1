@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:pure_white_pole"
+    },
+    {
+      "item": "ignatiushcsmoreore:fuzzy_pole"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "ignatiushcsmoreore:yang_arrow"
+  }
+}

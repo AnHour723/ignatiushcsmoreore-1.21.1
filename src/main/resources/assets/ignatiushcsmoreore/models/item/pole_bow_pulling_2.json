@@ -1,0 +1,6 @@
+{
+    "parent": "ignatiushcsmoreore:item/pole_bow",
+    "textures": {
+        "layer0": "ignatiushcsmoreore:item/pole_bow_pulling_2"
+    }
+}

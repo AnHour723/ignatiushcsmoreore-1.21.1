@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,has_blueprint=false": {
+      "model": "ignatiushcsmoreore:block/weapon_platform"
+    },
+    "facing=south,has_blueprint=false": {
+      "model": "ignatiushcsmoreore:block/weapon_platform",
+      "y": 180
+    },
+    "facing=east,has_blueprint=false": {
+      "model": "ignatiushcsmoreore:block/weapon_platform",
+      "y": 90
+    },
+    "facing=west,has_blueprint=false": {
+      "model": "ignatiushcsmoreore:block/weapon_platform",
+      "y": 270
+    },
+    "facing=north,has_blueprint=true": {
+      "model": "ignatiushcsmoreore:block/weapon_platform_has"
+    },
+    "facing=south,has_blueprint=true": {
+      "model": "ignatiushcsmoreore:block/weapon_platform_has",
+      "y": 180
+    },
+    "facing=east,has_blueprint=true": {
+      "model": "ignatiushcsmoreore:block/weapon_platform_has",
+      "y": 90
+    },
+    "facing=west,has_blueprint=true": {
+      "model": "ignatiushcsmoreore:block/weapon_platform_has",
+      "y": 270
+    }
+  }
+}

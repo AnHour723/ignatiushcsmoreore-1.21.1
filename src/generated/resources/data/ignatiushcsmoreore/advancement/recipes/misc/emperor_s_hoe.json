@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ignatiushcsmoreore:emperor_s_hoe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_xxx_from_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:xxx"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_xxx_from_hoe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ignatiushcsmoreore:emperor_s_hoe"
+    ]
+  }
+}

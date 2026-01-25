@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:ruby"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " Y ",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:ruby_pickaxe"
+  }
+}

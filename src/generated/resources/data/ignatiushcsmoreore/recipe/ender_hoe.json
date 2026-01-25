@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:ender_ingot"
+    },
+    "Y": {
+      "item": "ignatiushcsmoreore:ender_stick"
+    }
+  },
+  "pattern": [
+    "XX",
+    " Y",
+    " Y"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:ender_hoe"
+  }
+}

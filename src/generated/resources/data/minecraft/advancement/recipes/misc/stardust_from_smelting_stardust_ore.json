@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stardust_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:stardust_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:stardust_from_smelting_stardust_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stardust_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:stardust_from_smelting_stardust_ore"
+    ]
+  }
+}

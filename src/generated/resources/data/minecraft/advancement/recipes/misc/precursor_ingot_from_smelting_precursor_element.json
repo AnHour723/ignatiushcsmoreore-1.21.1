@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_precursor_element": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:precursor_element"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:precursor_ingot_from_smelting_precursor_element"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_precursor_element"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:precursor_ingot_from_smelting_precursor_element"
+    ]
+  }
+}

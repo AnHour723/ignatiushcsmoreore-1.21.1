@@ -1,0 +1,10 @@
+{
+  "remove": [
+    "#ignatiushcsmoreore:needs_quantum_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_netherite_tool",
+    "ignatiushcsmoreore:nether_ore",
+    "ignatiushcsmoreore:end_ore"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:the_will_of_the_hero"
+    },{
+      "item": "ignatiushcsmoreore:steel_ingot"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:holy_steel_ingot",
+    "count": 1
+  }
+}
+
+

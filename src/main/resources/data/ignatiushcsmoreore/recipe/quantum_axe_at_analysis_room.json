@@ -1,0 +1,12 @@
+{
+  "type": "ignatiushcsmoreore:analysis_room",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:quantum_axe_information_sphere"
+  },
+  "result": {
+    "id": "ignatiushcsmoreore:quantum_axe"
+  },
+  "analysis_time": 12000
+}
+
+

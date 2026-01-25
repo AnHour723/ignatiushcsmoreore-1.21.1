@@ -1,0 +1,6 @@
+{
+    "parent": "ignatiushcsmoreore:item/blazing_fire_bow",
+    "textures": {
+        "layer0": "ignatiushcsmoreore:item/blazing_fire_bow_pulling_1"
+    }
+}

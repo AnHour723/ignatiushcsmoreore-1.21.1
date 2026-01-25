@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:heyan_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:heyan",
+    "count": 2
+  }
+}
+
+

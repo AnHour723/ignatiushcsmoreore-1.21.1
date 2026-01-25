@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chloroplast": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:chloroplast"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:inactivated_chlorophyll_ingot_from_smelting_chloroplast"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chloroplast"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:inactivated_chlorophyll_ingot_from_smelting_chloroplast"
+    ]
+  }
+}

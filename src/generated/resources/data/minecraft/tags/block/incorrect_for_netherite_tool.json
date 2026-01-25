@@ -1,0 +1,12 @@
+{
+  "remove": [
+    "#ignatiushcsmoreore:needs_netherite_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool",
+    "ignatiushcsmoreore:overworld_ore",
+    "ignatiushcsmoreore:collapsing_block",
+    "ignatiushcsmoreore:nether_ore",
+    "ignatiushcsmoreore:end_ore"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:deepslate_tilama_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:tilama_ingot",
+    "count": 2
+  }
+}
+
+

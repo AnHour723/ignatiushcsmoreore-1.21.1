@@ -1,0 +1,19 @@
+{
+
+  "lan_hua_ying_ai": {
+    "sounds": [
+      {
+        "name": "ignatiushcsmoreore:lan_hua_ying_ai",
+        "stream": true
+      }
+    ]
+  },
+  "lan_hua_ying": {
+  "sounds": [
+    {
+      "name": "ignatiushcsmoreore:lan_hua_ying",
+      "stream": true
+    }
+  ]
+}
+}

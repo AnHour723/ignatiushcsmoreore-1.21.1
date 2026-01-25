@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:ruby_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:ruby",
+    "count": 2
+  }
+}
+
+

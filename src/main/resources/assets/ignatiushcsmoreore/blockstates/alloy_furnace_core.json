@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,is_working=false": {
+      "model": "ignatiushcsmoreore:block/alloy_furnace_core"
+    },
+    "facing=south,is_working=false": {
+      "model": "ignatiushcsmoreore:block/alloy_furnace_core",
+      "y": 180
+    },
+    "facing=east,is_working=false": {
+      "model": "ignatiushcsmoreore:block/alloy_furnace_core",
+      "y": 90
+    },
+    "facing=west,is_working=false": {
+      "model": "ignatiushcsmoreore:block/alloy_furnace_core",
+      "y": 270
+    },
+    "facing=north,is_working=true": {
+      "model": "ignatiushcsmoreore:block/alloy_furnace_core_on"
+    },
+    "facing=south,is_working=true": {
+      "model": "ignatiushcsmoreore:block/alloy_furnace_core_on",
+      "y": 180
+    },
+    "facing=east,is_working=true": {
+      "model": "ignatiushcsmoreore:block/alloy_furnace_core_on",
+      "y": 90
+    },
+    "facing=west,is_working=true": {
+      "model": "ignatiushcsmoreore:block/alloy_furnace_core_on",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "ignatiushcsmoreore:analysis_room",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:heroic_remains"
+  },
+  "result": {
+    "id": "ignatiushcsmoreore:the_will_of_the_hero",
+    "count": 2
+  },
+  "analysis_time": 400
+}
+
+
+
+

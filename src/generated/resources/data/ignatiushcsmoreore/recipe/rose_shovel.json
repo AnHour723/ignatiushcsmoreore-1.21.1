@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:rose_gemstone"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " X ",
+    " Y ",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:rose_shovel"
+  }
+}

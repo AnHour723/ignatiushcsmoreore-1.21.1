@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:smithing_table"
+    },
+    "B": {
+      "tag": "minecraft:anvil"
+    },
+    "O": {
+      "item": "minecraft:paper"
+    },
+    "X": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "AOB",
+    "XXX",
+    "X X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:weapon_platform"
+  }
+}

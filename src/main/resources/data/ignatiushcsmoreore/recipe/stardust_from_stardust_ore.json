@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:stardust_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:stardust",
+    "count": 2
+  }
+}
+
+

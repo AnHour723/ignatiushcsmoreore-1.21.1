@@ -1,0 +1,26 @@
+{
+  "type": "ignatiushcsmoreore:weapon_platform",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:nether_upgrade_template"
+    }, {
+      "item": "ignatiushcsmoreore:overworld_shovel"
+    },{
+      "item": "ignatiushcsmoreore:nether_core"
+    },{
+      "item": "minecraft:warped_wart_block"
+    },{
+      "item": "minecraft:nether_wart_block"
+    },{
+      "item": "minecraft:nether_wart"
+    },{
+      "item": "minecraft:soul_sand"
+    },{
+      "item": "minecraft:netherrack"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:nether_shovel",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ignatiushcsmoreore:item/ore/the_will_of_the_hero"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "ignatiushcsmoreore:weapon_platform",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:prismatic_colorful_upgrade_template"
+    }, {
+      "item": "minecraft:netherite_leggings"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_core"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    },{
+      "item": "ignatiushcsmoreore:prismatic_colorful_ingot"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:prismatic_colorful_leggings",
+    "count": 1
+  }
+}
+
+

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:inactivated_chlorophyll_ingot"
+    },
+    {
+      "item": "ignatiushcsmoreore:chlorophyll"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:chlorophyll_ingot"
+  }
+}

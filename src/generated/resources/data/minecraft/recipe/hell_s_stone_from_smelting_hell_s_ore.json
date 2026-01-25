@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "hell_s_ingot",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:hell_s_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:hell_s_stone"
+  }
+}

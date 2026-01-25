@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#ignatiushcsmoreore:needs_nether_tool"
+  ],
+  "values": [
+    "#ignatiushcsmoreore:incorrect_for_overworld_tool"
+  ]
+}

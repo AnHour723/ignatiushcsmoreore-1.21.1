@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:aluminum_ingot"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XX",
+    " Y",
+    " Y"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:aluminum_hoe"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:deepslate"
+    },
+    "O": {
+      "item": "ignatiushcsmoreore:chlorophyll_core"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AOA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:disguised_chlorophyll_ore"
+  }
+}

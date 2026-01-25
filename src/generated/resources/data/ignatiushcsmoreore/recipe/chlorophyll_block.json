@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:emerald"
+    },
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "O": {
+      "item": "ignatiushcsmoreore:chlorophyll"
+    }
+  },
+  "pattern": [
+    "BAB",
+    "AOA",
+    "BAB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:chlorophyll_block"
+  }
+}

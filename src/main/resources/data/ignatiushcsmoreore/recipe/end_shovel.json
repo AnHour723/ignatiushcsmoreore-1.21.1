@@ -1,0 +1,26 @@
+{
+  "type": "ignatiushcsmoreore:weapon_platform",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:end_upgrade_template"
+    }, {
+      "item": "ignatiushcsmoreore:nether_shovel"
+    },{
+      "item": "ignatiushcsmoreore:end_core"
+    },{
+      "item": "minecraft:obsidian"
+    },{
+      "item": "minecraft:end_stone"
+    },{
+      "item": "minecraft:dragon_head"
+    },{
+      "item": "minecraft:end_stone_bricks"
+    },{
+      "item": "minecraft:purpur_block"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:end_shovel",
+    "count": 1
+  }
+}

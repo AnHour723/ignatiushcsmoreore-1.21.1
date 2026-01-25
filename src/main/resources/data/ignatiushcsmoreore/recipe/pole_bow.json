@@ -1,0 +1,26 @@
+{
+  "type": "ignatiushcsmoreore:weapon_platform",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:pole_bow_upgrade_template"
+    }, {
+      "item": "ignatiushcsmoreore:storm_bow"
+    },{
+      "item": "ignatiushcsmoreore:taiji"
+    },{
+      "item": "ignatiushcsmoreore:pole_ingot"
+    },{
+      "item": "ignatiushcsmoreore:pole_ingot"
+    },{
+      "item": "ignatiushcsmoreore:pole_ingot"
+    },{
+      "item": "ignatiushcsmoreore:pole_ingot"
+    },{
+      "item": "ignatiushcsmoreore:pole_ingot"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:pole_bow",
+    "count": 1
+  }
+}

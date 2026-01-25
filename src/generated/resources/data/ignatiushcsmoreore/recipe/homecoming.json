@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "ignatiushcsmoreore:thought"
+    },
+    "O": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AOA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:homecoming"
+  }
+}

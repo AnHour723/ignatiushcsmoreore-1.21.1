@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_prismatic_colorful_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:prismatic_colorful_fragment"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ignatiushcsmoreore:prismatic_colorful_core"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_prismatic_colorful_fragment"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ignatiushcsmoreore:prismatic_colorful_core"
+    ]
+  }
+}

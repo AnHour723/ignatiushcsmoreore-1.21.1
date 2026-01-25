@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "minecraft:basalt_deltas",
+  "features": "ignatiushcsmoreore:nether_heyan_ore_placed",
+  "step": "underground_ores"
+}

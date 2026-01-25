@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate_redstone_ore"
+    }
+  ],
+  "result": {
+    "id": "minecraft:redstone",
+    "count": 2
+  }
+}
+
+

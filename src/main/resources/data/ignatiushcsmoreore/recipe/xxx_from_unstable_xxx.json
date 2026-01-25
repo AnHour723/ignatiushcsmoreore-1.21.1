@@ -1,0 +1,12 @@
+{
+  "type": "ignatiushcsmoreore:analysis_room",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:unstable_xxx"
+  },
+  "result": {
+    "id": "ignatiushcsmoreore:xxx"
+  },
+  "analysis_time": 100
+}
+
+

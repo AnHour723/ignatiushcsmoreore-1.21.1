@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:lanhuaying_ai_music_disc"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:lanhuaying_music_disc"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "ignatiushcsmoreore:item/storm_bow",
+    "textures": {
+        "layer0": "ignatiushcsmoreore:item/storm_bow_pulling_1"
+    }
+}

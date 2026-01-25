@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "ignatiushcsmoreore:titanium_ingot"
+    },
+    "O": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AOA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:alloy_furnace_core"
+  }
+}

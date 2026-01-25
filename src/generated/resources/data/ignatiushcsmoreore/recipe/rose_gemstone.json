@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:glass_crystallization_template"
+    },
+    {
+      "item": "ignatiushcsmoreore:blossoming_rose"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:rose_gemstone"
+  }
+}

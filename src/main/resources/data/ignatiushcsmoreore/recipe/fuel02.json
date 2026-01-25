@@ -1,0 +1,7 @@
+{
+  "type": "ignatiushcsmoreore:combustible_material",
+  "ingredient": {
+    "item": "minecraft:charcoal"
+  },
+  "burning_time": 1600
+}

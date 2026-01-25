@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ignatiushcsmoreore:item/tool/prismatic_colorful_sickle"
+  }
+}

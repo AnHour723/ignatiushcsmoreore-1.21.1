@@ -1,0 +1,7 @@
+{
+  "type": "ignatiushcsmoreore:combustible_material",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:pyrocarbon"
+  },
+  "burning_time": 4800
+}

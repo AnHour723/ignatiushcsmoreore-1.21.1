@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:raw_tin"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:tin_ingot",
+    "count": 2
+  }
+}
+
+

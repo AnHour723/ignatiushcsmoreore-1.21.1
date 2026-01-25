@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "minecraft:blue_orchid"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XAX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:lanhuaying_music_disc"
+  }
+}

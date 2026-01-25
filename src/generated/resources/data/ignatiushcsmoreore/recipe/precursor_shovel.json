@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:precursor_ingot"
+    },
+    "Y": {
+      "item": "ignatiushcsmoreore:tilama_stick"
+    }
+  },
+  "pattern": [
+    " X ",
+    " Y ",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:precursor_shovel"
+  }
+}

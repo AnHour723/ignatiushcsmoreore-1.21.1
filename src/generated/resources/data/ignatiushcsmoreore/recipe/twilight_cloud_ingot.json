@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:twilight_cloud_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ignatiushcsmoreore:twilight_cloud_ingot"
+  }
+}

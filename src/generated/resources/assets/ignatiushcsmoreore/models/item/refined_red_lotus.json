@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ignatiushcsmoreore:item/ore/refined_red_lotus"
+  }
+}

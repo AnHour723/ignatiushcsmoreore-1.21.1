@@ -1,0 +1,18 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:fuzzy_pole"
+    },{
+      "item": "ignatiushcsmoreore:pure_white_pole"
+    },{
+      "item": "ignatiushcsmoreore:pure_black_pole"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:taiji",
+    "count": 1
+  }
+}
+
+

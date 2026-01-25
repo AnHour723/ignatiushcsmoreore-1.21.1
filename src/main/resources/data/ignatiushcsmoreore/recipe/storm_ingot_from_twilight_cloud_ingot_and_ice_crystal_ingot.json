@@ -1,0 +1,16 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:twilight_cloud_ingot"
+    },{
+      "item": "ignatiushcsmoreore:ice_crystal_ingot"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:storm_ingot",
+    "count": 2
+  }
+}
+
+

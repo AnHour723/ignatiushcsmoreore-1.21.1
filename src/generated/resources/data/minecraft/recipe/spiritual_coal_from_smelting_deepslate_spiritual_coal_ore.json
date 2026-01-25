@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "precursor",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:deepslate_spiritual_coal_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:spiritual_coal"
+  }
+}

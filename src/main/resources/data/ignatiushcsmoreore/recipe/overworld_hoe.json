@@ -1,0 +1,28 @@
+{
+  "type": "ignatiushcsmoreore:weapon_platform",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:overworld_upgrade_template"
+    }, {
+      "item": "ignatiushcsmoreore:quantum_hoe"
+    },{
+      "item": "ignatiushcsmoreore:overworld_core"
+    },{
+      "item": "minecraft:poppy"
+    },{
+      "item": "minecraft:wheat_seeds"
+    },{
+      "item": "minecraft:torchflower"
+    },{
+      "item": "minecraft:oak_sapling"
+    },{
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:overworld_hoe",
+    "count": 1
+  }
+}
+
+

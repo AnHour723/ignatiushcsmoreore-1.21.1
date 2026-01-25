@@ -1,0 +1,16 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:poseidon_fragment"
+    },{
+      "item": "ignatiushcsmoreore:tentaculum_with_nerves"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:poseidon_ingot",
+    "count": 1
+  }
+}
+
+

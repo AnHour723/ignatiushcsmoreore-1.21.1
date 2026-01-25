@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "ignatiushcsmoreore:block/alloy_furnace_core_front",
+    "side": "ignatiushcsmoreore:block/alloy_furnace_core_side",
+    "top": "ignatiushcsmoreore:block/alloy_furnace_core_top"
+  }
+}

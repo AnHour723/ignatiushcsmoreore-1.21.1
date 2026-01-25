@@ -1,0 +1,12 @@
+{
+  "type": "ignatiushcsmoreore:analysis_room",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:quantum_domain"
+  },
+  "result": {
+    "id": "ignatiushcsmoreore:unstable_quantum_structure"
+  },
+  "analysis_time": 40
+}
+
+

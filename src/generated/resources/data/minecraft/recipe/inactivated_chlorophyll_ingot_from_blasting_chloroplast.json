@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "tilama",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:chloroplast"
+  },
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:inactivated_chlorophyll_ingot"
+  }
+}

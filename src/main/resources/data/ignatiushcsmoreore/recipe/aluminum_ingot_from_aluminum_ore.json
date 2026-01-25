@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:aluminum_ore"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:aluminum_ingot",
+    "count": 2
+  }
+}
+
+

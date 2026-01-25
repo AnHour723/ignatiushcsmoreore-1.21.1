@@ -1,0 +1,12 @@
+{
+  "type": "ignatiushcsmoreore:analysis_room",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:raw_ender_ore"
+  },
+  "result": {
+    "id": "minecraft:ender_pearl"
+  },
+  "analysis_time": 100
+}
+
+

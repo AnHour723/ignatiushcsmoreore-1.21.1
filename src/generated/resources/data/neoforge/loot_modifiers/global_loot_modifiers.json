@@ -1,0 +1,31 @@
+{
+  "entries": [
+    "ignatiushcsmoreore:chisel_from_abandoned_mineshaft",
+    "ignatiushcsmoreore:chisel_from_desert_pyramid",
+    "ignatiushcsmoreore:chisel_from_jungle_temple",
+    "ignatiushcsmoreore:chisel_from_jungle_temple_dispenser",
+    "ignatiushcsmoreore:chisel_from_igloo_chest",
+    "ignatiushcsmoreore:chisel_from_simple_dungeon",
+    "ignatiushcsmoreore:chisel_from_stronghold_corridor",
+    "ignatiushcsmoreore:chisel_from_stronghold_crossing",
+    "ignatiushcsmoreore:chisel_from_stronghold_library",
+    "ignatiushcsmoreore:chisel_from_woodland_mansion",
+    "ignatiushcsmoreore:chisel_from_underwater_ruin_big",
+    "ignatiushcsmoreore:chisel_from_underwater_ruin_small",
+    "ignatiushcsmoreore:chisel_from_buried_treasure",
+    "ignatiushcsmoreore:chisel_from_shipwreck_map",
+    "ignatiushcsmoreore:chisel_from_shipwreck_supply",
+    "ignatiushcsmoreore:chisel_from_shipwreck_treasure",
+    "ignatiushcsmoreore:chisel_from_ancient_city",
+    "ignatiushcsmoreore:chisel_from_ancient_city_ice_box",
+    "ignatiushcsmoreore:chisel_from_bastion_bridge",
+    "ignatiushcsmoreore:chisel_from_bastion_hoglin_stable",
+    "ignatiushcsmoreore:chisel_from_bastion_other",
+    "ignatiushcsmoreore:chisel_from_bastion_treasure",
+    "ignatiushcsmoreore:chisel_from_nether_bridge",
+    "ignatiushcsmoreore:chisel_from_ruined_portal",
+    "ignatiushcsmoreore:chisel_from_end_city_treasure",
+    "ignatiushcsmoreore:chisel_from_pillager_outpost"
+  ],
+  "replace": false
+}

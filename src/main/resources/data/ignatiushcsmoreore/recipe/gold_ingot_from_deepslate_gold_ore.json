@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate_gold_ore"
+    }
+  ],
+  "result": {
+    "id": "minecraft:gold_ingot",
+    "count": 2
+  }
+}
+
+

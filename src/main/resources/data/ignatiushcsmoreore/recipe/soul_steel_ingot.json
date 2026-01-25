@@ -1,0 +1,28 @@
+{
+  "type": "ignatiushcsmoreore:soul_altar",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:steel_ingot"
+    }, {
+      "item": "ignatiushcsmoreore:soul_essence"
+    },{
+      "item": "ignatiushcsmoreore:steel_ingot"
+    },{
+      "item": "ignatiushcsmoreore:soul_essence"
+    },{
+      "item": "ignatiushcsmoreore:steel_ingot"
+    },{
+      "item": "ignatiushcsmoreore:soul_essence"
+    },{
+      "item": "ignatiushcsmoreore:steel_ingot"
+    },{
+      "item": "ignatiushcsmoreore:soul_essence"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:soul_steel_ingot",
+    "count": 2
+  }
+}
+
+

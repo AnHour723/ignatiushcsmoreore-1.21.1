@@ -1,0 +1,26 @@
+{
+  "type": "ignatiushcsmoreore:weapon_platform",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:collapsing_upgrade_template"
+    }, {
+      "item": "ignatiushcsmoreore:quantum_sickle"
+    },{
+      "item": "ignatiushcsmoreore:collapsing_core"
+    },{
+      "item": "ignatiushcsmoreore:collapsing_ingot"
+    },{
+      "item": "ignatiushcsmoreore:collapsing_ingot"
+    },{
+      "item": "ignatiushcsmoreore:collapsing_ingot"
+    },{
+      "item": "ignatiushcsmoreore:collapsing_ingot"
+    },{
+      "item": "ignatiushcsmoreore:collapsing_ingot"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:collapsing_sickle",
+    "count": 1
+  }
+}

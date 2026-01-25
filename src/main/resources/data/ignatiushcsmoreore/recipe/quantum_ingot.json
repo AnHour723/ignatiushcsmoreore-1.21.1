@@ -1,0 +1,17 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:unstable_xxx"
+    },
+    {
+      "item": "ignatiushcsmoreore:unstable_quantum_structure"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:quantum_ingot",
+    "count": 1
+  }
+}
+
+

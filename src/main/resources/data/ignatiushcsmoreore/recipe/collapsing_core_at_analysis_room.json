@@ -1,0 +1,12 @@
+{
+  "type": "ignatiushcsmoreore:analysis_room",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:collapsing_cream"
+  },
+  "result": {
+    "id": "ignatiushcsmoreore:collapsing_core"
+  },
+  "analysis_time": 100
+}
+
+

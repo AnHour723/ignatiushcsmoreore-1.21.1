@@ -1,0 +1,9 @@
+{
+  "remove": [
+    "#ignatiushcsmoreore:needs_overworld_tool"
+  ],
+  "values": [
+    "#ignatiushcsmoreore:incorrect_for_quantum_tool",
+    "ignatiushcsmoreore:end_ore"
+  ]
+}

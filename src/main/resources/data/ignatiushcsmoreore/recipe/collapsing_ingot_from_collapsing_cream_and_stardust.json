@@ -1,0 +1,16 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:collapsing_cream"
+    },{
+      "item": "ignatiushcsmoreore:stardust"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:collapsing_ingot",
+    "count": 1
+  }
+}
+
+

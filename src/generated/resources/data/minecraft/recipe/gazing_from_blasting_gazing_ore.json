@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "gazing",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:gazing_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:gazing"
+  }
+}

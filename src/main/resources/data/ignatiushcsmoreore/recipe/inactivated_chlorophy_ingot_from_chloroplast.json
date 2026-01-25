@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "ignatiushcsmoreore:chloroplast"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:inactivated_chlorophyll_ingot",
+    "count": 2
+  }
+}
+
+

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_heyan_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:heyan_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:heyan_from_blasting_heyan_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_heyan_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:heyan_from_blasting_heyan_ore"
+    ]
+  }
+}

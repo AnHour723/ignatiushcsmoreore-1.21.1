@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_ore"
+    }
+  ],
+  "result": {
+    "id": "minecraft:diamond",
+    "count": 2
+  }
+}
+
+

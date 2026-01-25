@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "tag": "ignatiushcsmoreore:glass_key"
+    }
+  },
+  "pattern": [
+    " X ",
+    "X X",
+    " X "
+  ],
+  "result": {
+    "count": 3,
+    "id": "ignatiushcsmoreore:glass_crystallization_template"
+  }
+}

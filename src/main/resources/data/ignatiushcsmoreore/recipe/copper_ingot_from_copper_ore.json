@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ore"
+    }
+  ],
+  "result": {
+    "id": "minecraft:copper_ingot",
+    "count": 2
+  }
+}
+
+

@@ -1,0 +1,16 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },{
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:flash_gold_ingot",
+    "count": 1
+  }
+}
+
+
