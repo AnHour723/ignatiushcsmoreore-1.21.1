@@ -5,6 +5,9 @@
     "ignatiushcsmoreore:pole_ore",
     "ignatiushcsmoreore:nether_pole_ore",
     "ignatiushcsmoreore:end_pole_ore",
-    "ignatiushcsmoreore:collapsing_block"
+    "ignatiushcsmoreore:collapsing_block",
+    "ignatiushcsmoreore:overworld_ore",
+    "ignatiushcsmoreore:nether_ore",
+    "ignatiushcsmoreore:end_ore"
   ]
 }

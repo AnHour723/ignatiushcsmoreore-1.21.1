@@ -180,6 +180,7 @@ public class HCItemModelProvider extends ItemModelProvider {// 物品模型提�
 
         simpleItem(HCItems.LANHUAYING_MUSIC_DISC);// 唱片  蓝花楹
         simpleItem(HCItems.LANHUAYING_AI_MUSIC_DISC);// 唱片  蓝花楹ai
+        simpleItem(HCItems.FUCHEN_MUSIC_DISC);// 唱片  浮沉
 
         simpleItem(HCItems.QUANTUM_INFORMATION_SPHERE);// 量子空白信息球 物品模型
         simpleItem(HCItems.QUANTUM_HELMET_INFORMATION_SPHERE);// 量子头盔信息球 物品模型

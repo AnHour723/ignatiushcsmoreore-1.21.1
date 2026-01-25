@@ -54,6 +54,13 @@ public class HCGlobalLootModifierProvider extends GlobalLootModifierProvider { /
         ));
 
 
+        // stronghold_corridor 要塞走廊
+        this.addStrongholdCorridor(List.of(
+                HCItems.LANHUAYING_AI_MUSIC_DISC.get(),
+                HCItems.LANHUAYING_MUSIC_DISC.get()
+
+        ));
+
         /*===================主世界结构=======================*/
         // abandoned_mineshaft 废弃矿井
         // desert_pyramid 沙漠神殿

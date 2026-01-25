@@ -1,5 +1,4 @@
 {
-
   "lan_hua_ying_ai": {
     "sounds": [
       {
@@ -9,11 +8,19 @@
     ]
   },
   "lan_hua_ying": {
-  "sounds": [
-    {
-      "name": "ignatiushcsmoreore:lan_hua_ying",
-      "stream": true
-    }
-  ]
-}
+    "sounds": [
+      {
+        "name": "ignatiushcsmoreore:lan_hua_ying",
+        "stream": true
+      }
+    ]
+  },
+  "fu_chen": {
+    "sounds": [
+      {
+        "name": "ignatiushcsmoreore:fu_chen",
+        "stream": true
+      }
+    ]
+  }
 }

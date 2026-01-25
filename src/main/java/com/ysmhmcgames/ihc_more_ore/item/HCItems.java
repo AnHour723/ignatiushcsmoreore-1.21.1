@@ -98,6 +98,12 @@ public class HCItems {
     // 唱片 蓝花楹
     public static final DeferredItem<Item> LANHUAYING_MUSIC_DISC = ITEMS.register("lanhuaying_music_disc",
             ()-> new Item(new Item.Properties().jukeboxPlayable(HCSounds.LANHUAYING_KEY).stacksTo(1)));
+    // 唱片 浮沉
+    public static final DeferredItem<Item> FUCHEN_MUSIC_DISC = ITEMS.register("fuchen_music_disc",
+            ()-> new Item(new Item.Properties().jukeboxPlayable(HCSounds.FUCHEN_KEY).stacksTo(1)));
+
+
+
 
     // 创建注册方法，之后到主类中进行bus注册
     public static void register(IEventBus iEventBus) {

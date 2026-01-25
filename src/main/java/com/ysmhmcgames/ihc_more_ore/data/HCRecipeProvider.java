@@ -1975,6 +1975,15 @@ public class HCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(HCItems.LANHUAYING_MUSIC_DISC)
                 .unlockedBy("has_lanhuaying",has(HCItems.LANHUAYING_MUSIC_DISC))
                 .save(recipeOutput,"ignatiushcsmoreore:ai_from_lanhuaying");
+        // 浮沉 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCItems.FUCHEN_MUSIC_DISC,1)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', ItemTags.LEG_ARMOR)
+                .define('A', Items.NETHER_STAR)
+                .unlockedBy("has_nether_star",has(Items.NETHER_STAR))
+                .save(recipeOutput);
 
         /*=================================*/
         // 灵煤

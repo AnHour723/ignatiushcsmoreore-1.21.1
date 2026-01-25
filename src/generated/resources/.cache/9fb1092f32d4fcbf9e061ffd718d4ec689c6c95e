@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-25T17:50:20.9044144	Recipes
+// 1.21.1	2026-01-25T22:23:02.2220127	Recipes
 5b551bb90f5eab3cc2e92ff61ce5c46a6c64b1d6 data/ignatiushcsmoreore/advancement/recipes/misc/ai_from_lanhuaying.json
 ad31d5f4e21f24ae981fd9b309e0ea7de3050aa3 data/ignatiushcsmoreore/advancement/recipes/misc/alloy_furnace_core.json
 1aa7fe1db9ed43c80df6d9fe074f88af253b21d7 data/ignatiushcsmoreore/advancement/recipes/misc/alloy_furnace_framework.json
@@ -60,6 +60,7 @@ dcb71794bf80ce39f55af117080dfbe9c536a7a1 data/ignatiushcsmoreore/advancement/rec
 9de0a711aec4c06447ce4ad2c491d6a06709aa1d data/ignatiushcsmoreore/advancement/recipes/misc/ender_sword.json
 d22d08f57e6b452c3904c80bcd6f6d4379547a52 data/ignatiushcsmoreore/advancement/recipes/misc/flash_gold_block.json
 bd09cb24f0f2ae5ae29533c51314a5fb063a6eec data/ignatiushcsmoreore/advancement/recipes/misc/flash_gold_ingot.json
+cd036fb4893a47144e614465871edd338081da3b data/ignatiushcsmoreore/advancement/recipes/misc/fuchen_music_disc.json
 6f2761056725bbb45658315d8753584dac5d7439 data/ignatiushcsmoreore/advancement/recipes/misc/glass_crystallization_template.json
 b8b2eb7156e758bfe55a5c6cdf256b074b0d247b data/ignatiushcsmoreore/advancement/recipes/misc/hell_s_axe.json
 6e783f4718fced2f94f2cbe865ba0826b3f72f76 data/ignatiushcsmoreore/advancement/recipes/misc/hell_s_hoe.json
@@ -273,6 +274,7 @@ c0c051df3a2f5d91dca7c260eb5487c9d96e2e2a data/ignatiushcsmoreore/recipe/ender_si
 8e3f7d1a90ea14663850cc25c143ce6011ea291b data/ignatiushcsmoreore/recipe/ender_sword.json
 3a354575ca6c6cd7469b6f74bdd690b255d99992 data/ignatiushcsmoreore/recipe/flash_gold_block.json
 4c20cc361da33160a368772b7df788c0aec50f16 data/ignatiushcsmoreore/recipe/flash_gold_ingot.json
+cab6ab9bad92d64ee787e96139313d815c11b215 data/ignatiushcsmoreore/recipe/fuchen_music_disc.json
 21ba280a6c8962881d23a0e526e7b21c55200309 data/ignatiushcsmoreore/recipe/glass_crystallization_template.json
 1bf283a257393bf71973c20af59cd03b101c4e1a data/ignatiushcsmoreore/recipe/hell_s_axe.json
 f18de22316be18f0fd0c7d9f82c7cfab2851e1bb data/ignatiushcsmoreore/recipe/hell_s_hoe.json

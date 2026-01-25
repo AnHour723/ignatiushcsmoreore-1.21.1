@@ -214,6 +214,10 @@ public class HCBlockTagProvider extends BlockTagsProvider {// 方块标签提供
 
                 .add(HCBlock.COLLAPSING_BLOCK.get())// 坍缩嵌块
 
+                .add(HCBlock.OVERWORLD_ORE.get())// 主界矿
+                .add(HCBlock.NETHER_ORE.get())// 下界矿
+                .add(HCBlock.END_ORE.get())// 终界矿
+
                 ;
 
         // 添加需要下届合金挖掘等级才能挖的东西  --  标签

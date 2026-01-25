@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-25T01:09:47.3167263	Item Models: ignatiushcsmoreore
+// 1.21.1	2026-01-25T22:23:02.2103599	Item Models: ignatiushcsmoreore
 f9454c236e0811183e05acdc3c96b8c1c62361ad assets/ignatiushcsmoreore/models/item/active_fire.json
 0f596cb1c642d4bd1c734ad85bd7078565935516 assets/ignatiushcsmoreore/models/item/aluminum_axe.json
 eab0ea6af0ca6d94ed19bb8ec4916839dfa87e58 assets/ignatiushcsmoreore/models/item/aluminum_boots.json
@@ -237,6 +237,7 @@ aafc0df706b4e363950bb93a66380c7020ef04ac assets/ignatiushcsmoreore/models/item/e
 40f8b65df5759d652ee1cfcb4b734e67281da9b1 assets/ignatiushcsmoreore/models/item/end_sword.json
 929c0cb980c24e9f6f7efd113babf516dc8b240c assets/ignatiushcsmoreore/models/item/end_upgrade_template.json
 7597de5c24c36ba023813a35fe2f55ff6765c6dd assets/ignatiushcsmoreore/models/item/flash_gold_ingot.json
+3ab3450a34295bef9db7ad3b08b6dce37359e5a9 assets/ignatiushcsmoreore/models/item/fuchen_music_disc.json
 8fe64eb995ecc8188b2874d475dea4cd4b209d14 assets/ignatiushcsmoreore/models/item/fuzzy_pole.json
 ae960d5414ad2a0cbac7dae8d0a88b886efd5941 assets/ignatiushcsmoreore/models/item/gazing.json
 e027ac8295c9889119125e1dc56603b020e174a8 assets/ignatiushcsmoreore/models/item/glass_crystallization_template.json

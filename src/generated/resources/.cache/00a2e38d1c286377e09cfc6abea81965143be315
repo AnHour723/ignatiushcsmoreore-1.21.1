@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-22T15:31:03.2943375	Tags for minecraft:block mod id ignatiushcsmoreore
+// 1.21.1	2026-01-25T22:23:02.2090045	Tags for minecraft:block mod id ignatiushcsmoreore
 eff1f154290102f9acb4a63702fdd2f3f9471dde data/ignatiushcsmoreore/tags/block/incorrect_for_end_tool.json
 fb93a43d63b7891b5942dc17bcd0dd59af616195 data/ignatiushcsmoreore/tags/block/incorrect_for_nether_tool.json
 a37ed2d686667fd5842cd20ee8f5ecc0880f6390 data/ignatiushcsmoreore/tags/block/incorrect_for_overworld_tool.json
@@ -10,7 +10,7 @@ a8139413d7489ef2b5a708131e66e448ef0caa1b data/ignatiushcsmoreore/tags/block/need
 6ff9fbbc922b054c3e174b0daa8a56022b8e2f13 data/ignatiushcsmoreore/tags/block/needs_overworld_tool.json
 65028f433c156a83e253dbf3f9c25301aafb6dd4 data/ignatiushcsmoreore/tags/block/needs_quantum_tool.json
 fda02bb4719f0d47d8cf362c8a6478b67bc76a87 data/ignatiushcsmoreore/tags/block/needs_ultimate_tool.json
-6a165bddae85aabf3b55500950a6d46191cb3ac5 data/minecraft/tags/block/incorrect_for_diamond_tool.json
+42daa701b9ce034472455ac63aa6e1fbecfb577e data/minecraft/tags/block/incorrect_for_diamond_tool.json
 ec2fbd3fa889ad1b6cfe1803b1f8cb5eaad6d4ec data/minecraft/tags/block/incorrect_for_netherite_tool.json
 15417f27598e367bb560b35d2c2a0cdc59e79ea1 data/minecraft/tags/block/mineable/axe.json
 d47683c054f37224a38be0e66768e51e7baae814 data/minecraft/tags/block/mineable/hoe.json

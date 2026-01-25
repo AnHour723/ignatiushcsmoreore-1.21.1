@@ -117,10 +117,10 @@ public class HCToolTiers {
 
     // 坍缩材质
     public static final Tier COLLAPSING = new SimpleTier(HCTags.Blocks.INCORRECT_FOR_OVERWORLD_TOOL,
-            2351,1f,10f,22,()-> Ingredient.of(HCOreItem.COLLAPSING_INGOT));
+            2351,18f,10f,22,()-> Ingredient.of(HCOreItem.COLLAPSING_INGOT));
 
 
     // 终界材质
     public static final Tier END = new SimpleTier(HCTags.Blocks.INCORRECT_FOR_END_TOOL,
-            4108,22f,10f,32,()-> Ingredient.of(HCOreItem.END_CORE));
+            4108,25f,10f,32,()-> Ingredient.of(HCOreItem.END_CORE));
 }
