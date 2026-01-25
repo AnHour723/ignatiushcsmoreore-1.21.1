@@ -73,7 +73,7 @@ public class IgnatiusHCsMoreOre {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-        HCItemProperties.addCustomItemProperties();
+
     }
 
 

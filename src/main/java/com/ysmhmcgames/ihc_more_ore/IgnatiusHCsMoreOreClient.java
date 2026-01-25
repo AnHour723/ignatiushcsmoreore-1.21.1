@@ -12,6 +12,7 @@ import com.ysmhmcgames.ihc_more_ore.entity.client.YinProjectileRenderer;
 import com.ysmhmcgames.ihc_more_ore.item.HCArmor;
 import com.ysmhmcgames.ihc_more_ore.screen.HCMenuTypes;
 import com.ysmhmcgames.ihc_more_ore.screen.custom.*;
+import com.ysmhmcgames.ihc_more_ore.util.HCItemProperties;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -42,11 +43,11 @@ public class IgnatiusHCsMoreOreClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
-        IgnatiusHCsMoreOre.LOGGER.info("HELLO FROM CLIENT SETUP");
-        IgnatiusHCsMoreOre.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
-        event.enqueueWork(() -> {
+        event.enqueueWork(() -> {// 服务端初始化代码
+
+            HCItemProperties.addCustomItemProperties();
+
             // 设置半透明渲染层
             ItemBlockRenderTypes.setRenderLayer(HCBlock.QUANTUM_DOMAIN.get(),
                     RenderType.translucent());
@@ -57,10 +58,10 @@ public class IgnatiusHCsMoreOreClient {
             ItemBlockRenderTypes.setRenderLayer(HCBlock.TWILIGHT_CLOUD_ELEMENT.get(),
                     RenderType.translucent());
 
+            EntityRenderers.register(HCEntities.YIN_ARROW.get(), YinProjectileRenderer::new);
+            EntityRenderers.register(HCEntities.YANG_ARROW.get(), YangProjectileRenderer::new);
         });
 
-        EntityRenderers.register(HCEntities.YIN_ARROW.get(), YinProjectileRenderer::new);
-        EntityRenderers.register(HCEntities.YANG_ARROW.get(), YangProjectileRenderer::new);
     }
 
 
