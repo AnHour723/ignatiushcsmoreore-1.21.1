@@ -1,0 +1,14 @@
+{
+  "type": "ignatiushcsmoreore:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ruined_portal"
+    },
+    {
+      "chance": 0.25,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "ignatiushcsmoreore:nether_upgrade_template"
+}

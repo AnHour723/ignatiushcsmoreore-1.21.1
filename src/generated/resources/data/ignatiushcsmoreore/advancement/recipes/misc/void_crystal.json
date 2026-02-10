@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ignatiushcsmoreore:void_crystal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_void_crystal_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:void_crystal_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_void_crystal_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ignatiushcsmoreore:void_crystal"
+    ]
+  }
+}
