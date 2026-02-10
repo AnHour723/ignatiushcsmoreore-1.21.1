@@ -1,0 +1,7 @@
+{
+  "type": "ignatiushcsmoreore:combustible_material",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:spiritual_coal_block"
+  },
+  "burning_time": 28800
+}

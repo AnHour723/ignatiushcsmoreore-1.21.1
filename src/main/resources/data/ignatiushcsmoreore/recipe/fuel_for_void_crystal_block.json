@@ -1,0 +1,7 @@
+{
+  "type": "ignatiushcsmoreore:combustible_material",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:void_crystal_block"
+  },
+  "burning_time": 57600
+}

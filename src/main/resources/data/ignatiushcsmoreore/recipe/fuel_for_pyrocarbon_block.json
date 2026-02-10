@@ -1,0 +1,7 @@
+{
+  "type": "ignatiushcsmoreore:combustible_material",
+  "ingredient": {
+    "item": "ignatiushcsmoreore:pyrocarbon_block"
+  },
+  "burning_time": 43200
+}
