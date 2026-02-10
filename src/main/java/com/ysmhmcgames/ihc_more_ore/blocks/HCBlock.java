@@ -6,6 +6,7 @@ import com.ysmhmcgames.ihc_more_ore.blocks.hc_entity_block.*;
 import com.ysmhmcgames.ihc_more_ore.blocks.ore.DisguisedChlorophyllOre;
 import com.ysmhmcgames.ihc_more_ore.blocks.ore.ProfaneBloodBlock;
 import com.ysmhmcgames.ihc_more_ore.blocks.ore.TwilightCloudElementBlock;
+import com.ysmhmcgames.ihc_more_ore.item.FuelBlockItem;
 import com.ysmhmcgames.ihc_more_ore.item.HCOreItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -257,18 +258,30 @@ public class HCBlock {
     // 深层灵煤矿
     public static final DeferredBlock<Block> DEEPSLATE_SPIRITUAL_COAL_ORE = registerBlock("deepslate_spiritual_coal_ore",
             ()->new Block(Block.Properties.of().sound(SoundType.STONE).strength(7.0f).requiresCorrectToolForDrops()));
+    // 灵煤块
+    public static final DeferredBlock<Block> SPIRITUAL_COAL_BLOCK = registerFuelBlock("spiritual_coal_block",
+            ()->new Block(Block.Properties.of().sound(SoundType.STONE).strength(5.0f).requiresCorrectToolForDrops()), 28800);
     // 硝石矿
     public static final DeferredBlock<Block> SALTPETRE_ORE = registerBlock("saltpetre_ore",
             ()->new Block(Block.Properties.of().sound(SoundType.STONE).strength(5.0f).requiresCorrectToolForDrops()));
     // 深层硝石矿
     public static final DeferredBlock<Block> DEEPSLATE_SALTPETRE_ORE = registerBlock("deepslate_saltpetre_ore",
             ()->new Block(Block.Properties.of().sound(SoundType.STONE).strength(5.0f).requiresCorrectToolForDrops()));
+    // 硝石块
+    public static final DeferredBlock<Block> SALTPETRE_BLOCK = registerFuelBlock("saltpetre_block",
+            ()->new Block(Block.Properties.of().sound(SoundType.STONE).strength(3.0f).requiresCorrectToolForDrops()), 18000);
     // 冥火矿
     public static final DeferredBlock<Block> PYROCARBON_ORE = registerBlock("pyrocarbon_ore",
             ()->new Block(Block.Properties.of().sound(SoundType.SOUL_SAND).strength(9.0f).requiresCorrectToolForDrops()));
+    // 冥火碳块
+    public static final DeferredBlock<Block> PYROCARBON_BLOCK = registerFuelBlock("pyrocarbon_block",
+            ()->new Block(Block.Properties.of().sound(SoundType.STONE).strength(5.0f).requiresCorrectToolForDrops()), 43200);
     // 墨晶矿
     public static final DeferredBlock<Block> VOID_CRYSTAL_ORE = registerBlock("void_crystal_ore",
             ()->new Block(Block.Properties.of().sound(SoundType.STONE).strength(9.0f).requiresCorrectToolForDrops()));
+    // 虚空墨晶块
+    public static final DeferredBlock<Block> VOID_CRYSTAL_BLOCK = registerFuelBlock("void_crystal_block",
+            ()->new Block(Block.Properties.of().sound(SoundType.STONE).strength(7.0f).requiresCorrectToolForDrops()), 57600);
 
 
     // 置物台
@@ -300,15 +313,27 @@ public class HCBlock {
 
 
 
-    // 方块注册方法
+    // 同步注册方块item
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         HCOreItem.ORE_ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
-    // 同步注册方块item
+    // 方块注册方法
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> blocks = ORE_BLOCK.register(name, block);
         registerBlockItems(name, blocks);
+        return blocks;
+    }
+
+    // 同步注册燃料方块item
+    private static <T extends Block> void registerFuelBlockItems(String name, DeferredBlock<T> block, int burnTime) {
+        HCOreItem.ORE_ITEMS.register(name, () -> new FuelBlockItem(block.get(), new Item.Properties(), burnTime));
+    }
+
+    // 燃料方块注册方法
+    private static <T extends Block> DeferredBlock<T> registerFuelBlock(String name, Supplier<T> block, int burnTime) {
+        DeferredBlock<T> blocks = ORE_BLOCK.register(name, block);
+        registerFuelBlockItems(name, blocks, burnTime);
         return blocks;
     }
 

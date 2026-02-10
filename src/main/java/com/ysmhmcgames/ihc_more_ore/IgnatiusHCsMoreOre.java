@@ -2,6 +2,7 @@ package com.ysmhmcgames.ihc_more_ore;
 
 import com.ysmhmcgames.ihc_more_ore.blocks.HCBlock;
 import com.ysmhmcgames.ihc_more_ore.blocks.entity.HCBlockEntity;
+import com.ysmhmcgames.ihc_more_ore.blocks.foods.HCFoods;
 import com.ysmhmcgames.ihc_more_ore.effect.HCEffects;
 import com.ysmhmcgames.ihc_more_ore.enchantment.HCEnchantmentEffects;
 import com.ysmhmcgames.ihc_more_ore.entity.HCEntities;
@@ -52,6 +53,8 @@ public class IgnatiusHCsMoreOre {
         HCItems.register(modEventBus);// 杂货物品的注册
         HCArmor.register(modEventBus);// 装备物品的注册
         HCBlock.register(modEventBus); // block注册
+
+        HCFoods.register(modEventBus); // 方块食物注册
         ItemTab.MODE_TAB.register(modEventBus);
         HCBlockEntity.register(modEventBus);// block entity注册
 

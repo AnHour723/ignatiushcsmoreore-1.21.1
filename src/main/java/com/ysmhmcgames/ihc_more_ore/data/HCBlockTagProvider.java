@@ -119,6 +119,10 @@ public class HCBlockTagProvider extends BlockTagsProvider {// 方块标签提供
                 .add(HCBlock.DEEPSLATE_SPIRITUAL_COAL_ORE.get())// 深层灵煤矿
                 .add(HCBlock.DEEPSLATE_SALTPETRE_ORE.get())// 深层硝石矿
                 .add(HCBlock.VOID_CRYSTAL_ORE.get())// 墨晶矿
+                .add(HCBlock.SPIRITUAL_COAL_BLOCK.get())// 灵煤块
+                .add(HCBlock.SALTPETRE_BLOCK.get())// 硝石块
+                .add(HCBlock.PYROCARBON_BLOCK.get())// 冥火碳块
+                .add(HCBlock.VOID_CRYSTAL_BLOCK.get())// 虚空墨晶块
 
                 .add(HCBlock.DISPLAY_STAND.get())// 置物台
                 .add(HCBlock.ANALYSIS_ROOM_BLOCK.get())// 解析室
@@ -149,6 +153,10 @@ public class HCBlockTagProvider extends BlockTagsProvider {// 方块标签提供
                 .add(HCBlock.DEEPSLATE_SALTPETRE_ORE.get())// 深层硝石矿
                 .add(HCBlock.PYROCARBON_ORE.get())// 冥火矿
                 .add(HCBlock.VOID_CRYSTAL_ORE.get())// 墨晶矿
+                .add(HCBlock.SPIRITUAL_COAL_BLOCK.get())// 灵煤块
+                .add(HCBlock.SALTPETRE_BLOCK.get())// 硝石块
+                .add(HCBlock.PYROCARBON_BLOCK.get())// 冥火碳块
+                .add(HCBlock.VOID_CRYSTAL_BLOCK.get())// 虚空墨晶块
 
 
                 .add(HCBlock.DEEPSEA_RESIDUE.get())// 深海残渣

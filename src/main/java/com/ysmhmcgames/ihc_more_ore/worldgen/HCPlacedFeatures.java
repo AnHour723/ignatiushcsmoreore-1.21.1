@@ -98,7 +98,7 @@ public class HCPlacedFeatures {
                 HCOrePlacement.commonOrePlacement(8,HeightRangePlacement.triangle(VerticalAnchor.absolute(-16),VerticalAnchor.absolute(72))));
         // 提拉马 的生成
         register(context, TILAMA_ORE_PLACED_KEY, configuredFeature.getOrThrow(HCConfiguredFeatures.OVERWORLD_TILAMA_ORE_KEY),
-                HCOrePlacement.commonOrePlacement(10,HeightRangePlacement.triangle(VerticalAnchor.absolute(-64),VerticalAnchor.absolute(72))));
+                HCOrePlacement.commonOrePlacement(7,HeightRangePlacement.triangle(VerticalAnchor.absolute(-64),VerticalAnchor.absolute(72))));
 
         // 钛 的生成
         register(context, TITANIUM_ORE_PLACED_KEY, configuredFeature.getOrThrow(HCConfiguredFeatures.OVERWORLD_TITANIUM_ORE_KEY),

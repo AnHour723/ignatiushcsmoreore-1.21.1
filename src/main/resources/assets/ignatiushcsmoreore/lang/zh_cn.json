@@ -153,6 +153,10 @@
   "block.ignatiushcsmoreore.deepslate_saltpetre_ore": "深层硝石矿",
   "block.ignatiushcsmoreore.pyrocarbon_ore": "冥火矿",
   "block.ignatiushcsmoreore.void_crystal_ore": "墨晶矿",
+  "block.ignatiushcsmoreore.spiritual_coal_block": "灵煤块",
+  "block.ignatiushcsmoreore.saltpetre_block": "硝石块",
+  "block.ignatiushcsmoreore.pyrocarbon_block": "冥火碳块",
+  "block.ignatiushcsmoreore.void_crystal_block": "虚空墨晶块",
 
   "block.ignatiushcsmoreore.display_stand": "展示台",
   "block.ignatiushcsmoreore.analysis_room_block": "解析室",

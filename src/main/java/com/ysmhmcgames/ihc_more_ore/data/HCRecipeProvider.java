@@ -1993,6 +1993,20 @@ public class HCRecipeProvider extends RecipeProvider implements IConditionBuilde
         oreSmelting(recipeOutput, SPIRITUAL_COAL_SMELTABLES, RecipeCategory.MISC, HCOreItem.SPIRITUAL_COAL.get(),0.25f,200,"precursor");
         // 高炉配方
         oreBlasting(recipeOutput, SPIRITUAL_COAL_SMELTABLES, RecipeCategory.MISC, HCOreItem.SPIRITUAL_COAL.get(),0.25f,200,"precursor");
+
+        // 灵煤块 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCBlock.SPIRITUAL_COAL_BLOCK,1)
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', HCOreItem.SPIRITUAL_COAL)
+                .unlockedBy("has_spiritual_coal",has(HCOreItem.SPIRITUAL_COAL))
+                .save(recipeOutput);
+        // 灵煤 无序 工作台
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HCOreItem.SPIRITUAL_COAL,9)
+                .requires(HCBlock.SPIRITUAL_COAL_BLOCK)
+                .unlockedBy("has_spiritual_coal_block",has(HCBlock.SPIRITUAL_COAL_BLOCK))
+                .save(recipeOutput);
         /*=================================*/
         // 硝石
         List<ItemLike> SALTPETRE_SMELTABLES = List.of(HCBlock.SALTPETRE_ORE,
@@ -2001,6 +2015,20 @@ public class HCRecipeProvider extends RecipeProvider implements IConditionBuilde
         oreSmelting(recipeOutput, SALTPETRE_SMELTABLES, RecipeCategory.MISC, HCOreItem.SALTPETRE.get(),0.25f,200,"precursor");
         // 高炉配方
         oreBlasting(recipeOutput, SALTPETRE_SMELTABLES, RecipeCategory.MISC, HCOreItem.SALTPETRE.get(),0.25f,200,"precursor");
+
+        // 硝石块 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCBlock.SALTPETRE_BLOCK,1)
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', HCOreItem.SALTPETRE)
+                .unlockedBy("has_saltpetre",has(HCOreItem.SALTPETRE))
+                .save(recipeOutput);
+        // 硝石 无序 工作台
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HCOreItem.SALTPETRE,9)
+                .requires(HCBlock.SALTPETRE_BLOCK)
+                .unlockedBy("has_saltpetre_block",has(HCBlock.SALTPETRE_BLOCK))
+                .save(recipeOutput);
         /*=================================*/
         // 冥火炭
         List<ItemLike> PYROCARBON_SMELTABLES = List.of(HCBlock.PYROCARBON_ORE);// 将熔炼结果一样的物品放到一个表里面 一起生成配方
@@ -2008,6 +2036,20 @@ public class HCRecipeProvider extends RecipeProvider implements IConditionBuilde
         oreSmelting(recipeOutput, PYROCARBON_SMELTABLES, RecipeCategory.MISC, HCOreItem.PYROCARBON.get(),0.25f,200,"precursor");
         // 高炉配方
         oreBlasting(recipeOutput, PYROCARBON_SMELTABLES, RecipeCategory.MISC, HCOreItem.PYROCARBON.get(),0.25f,200,"precursor");
+
+        // 冥火炭块 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCBlock.PYROCARBON_BLOCK,1)
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', HCOreItem.PYROCARBON)
+                .unlockedBy("has_pyrocarbon",has(HCOreItem.PYROCARBON))
+                .save(recipeOutput);
+        // 冥火炭 无序 工作台
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HCOreItem.PYROCARBON,9)
+                .requires(HCBlock.PYROCARBON_BLOCK)
+                .unlockedBy("has_pyrocarbon_block",has(HCBlock.PYROCARBON_BLOCK))
+                .save(recipeOutput);
         /*=================================*/
         // 虚空墨晶
         List<ItemLike> VOID_CRYSTAL_SMELTABLES = List.of(HCBlock.VOID_CRYSTAL_ORE);// 将熔炼结果一样的物品放到一个表里面 一起生成配方
@@ -2016,6 +2058,19 @@ public class HCRecipeProvider extends RecipeProvider implements IConditionBuilde
         // 高炉配方
         oreBlasting(recipeOutput, VOID_CRYSTAL_SMELTABLES, RecipeCategory.MISC, HCOreItem.VOID_CRYSTAL.get(),0.25f,200,"precursor");
 
+        // 虚空墨晶块 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCBlock.VOID_CRYSTAL_BLOCK,1)
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', HCOreItem.VOID_CRYSTAL)
+                .unlockedBy("has_void_crystal",has(HCOreItem.VOID_CRYSTAL))
+                .save(recipeOutput);
+        // 虚空墨晶 无序 工作台
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HCOreItem.VOID_CRYSTAL,9)
+                .requires(HCBlock.VOID_CRYSTAL_BLOCK)
+                .unlockedBy("has_void_crystal_block",has(HCBlock.VOID_CRYSTAL_BLOCK))
+                .save(recipeOutput);
         /*=================================*/
         // 阳子弹 无序 工作台
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HCTools.YANG_ARROW,4)

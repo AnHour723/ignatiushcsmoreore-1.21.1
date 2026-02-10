@@ -18,6 +18,10 @@
     "ignatiushcsmoreore:deepslate_saltpetre_ore",
     "ignatiushcsmoreore:pyrocarbon_ore",
     "ignatiushcsmoreore:void_crystal_ore",
+    "ignatiushcsmoreore:spiritual_coal_block",
+    "ignatiushcsmoreore:saltpetre_block",
+    "ignatiushcsmoreore:pyrocarbon_block",
+    "ignatiushcsmoreore:void_crystal_block",
     "ignatiushcsmoreore:deepsea_residue"
   ]
 }

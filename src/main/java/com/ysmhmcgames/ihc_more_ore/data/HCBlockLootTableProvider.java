@@ -68,6 +68,11 @@ public class HCBlockLootTableProvider extends BlockLootSubProvider {// 方块掉
 
         dropSelf(HCBlock.DIVINATION_DRAGON_BLOCK.get());// 粗龙占块掉落物表
 
+        dropSelf(HCBlock.SPIRITUAL_COAL_BLOCK.get());// 灵煤块掉落物表
+        dropSelf(HCBlock.SALTPETRE_BLOCK.get());// 硝石块掉落物表
+        dropSelf(HCBlock.PYROCARBON_BLOCK.get());// 冥火炭块掉落物表
+        dropSelf(HCBlock.VOID_CRYSTAL_BLOCK.get());// 虚空墨晶块掉落物表
+
         dropSelf(HCBlock.DISPLAY_STAND.get());// 置物台掉落物表
         dropSelf(HCBlock.ANALYSIS_ROOM_BLOCK.get());// 解析室掉落物表
         dropSelf(HCBlock.ALLOY_FURNACE_CORE_BLOCK.get());// 合金熔炉核心掉落物表

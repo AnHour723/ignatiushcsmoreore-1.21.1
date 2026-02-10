@@ -119,6 +119,11 @@ public class HCBlockStateProvider extends BlockStateProvider {// 方块状态提
         blockWithItem(HCBlock.PYROCARBON_ORE);// 冥火矿 模型
         blockWithItem(HCBlock.VOID_CRYSTAL_ORE);// 墨晶矿 模型
 
+        blockWithItem(HCBlock.SPIRITUAL_COAL_BLOCK);// 灵煤块 模型
+        blockWithItem(HCBlock.SALTPETRE_BLOCK);// 硝石块 模型
+        blockWithItem(HCBlock.PYROCARBON_BLOCK);// 冥火碳块 模型
+        blockWithItem(HCBlock.VOID_CRYSTAL_BLOCK);// 虚空墨晶块 模型
+
 
 
         blockWithItem(HCBlock.ALLOY_FURNACE_FRAMEWORK_BLOCK);// 合金熔炉框架 模型

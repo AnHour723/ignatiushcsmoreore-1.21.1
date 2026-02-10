@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-25T22:23:02.2090045	Tags for minecraft:block mod id ignatiushcsmoreore
+// 1.21.1	2026-02-10T17:18:52.8795778	Tags for minecraft:block mod id ignatiushcsmoreore
 eff1f154290102f9acb4a63702fdd2f3f9471dde data/ignatiushcsmoreore/tags/block/incorrect_for_end_tool.json
 fb93a43d63b7891b5942dc17bcd0dd59af616195 data/ignatiushcsmoreore/tags/block/incorrect_for_nether_tool.json
 a37ed2d686667fd5842cd20ee8f5ecc0880f6390 data/ignatiushcsmoreore/tags/block/incorrect_for_overworld_tool.json
@@ -14,8 +14,8 @@ fda02bb4719f0d47d8cf362c8a6478b67bc76a87 data/ignatiushcsmoreore/tags/block/need
 ec2fbd3fa889ad1b6cfe1803b1f8cb5eaad6d4ec data/minecraft/tags/block/incorrect_for_netherite_tool.json
 15417f27598e367bb560b35d2c2a0cdc59e79ea1 data/minecraft/tags/block/mineable/axe.json
 d47683c054f37224a38be0e66768e51e7baae814 data/minecraft/tags/block/mineable/hoe.json
-9bd5f1ba96e3f32f4e63c559affe8bd7ebfebf52 data/minecraft/tags/block/mineable/pickaxe.json
+9f2aa63de8d9db915926aea2dbc0b1cefc1d2a0c data/minecraft/tags/block/mineable/pickaxe.json
 1ec03d7a317a02886793d232b8d4ec5d704b3355 data/minecraft/tags/block/mineable/shovel.json
 5453eca193d0e5498f343b8415b587e523f48dc5 data/minecraft/tags/block/needs_diamond_tool.json
 c6bcaea6568322eb7a880d9cf6070a4d048ca2db data/minecraft/tags/block/needs_iron_tool.json
-f6b3ffaae23393b6c5d100676626c8362b7590b1 data/minecraft/tags/block/needs_stone_tool.json
+473caca9c9ee09611f71eb0bba1ff18ff07a7413 data/minecraft/tags/block/needs_stone_tool.json

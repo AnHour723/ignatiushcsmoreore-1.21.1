@@ -47,7 +47,7 @@ public class AlloyFurnaceCoreBlockEntity extends BlockEntity implements MenuProv
     private int progress = 0;// 进度
     private int max_progress = 200;// 最大进度
     private int fuel = 0;// 燃料进度
-    private int max_fuel = 1600;// 燃料进度
+    private int max_fuel = 1200;// 燃料进度
 
     public AlloyFurnaceCoreBlockEntity(BlockPos pos, BlockState blockState) {
         super(HCBlockEntity.ALLOY_FURNACE_CORE_BLOCK_ENTITY.get(), pos, blockState);
@@ -126,6 +126,7 @@ public class AlloyFurnaceCoreBlockEntity extends BlockEntity implements MenuProv
         Optional<RecipeHolder<FuelRecipe>> recipe = getFuelRecipe();
         inventory.extractItem(FUEL_SLOT,1,false);
         this.fuel = recipe.get().value().fuelValue();
+        this.max_fuel = recipe.get().value().fuelValue();
     }
 
     private boolean isFuel() {
@@ -184,7 +185,7 @@ public class AlloyFurnaceCoreBlockEntity extends BlockEntity implements MenuProv
     }
 
     private Optional<RecipeHolder<FuelRecipe>> getFuelRecipe() {
-        // 这里的目的是检测所有具有ANALYSIS_ROOM_TYPE类型标签的的配方,并将其与配方输入做对比
+        // 这里的目的是检测所有具有FUEL_TYPE类型标签的的配方,并将其与配方输入做对比
         return this.level.getRecipeManager()
                 .getRecipeFor(HCRecipes.FUEL_TYPE.get(),
                         // 这里将方块实体内物品传入 配方输入类(输入物品处理器)

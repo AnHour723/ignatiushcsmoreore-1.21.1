@@ -1,0 +1,17 @@
+{
+  "type": "ignatiushcsmoreore:furnace_core",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "result": {
+    "id": "ignatiushcsmoreore:steel_ingot",
+    "count": 1
+  }
+}
+
+

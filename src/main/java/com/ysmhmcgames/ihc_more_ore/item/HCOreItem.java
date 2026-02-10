@@ -2,6 +2,7 @@ package com.ysmhmcgames.ihc_more_ore.item;
 
 import com.ysmhmcgames.ihc_more_ore.IgnatiusHCsMoreOre;
 import com.ysmhmcgames.ihc_more_ore.item.tools.custom.miscellaneous.HomecomingItem;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.BrushItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;

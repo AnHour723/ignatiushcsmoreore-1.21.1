@@ -153,6 +153,10 @@
   "block.ignatiushcsmoreore.deepslate_saltpetre_ore": "Deepslate saltpetre ore",
   "block.ignatiushcsmoreore.pyrocarbon_ore": "Pyrocarbon ore",
   "block.ignatiushcsmoreore.void_crystal_ore": "Void crystal ore",
+  "block.ignatiushcsmoreore.spiritual_coal_block": "Spiritual coal block",
+  "block.ignatiushcsmoreore.saltpetre_block": "Saltpetre block",
+  "block.ignatiushcsmoreore.pyrocarbon_block": "Pyrocarbon block",
+  "block.ignatiushcsmoreore.void_crystal_block": "Void crystal block",
 
   "block.ignatiushcsmoreore.display_stand": "Display stand",
   "block.ignatiushcsmoreore.analysis_room_block": "Analysis room block",
