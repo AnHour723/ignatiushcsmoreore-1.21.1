@@ -13,7 +13,6 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCon
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
 import net.neoforged.neoforge.common.loot.LootTableIdCondition;
-import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -28,52 +27,57 @@ public class HCGlobalLootModifierProvider extends GlobalLootModifierProvider { /
     protected void start() {
         /*===================主世界一般结构结构=======================*/
         this.addSimpleOverworld(List.of(
-                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get()
+                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get() // 添加 玻璃结晶模板
         ),0.5f);
         /*====================海洋结构======================*/
         this.addOcean(List.of(
-                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get()
+                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get() // 添加 玻璃结晶模板
         ),0.5f);
         /*====================古代结构======================*/
         this.addAncientStructure(List.of(
-                HCItems.OVERWORLD_UPGRADE_TEMPLATE.get()
+                HCItems.OVERWORLD_UPGRADE_TEMPLATE.get() // 添加 升级模板   量子 -> 主界
         ),0.25f);
         this.addAncientStructure(List.of(
-                HCItems.PRISMATIC_COLORFUL_UPGRADE_TEMPLATE.get()
+                HCItems.PRISMATIC_COLORFUL_UPGRADE_TEMPLATE.get() // 添加 升级模板   元祖 -> 棱彩
         ),0.4f);
         this.addAncientStructure(List.of(
-                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get()
+                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get() // 添加 玻璃结晶模板
         ),0.7f);
         /*====================下界结构======================*/
         this.addNether(List.of(
-                HCItems.NETHER_UPGRADE_TEMPLATE.get()
+                HCItems.NETHER_UPGRADE_TEMPLATE.get() // 添加 升级模板   主界 -> 下界
         ),0.25f);
         this.addNether(List.of(
-                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get()
+                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get() // 添加 玻璃结晶模板
         ),0.7f);
         /*====================末地结构======================*/
         this.addEndCityTreasure(List.of(
-                HCItems.END_UPGRADE_TEMPLATE.get()
+                HCItems.END_UPGRADE_TEMPLATE.get() // 添加 升级模板   下界 -> 终界
         ),0.25f);
         this.addEndCityTreasure(List.of(
-                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get(),
-                HCItems.COLLAPSING_UPGRADE_TEMPLATE.get(),
-                HCItems.POLE_BOW_UPGRADE_TEMPLATE.get()
+                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get(), // 添加 玻璃结晶模板
+                HCItems.COLLAPSING_UPGRADE_TEMPLATE.get(), // 添加 升级模板   量子 -> 坍缩
+                HCItems.POLE_BOW_UPGRADE_TEMPLATE.get() // 添加 武器图纸   风暴 -> 两级弓
         ),0.4f);
         this.addEndCityTreasure(List.of(
-                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get()
+                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get() // 添加 玻璃结晶模板
         ),0.7f);
         /*===================掠夺者前哨站====================*/
         this.addPillagerOutpost(List.of(
-                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get()
+                HCItems.GLASS_CRYSTALLIZATION_TEMPLATE.get() // 添加 玻璃结晶模板
         ),0.7f);
 
 
         // stronghold_corridor 要塞走廊
         this.addStrongholdCorridor(List.of(
-                HCItems.LANHUAYING_AI_MUSIC_DISC.get(),
-                HCItems.LANHUAYING_MUSIC_DISC.get()
+                HCItems.LANHUAYING_AI_MUSIC_DISC.get(), // 添加 唱片 蓝花楹ai
+                HCItems.LANHUAYING_MUSIC_DISC.get() // 添加 唱片 蓝花楹
         ),0.36f);
+
+        // 添加下届类建筑
+        this.addNether(List.of(
+                HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get() // 添加 红金升级模板
+        ),0.66f);
 
         /*===================主世界结构=======================*/
         // abandoned_mineshaft 废弃矿井

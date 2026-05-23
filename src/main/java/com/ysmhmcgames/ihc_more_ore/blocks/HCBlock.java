@@ -4,6 +4,7 @@ import com.ysmhmcgames.ihc_more_ore.IgnatiusHCsMoreOre;
 
 import com.ysmhmcgames.ihc_more_ore.blocks.hc_entity_block.*;
 import com.ysmhmcgames.ihc_more_ore.blocks.ore.DisguisedChlorophyllOre;
+import com.ysmhmcgames.ihc_more_ore.blocks.ore.FlashGoldBlock;
 import com.ysmhmcgames.ihc_more_ore.blocks.ore.ProfaneBloodBlock;
 import com.ysmhmcgames.ihc_more_ore.blocks.ore.TwilightCloudElementBlock;
 import com.ysmhmcgames.ihc_more_ore.item.FuelBlockItem;
@@ -181,6 +182,14 @@ public class HCBlock {
 
     // 闪金块
     public static final DeferredBlock<Block> FLASH_GOLD_BLOCK = registerBlock("flash_gold_block",
+            ()->new FlashGoldBlock(Block.Properties.of().sound(SoundType.STONE).strength(3.0f).requiresCorrectToolForDrops()));
+
+    // 闪金脆块
+    public static final DeferredBlock<Block> FLASH_GOLD_FRAGILE_BLOCK = registerBlock("flash_gold_fragile_block",
+            ()->new Block(Block.Properties.of().sound(SoundType.GLASS).strength(2.0f).requiresCorrectToolForDrops()));
+
+    // 红金块
+    public static final DeferredBlock<Block> RED_GOLD_BLOCK = registerBlock("red_gold_block",
             ()->new Block(Block.Properties.of().sound(SoundType.STONE).strength(3.0f).requiresCorrectToolForDrops()));
 
     // 赫岩矿

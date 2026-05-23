@@ -51,8 +51,8 @@ public class HCArmorMaterials {
     public static final Holder<ArmorMaterial> TIN_ARMOR_MATERIAL = register("tin",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS,2);// 靴子护甲值
-                attribute.put(ArmorItem.Type.LEGGINGS,5);// 护腿护甲值
-                attribute.put(ArmorItem.Type.CHESTPLATE,4);// 胸甲护甲值
+                attribute.put(ArmorItem.Type.LEGGINGS,4);// 护腿护甲值
+                attribute.put(ArmorItem.Type.CHESTPLATE,5);// 胸甲护甲值
                 attribute.put(ArmorItem.Type.HELMET,2);// 头盔护甲值
             }), 8, 0f, 0f, SoundEvents.ARMOR_EQUIP_IRON, () -> HCOreItem.TIN_INGOT.get());
 
@@ -69,8 +69,8 @@ public class HCArmorMaterials {
     public static final Holder<ArmorMaterial> POSEIDON_ARMOR_MATERIAL = register("poseidon",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS,2);// 靴子护甲值
-                attribute.put(ArmorItem.Type.LEGGINGS,6);// 护腿护甲值
-                attribute.put(ArmorItem.Type.CHESTPLATE,5);// 胸甲护甲值
+                attribute.put(ArmorItem.Type.LEGGINGS,5);// 护腿护甲值
+                attribute.put(ArmorItem.Type.CHESTPLATE,6);// 胸甲护甲值
                 attribute.put(ArmorItem.Type.HELMET,2);// 头盔护甲值
             }), 12, 0f, 0f, SoundEvents.ARMOR_EQUIP_IRON, () -> HCOreItem.POSEIDON_INGOT.get());
 
@@ -78,18 +78,26 @@ public class HCArmorMaterials {
     public static final Holder<ArmorMaterial> ROSE_ARMOR_MATERIAL = register("rose",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS,4);// 靴子护甲值
-                attribute.put(ArmorItem.Type.LEGGINGS,6);// 护腿护甲值
-                attribute.put(ArmorItem.Type.CHESTPLATE,5);// 胸甲护甲值
+                attribute.put(ArmorItem.Type.LEGGINGS,5);// 护腿护甲值
+                attribute.put(ArmorItem.Type.CHESTPLATE,6);// 胸甲护甲值
                 attribute.put(ArmorItem.Type.HELMET,4);// 头盔护甲值
             }), 12, 1.0f, 0.2f, SoundEvents.ARMOR_EQUIP_IRON, () -> HCOreItem.ROSE_GEMSTONE.get());
 
+    // 红金材质
+    public static final Holder<ArmorMaterial> RED_GOLD_ARMOR_MATERIAL = register("red_gold",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS,2);// 靴子护甲值
+                attribute.put(ArmorItem.Type.LEGGINGS,6);// 护腿护甲值
+                attribute.put(ArmorItem.Type.CHESTPLATE,8);// 胸甲护甲值
+                attribute.put(ArmorItem.Type.HELMET,3);// 头盔护甲值
+            }), 20, 2.0f, 0.1f, SoundEvents.ARMOR_EQUIP_DIAMOND, () -> HCOreItem.RED_GOLD_REPAIR_KIT.get());
 
     // 圣钢材质
     public static final Holder<ArmorMaterial> HOLY_STEEL_ARMOR_MATERIAL = register("holy_steel",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS,3);// 靴子护甲值
-                attribute.put(ArmorItem.Type.LEGGINGS,7);// 护腿护甲值
-                attribute.put(ArmorItem.Type.CHESTPLATE,6);// 胸甲护甲值
+                attribute.put(ArmorItem.Type.LEGGINGS,6);// 护腿护甲值
+                attribute.put(ArmorItem.Type.CHESTPLATE,7);// 胸甲护甲值
                 attribute.put(ArmorItem.Type.HELMET,3);// 头盔护甲值
             }), 15, 2.0f, 0.1f, SoundEvents.ARMOR_EQUIP_IRON, () -> HCOreItem.HOLY_STEEL_INGOT.get());
 
@@ -97,8 +105,8 @@ public class HCArmorMaterials {
     public static final Holder<ArmorMaterial> ENDER_ARMOR_MATERIAL = register("ender",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS,3);// 靴子护甲值
-                attribute.put(ArmorItem.Type.LEGGINGS,8);// 护腿护甲值
-                attribute.put(ArmorItem.Type.CHESTPLATE,7);// 胸甲护甲值
+                attribute.put(ArmorItem.Type.LEGGINGS,7);// 护腿护甲值
+                attribute.put(ArmorItem.Type.CHESTPLATE,8);// 胸甲护甲值
                 attribute.put(ArmorItem.Type.HELMET,3);// 头盔护甲值
             }), 17, 2.0f, 0.1f, SoundEvents.ARMOR_EQUIP_IRON, () -> HCOreItem.ENDER_INGOT.get());
 
@@ -106,8 +114,8 @@ public class HCArmorMaterials {
     public static final Holder<ArmorMaterial> EMPEROR_S_ARMOR_MATERIAL = register("xxx",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS,3);// 靴子护甲值
-                attribute.put(ArmorItem.Type.LEGGINGS,8);// 护腿护甲值
-                attribute.put(ArmorItem.Type.CHESTPLATE,7);// 胸甲护甲值
+                attribute.put(ArmorItem.Type.LEGGINGS,7);// 护腿护甲值
+                attribute.put(ArmorItem.Type.CHESTPLATE,8);// 胸甲护甲值
                 attribute.put(ArmorItem.Type.HELMET,3);// 头盔护甲值
             }), 18, 1.0f, 0.2f, SoundEvents.ARMOR_EQUIP_IRON, () -> HCOreItem.XXX.get());
 

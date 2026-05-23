@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-10T17:18:52.8819485	Loot Tables
+// 1.21.1	2026-05-13T15:52:58.8481389	Loot Tables
 05d0983eef0bb8764c8cccd87b30e59a3b296ec9 data/ignatiushcsmoreore/loot_table/blocks/alloy_furnace_core.json
 808392f11d4de7acaa796c9c98453aed8b916060 data/ignatiushcsmoreore/loot_table/blocks/alloy_furnace_framework.json
 09b2bf6eb1271613a29128bf32e49fc09cd338b7 data/ignatiushcsmoreore/loot_table/blocks/aluminum_block.json
@@ -29,6 +29,7 @@ b8987f92f9de6d776017ee5019eb78f5d380d042 data/ignatiushcsmoreore/loot_table/bloc
 792112e2a508f02ce19da1cf50afc7005d6a09da data/ignatiushcsmoreore/loot_table/blocks/end_ore.json
 af91a416a073b7b2ccbc0d3045c5ac1bb86a00c1 data/ignatiushcsmoreore/loot_table/blocks/end_pole_ore.json
 c3d6914f774cc833e7350cdfa627cd5371a5244b data/ignatiushcsmoreore/loot_table/blocks/flash_gold_block.json
+1a789e816a86dfaf34458e79e3cc247f88f5aa12 data/ignatiushcsmoreore/loot_table/blocks/flash_gold_fragile_block.json
 a09ea9596acce84bb757adf62554179baea299f1 data/ignatiushcsmoreore/loot_table/blocks/gazing_ore.json
 0720a67b16ac81410f1b0fee0ddfd4db28dc6bc6 data/ignatiushcsmoreore/loot_table/blocks/hell_s_ore.json
 2cd6d653ddb054545ef9383a9b538da8f49fa8ac data/ignatiushcsmoreore/loot_table/blocks/heroic_remains.json
@@ -50,6 +51,7 @@ b42694a5fcd58702e42c26df3c61685b560b99eb data/ignatiushcsmoreore/loot_table/bloc
 4bcd195ce28266d75a4234e14f565a76f8ece998 data/ignatiushcsmoreore/loot_table/blocks/raw_silver_block.json
 3f6df3ca8a183a90a9be03ddc9ec37ded80fa710 data/ignatiushcsmoreore/loot_table/blocks/raw_tin_block.json
 0672bdb30534848d6f944b28cc90b3fb389a2413 data/ignatiushcsmoreore/loot_table/blocks/raw_titanium_block.json
+cdd11fde216994d2c10fa3cddf55527ebdc5298c data/ignatiushcsmoreore/loot_table/blocks/red_gold_block.json
 ae85c60f557087cf18cf3a05224e598dffef2c56 data/ignatiushcsmoreore/loot_table/blocks/red_lotus_block.json
 8deb73dce55b66201aab7746fc03cefaacd8f23a data/ignatiushcsmoreore/loot_table/blocks/rose_ore.json
 03dd936de3f9f3a6a5a20e716b3c4626a0e401f6 data/ignatiushcsmoreore/loot_table/blocks/ruby_block.json

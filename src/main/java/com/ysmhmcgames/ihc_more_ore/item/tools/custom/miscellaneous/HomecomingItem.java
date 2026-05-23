@@ -4,12 +4,14 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.RelativeMovement;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -18,6 +20,7 @@ import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -25,15 +28,17 @@ public class HomecomingItem extends Item {
     public HomecomingItem(Properties properties) {
         super(properties);
     }
-
+    private static ServerLevel serverLevel = null;
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, @NotNull InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
 
         if (!level.isClientSide()) {
             // 获取出生点
             BlockPos spawnPoint = getSpawnPoint(player);
+            //System.out.println(spawnPoint);
+            ResourceKey<Level> dimension = player.level().dimension();
 
             if (spawnPoint != null) {
                 // 传送玩家
@@ -54,12 +59,24 @@ public class HomecomingItem extends Item {
 
                 return InteractionResultHolder.success(stack);
             } else {
+                // 发送消息
+                player.displayClientMessage(
+                        Component.translatable("text.home_coming.warning").withStyle(ChatFormatting.DARK_RED),
+                        true
+                );
                 // 没有出生点的情况
                 return InteractionResultHolder.fail(stack);
             }
         }
 
         return InteractionResultHolder.pass(stack);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+
+        tooltipComponents.add(Component.translatable("item_text.home_coming.info").withColor(0xFFFFFF));
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 
     /**
@@ -76,7 +93,7 @@ public class HomecomingItem extends Item {
 
         // 2. 获取世界出生点
         if (player instanceof ServerPlayer serverPlayer) {
-            ServerLevel serverLevel = serverPlayer.server.getLevel(Level.OVERWORLD);
+            serverLevel = serverPlayer.server.getLevel(player.getCommandSenderWorld().dimension());
             if (serverLevel != null) {
                 return serverLevel.getSharedSpawnPos();
             }
@@ -86,7 +103,7 @@ public class HomecomingItem extends Item {
     }
 
     /**
-     * 🎯 传送玩家
+     * 传送玩家
      */
     private void teleportPlayer(Player player, BlockPos spawnPoint) {
         // 寻找安全的站立位置
@@ -94,9 +111,12 @@ public class HomecomingItem extends Item {
 
         // 执行传送
         player.teleportTo(
+                player.getServer().getLevel(Level.OVERWORLD),
                 safeSpawn.getX() + 0.5,
                 safeSpawn.getY(),
-                safeSpawn.getZ() + 0.5
+                safeSpawn.getZ() + 0.5,
+                RelativeMovement.ALL,
+                player.getYRot(), player.getXRot()
         );
 
         // 防止摔落伤害
@@ -104,13 +124,13 @@ public class HomecomingItem extends Item {
 
         // 发送消息
         player.displayClientMessage(
-                Component.literal("已传送到出生点！").withStyle(ChatFormatting.GREEN),
+                Component.translatable("text.home_coming.info").withStyle(ChatFormatting.GREEN),
                 true
         );
     }
 
     /**
-     * 🎯 寻找安全的出生点位置
+     * 寻找安全的出生点位置
      */
     private BlockPos findSafeSpawn(Level level, BlockPos pos) {
         // 检查当前位置是否安全
@@ -135,7 +155,7 @@ public class HomecomingItem extends Item {
     }
 
     /**
-     * 🎯 检查位置是否安全
+     * 检查位置是否安全
      */
     private boolean isSafeSpawn(Level level, BlockPos pos) {
         // 检查站立方块

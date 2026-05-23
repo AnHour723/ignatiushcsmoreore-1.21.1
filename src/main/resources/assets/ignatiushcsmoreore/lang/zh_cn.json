@@ -55,6 +55,9 @@
   "item.ignatiushcsmoreore.soul_essence": "灵魂精华",
   "item.ignatiushcsmoreore.soul_steel_ingot": "灵魂钢锭",
   "item.ignatiushcsmoreore.flash_gold_ingot": "闪金锭",
+  "item.ignatiushcsmoreore.flash_gold_dust": "闪金粉",
+  "item.ignatiushcsmoreore.red_gold_ingot": "红金锭",
+  "item.ignatiushcsmoreore.red_gold_repair_kit": "红金修补套件",
   "item.ignatiushcsmoreore.heyan": "赫岩",
   "item.ignatiushcsmoreore.black_crystals": "黑晶",
   "item.ignatiushcsmoreore.hell_s_stone": "狱炎岩",
@@ -129,6 +132,8 @@
   "block.ignatiushcsmoreore.thoughts_ore": "思绪矿",
   "block.ignatiushcsmoreore.overworld_ore": "主界矿",
   "block.ignatiushcsmoreore.flash_gold_block": "闪金块",
+  "block.ignatiushcsmoreore.flash_gold_fragile_block": "闪金脆块",
+  "block.ignatiushcsmoreore.red_gold_block": "红金块",
   "block.ignatiushcsmoreore.heyan_ore": "赫岩矿",
   "block.ignatiushcsmoreore.black_crystals_ore": "黑晶矿",
   "block.ignatiushcsmoreore.black_crystals_block": "黑晶块",
@@ -378,6 +383,11 @@
   "item.ignatiushcsmoreore.rose_leggings": "玫瑰裤腿",
   "item.ignatiushcsmoreore.rose_boots": "玫瑰靴子",
 
+  "item.ignatiushcsmoreore.red_gold_helmet": "红金头盔",
+  "item.ignatiushcsmoreore.red_gold_chestplate": "红金胸甲",
+  "item.ignatiushcsmoreore.red_gold_leggings": "红金裤腿",
+  "item.ignatiushcsmoreore.red_gold_boots": "红金靴子",
+
   "item.ignatiushcsmoreore.holy_steel_helmet": "圣钢头盔",
   "item.ignatiushcsmoreore.holy_steel_chestplate": "圣钢胸甲",
   "item.ignatiushcsmoreore.holy_steel_leggings": "圣钢裤腿",
@@ -423,8 +433,24 @@
   "item.ignatiushcsmoreore.prismatic_colorful_leggings": "棱彩裤腿",
   "item.ignatiushcsmoreore.prismatic_colorful_boots": "棱彩靴子",
 
+  "item.ignatiushcsmoreore.flash_gold_cooked_beef": "闪金熟牛排",
+  "item.ignatiushcsmoreore.flash_gold_cooked_mutton": "闪金熟羊排",
+  "item.ignatiushcsmoreore.flash_gold_cooked_porkchop": "闪金熟猪排",
+  "item.ignatiushcsmoreore.flash_gold_cooked_chicken": "闪金熟鸡肉",
+  "item.ignatiushcsmoreore.flash_gold_cooked_rabbit": "闪金熟兔肉",
+  "item.ignatiushcsmoreore.flash_gold_cooked_cod": "闪金熟鳕鱼",
+  "item.ignatiushcsmoreore.flash_gold_cooked_salmon": "闪金熟鲑鱼",
+  "item.ignatiushcsmoreore.flash_gold_bread": "闪金面包",
+  "item.ignatiushcsmoreore.flash_gold_baked_potato": "闪金烤马铃薯",
+  "item.ignatiushcsmoreore.flash_gold_beetroot": "闪金甜菜根",
+  "item.ignatiushcsmoreore.flash_gold_melon_slice": "闪金西瓜片",
+  "item.ignatiushcsmoreore.flash_gold_dried_kelp": "闪金干海带",
+  "item.ignatiushcsmoreore.flash_gold_cookie": "闪金曲奇",
+  "item.ignatiushcsmoreore.flash_gold_pufferfish": "闪金河豚",
 
 
+  "item.ignatiushcsmoreore.flash_gold_endoscope": "闪金窥镜",
+  "item.ignatiushcsmoreore.quantum_badge": "量子徽章",
 
 
   "effect.ignatiushcsmoreore.bleeding": "流血",
@@ -433,6 +459,9 @@
   "effect.ignatiushcsmoreore.fireproof": "防火",
   "effect.ignatiushcsmoreore.cold_resistant": "抗寒",
   "effect.ignatiushcsmoreore.sanctuary": "圣域",
+  "effect.ignatiushcsmoreore.quantification": "量子化",
+  "effect.ignatiushcsmoreore.glistening": "闪耀",
+  "effect.ignatiushcsmoreore.frail": "脆弱",
 
 
   "entity.mccourse.yin_arrow": "阴",
@@ -441,6 +470,8 @@
   "create_tab.more_ore_tab": "寒澈的更多矿石",
   "create_tab.feng_s_tool_tab": "小枫的工具库",
   "create_tab.jangtanglalala_s_groceries_tab": "姜糖的杂货铺",
+  "create_tab.mengmaoni_s_food_tab": "懵猫咪的美食",
+  "create_tab.an_hour_s_magical_items_tab": "小时的魔法道具",
 
   "menu_text.display_stand": "展示台",
   "menu_text.analysis_room": "解析室",
@@ -450,6 +481,11 @@
 
 
   "text.alloy_furnace_core.info": "结构不正确!",
+  "text.flash_gold_endoscope.info": "周围没有实体目标!",
+  "text.home_coming.info": "已传送至出生点!",
+  "text.home_coming.warning": "出生点检索错误，请确定出生点为主世界！",
+
+  "item_text.home_coming.info": "使用事项：此物品会将你传送至主世界的出生点坐标，若出生点不在主世界，也会根据其他维度坐标传送至主世界对应位置",
 
 
   "item.ignatiushcsmoreore.steel_stick": "钢棒",
@@ -508,6 +544,11 @@
   "upgrade_template.ignatiushcsmoreore.pole_upgradeTemplateName": "武器锻造",
   "upgrade_template.ignatiushcsmoreore.bow_equipment": " 风暴弓",
   "upgrade_template.ignatiushcsmoreore.pole_ore": " 两级锭",
+
+  "item.ignatiushcsmoreore.red_gold_upgrade_smithing_template": "红金锻造模板",
+  "upgrade.ignatiushcsmoreore.red_gold_upgrade": "红金升级",
+  "item.ignatiushcsmoreore.smithing_template.red_gold_upgrade.applies_to": "金装备",
+  "item.ignatiushcsmoreore.smithing_template.red_gold_upgrade.ingredients": "红金修补套件",
 
 
 

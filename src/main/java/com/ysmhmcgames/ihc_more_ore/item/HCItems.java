@@ -1,13 +1,20 @@
 package com.ysmhmcgames.ihc_more_ore.item;
 
 import com.ysmhmcgames.ihc_more_ore.IgnatiusHCsMoreOre;
-import com.ysmhmcgames.ihc_more_ore.item.tools.SickleItem;
+import com.ysmhmcgames.ihc_more_ore.item.AHMagicItems.QuantumBadge;
 import com.ysmhmcgames.ihc_more_ore.item.tools.UpgradeTemplateItem;
 import com.ysmhmcgames.ihc_more_ore.sound.HCSounds;
+import net.minecraft.ChatFormatting;
+import net.minecraft.Util;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class HCItems {
     // 声明总注册类型
@@ -91,6 +98,80 @@ public class HCItems {
             ()-> new UpgradeTemplateItem(new Item.Properties(),"bow","pole"));
 
 
+    // 进化模板（类原版）
+    // 文本的颜色和样式
+    private static final ChatFormatting TITLE_FORMAT = ChatFormatting.GRAY;// 标题格式
+    private static final ChatFormatting DESCRIPTION_FORMAT = ChatFormatting.BLUE;// 描述格式
+
+    // 创建图片资源获取地址(空槽位时，显示的图案)
+    private static final ResourceLocation EMPTY_SLOT_HELMET = ResourceLocation.parse("item/empty_armor_slot_helmet");
+    private static final ResourceLocation EMPTY_SLOT_CHESTPLATE = ResourceLocation.parse("item/empty_armor_slot_chestplate");
+    private static final ResourceLocation EMPTY_SLOT_LEGGINGS = ResourceLocation.parse("item/empty_armor_slot_leggings");
+    private static final ResourceLocation EMPTY_SLOT_BOOTS = ResourceLocation.parse("item/empty_armor_slot_boots");
+    private static final ResourceLocation EMPTY_SLOT_HOE = ResourceLocation.parse("item/empty_slot_hoe");
+    private static final ResourceLocation EMPTY_SLOT_AXE = ResourceLocation.parse("item/empty_slot_axe");
+    private static final ResourceLocation EMPTY_SLOT_SWORD = ResourceLocation.parse("item/empty_slot_sword");
+    private static final ResourceLocation EMPTY_SLOT_SHOVEL = ResourceLocation.parse("item/empty_slot_shovel");
+    private static final ResourceLocation EMPTY_SLOT_PICKAXE = ResourceLocation.parse("item/empty_slot_pickaxe");
+    private static final ResourceLocation EMPTY_SLOT_INGOT = ResourceLocation.parse("item/empty_slot_ingot");
+
+    // 定义红金进化模板
+    private static final Component RED_GOLD_UPGRADE = Component.translatable(
+            Util.makeDescriptionId("upgrade",
+                    ResourceLocation.fromNamespaceAndPath(IgnatiusHCsMoreOre.MODID, "red_gold_upgrade"))).withStyle(TITLE_FORMAT);
+    private static final Component RED_GOLD_UPGRADE_APPLIES_TO = Component.translatable(
+            Util.makeDescriptionId("item",
+                    ResourceLocation.fromNamespaceAndPath(IgnatiusHCsMoreOre.MODID, "smithing_template.red_gold_upgrade.applies_to"))).withStyle(DESCRIPTION_FORMAT);
+    private static final Component RED_GOLD_UPGRADE_INGREDIENTS = Component.translatable(
+            Util.makeDescriptionId("item",
+                    ResourceLocation.fromNamespaceAndPath(IgnatiusHCsMoreOre.MODID, "smithing_template.red_gold_upgrade.ingredients"))).withStyle(DESCRIPTION_FORMAT);
+    private static final Component RED_GOLD_UPGRADE_BASE_SLOT_DESCRIPTION = Component.translatable(
+            Util.makeDescriptionId("item",
+                    ResourceLocation.fromNamespaceAndPath(IgnatiusHCsMoreOre.MODID, "smithing_template.red_gold_upgrade.base_slot_description")));
+    private static final Component RED_GOLD_UPGRADE_ADDITIONS_SLOT_DESCRIPTION = Component.translatable(
+            Util.makeDescriptionId("item",
+                    ResourceLocation.fromNamespaceAndPath(IgnatiusHCsMoreOre.MODID, "smithing_template.red_gold_upgrade.additions_slot_description")));
+
+    // 创建红金升级模板
+    public static final DeferredItem<Item> RED_GOLD_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("red_gold_upgrade_smithing_template",
+            () -> createUpgradeTemplate(RED_GOLD_UPGRADE_APPLIES_TO,
+                    RED_GOLD_UPGRADE_INGREDIENTS,
+                    RED_GOLD_UPGRADE,
+                    RED_GOLD_UPGRADE_BASE_SLOT_DESCRIPTION,
+                    RED_GOLD_UPGRADE_ADDITIONS_SLOT_DESCRIPTION,
+                    createRedGoldUpgradeIconList(),
+                    createRedGoldUpgradeMaterialList()));
+
+
+    // 红金装备升级图标获取
+    private static List<ResourceLocation> createRedGoldUpgradeIconList() {
+        return List.of(EMPTY_SLOT_HELMET, EMPTY_SLOT_SWORD, EMPTY_SLOT_CHESTPLATE, EMPTY_SLOT_PICKAXE, EMPTY_SLOT_LEGGINGS, EMPTY_SLOT_AXE, EMPTY_SLOT_BOOTS, EMPTY_SLOT_HOE, EMPTY_SLOT_SHOVEL);
+    }
+    // 红金材料升级图标获取
+    private static List<ResourceLocation> createRedGoldUpgradeMaterialList() {
+        return List.of(EMPTY_SLOT_INGOT);
+    }
+
+
+
+
+
+    // 创建模板方法(原版模板)
+    public static SmithingTemplateItem createUpgradeTemplate(Component upgrade_applies_to,
+                                                                    Component upgrade_ingredients,
+                                                                    Component upgrade,
+                                                                    Component upgrade_base_slot_description,
+                                                                    Component upgrade_additions_slot_description,
+                                                                    List<ResourceLocation> upgradeIconList,
+                                                                    List<ResourceLocation> upgradeMaterialList) {
+        return new SmithingTemplateItem(upgrade_applies_to,
+                upgrade_ingredients,
+                upgrade,
+                upgrade_base_slot_description,
+                upgrade_additions_slot_description,
+                upgradeIconList, upgradeMaterialList);
+    }
+
 
     // 唱片 蓝花楹ai
     public static final DeferredItem<Item> LANHUAYING_AI_MUSIC_DISC = ITEMS.register("lanhuaying_ai_music_disc",
@@ -102,7 +183,7 @@ public class HCItems {
     public static final DeferredItem<Item> FUCHEN_MUSIC_DISC = ITEMS.register("fuchen_music_disc",
             ()-> new Item(new Item.Properties().jukeboxPlayable(HCSounds.FUCHEN_KEY).stacksTo(1)));
 
-
+    
 
 
     // 创建注册方法，之后到主类中进行bus注册

@@ -52,7 +52,10 @@ public class IgnatiusHCsMoreOre {
         HCTools.register(modEventBus);// 工具物品的注册
         HCItems.register(modEventBus);// 杂货物品的注册
         HCArmor.register(modEventBus);// 装备物品的注册
+        HCFoodItem.register(modEventBus); // 食物注册
         HCBlock.register(modEventBus); // block注册
+
+        AHMagicItem.register(modEventBus); // an_hour 的魔法道具物品注册
 
         HCFoods.register(modEventBus); // 方块食物注册
         ItemTab.MODE_TAB.register(modEventBus);

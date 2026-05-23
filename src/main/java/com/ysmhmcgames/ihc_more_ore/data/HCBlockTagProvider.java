@@ -33,7 +33,7 @@ public class HCBlockTagProvider extends BlockTagsProvider {// 方块标签提供
         ;
         // 需要被斧头挖掘
         tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(HCBlock.WEAPON_PLATFORM.get())
+                .add(HCBlock.WEAPON_PLATFORM.get())// 武器台
         ;
 
 
@@ -85,6 +85,8 @@ public class HCBlockTagProvider extends BlockTagsProvider {// 方块标签提供
                 .add(HCBlock.OVERWORLD_ORE.get())// 主界矿
 
                 .add(HCBlock.FLASH_GOLD_BLOCK.get())// 闪金块
+                .add(HCBlock.FLASH_GOLD_FRAGILE_BLOCK.get())// 闪金脆块
+                .add(HCBlock.RED_GOLD_BLOCK.get())// 红金块
 
                 .add(HCBlock.HEYAN_ORE.get())// 赫岩矿
                 .add(HCBlock.BLACK_CRYSTALS_ORE.get())// 黑晶矿
@@ -143,6 +145,8 @@ public class HCBlockTagProvider extends BlockTagsProvider {// 方块标签提供
                 .add(HCBlock.RUBY_ORE.get())// 红宝石矿石
                 .add(HCBlock.DEEPSLATE_RUBY_ORE.get())// 深层红宝石矿石
 
+                .add(HCBlock.RED_GOLD_BLOCK.get())// 红金块
+
                 .add(HCBlock.HEYAN_ORE.get())// 赫岩矿
 
                 .add(HCBlock.GAZING_ORE.get())// 凝视矿
@@ -173,6 +177,8 @@ public class HCBlockTagProvider extends BlockTagsProvider {// 方块标签提供
                 .add(HCBlock.VIOLET_ORE.get())// 紫罗兰矿
                 .add(HCBlock.DEEPSLATE_VIOLET_ORE.get())// 深层紫罗兰矿
                 .add(HCBlock.THOUGHTS_ORE.get())// 思绪矿
+
+                .add(HCBlock.FLASH_GOLD_FRAGILE_BLOCK.get())// 闪金脆块
 
                 .add(HCBlock.BLACK_CRYSTALS_ORE.get())// 黑晶矿
 

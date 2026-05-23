@@ -31,6 +31,9 @@ public class HCArmorItem extends ArmorItem {
                     .put(HCArmorMaterials.HOLY_STEEL_ARMOR_MATERIAL,
                             // MobEffectInstance类两个布尔值，第一个为例子是否显示(t为不显示)，第二个为ui是否显示(t为不显示)
                             List.of(new MobEffectInstance(HCEffects.SANCTUARY_EFFECT,200,0,true,false)))
+                    .put(HCArmorMaterials.RED_GOLD_ARMOR_MATERIAL,
+                            // MobEffectInstance类两个布尔值，第一个为例子是否显示(t为不显示)，第二个为ui是否显示(t为不显示)
+                            List.of(new MobEffectInstance(HCEffects.GLISTENING_EFFECT,200,0,true,false)))
                     .build();
 
     public HCArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {

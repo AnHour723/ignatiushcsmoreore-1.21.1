@@ -232,6 +232,7 @@ public class HCItemTagProvider extends ItemTagsProvider {// 物品标签提供�
                 .add(HCArmor.SILVER_HELMET.get())
                 .add(HCArmor.POSEIDON_HELMET.get())
                 .add(HCArmor.ROSE_HELMET.get())
+                .add(HCArmor.RED_GOLD_HELMET.get())
                 .add(HCArmor.HOLY_STEEL_HELMET.get())
                 .add(HCArmor.ENDER_HELMET.get())
                 .add(HCArmor.EMPEROR_S_HELMET.get())
@@ -247,6 +248,7 @@ public class HCItemTagProvider extends ItemTagsProvider {// 物品标签提供�
                 .add(HCArmor.SILVER_CHESTPLATE.get())
                 .add(HCArmor.POSEIDON_CHESTPLATE.get())
                 .add(HCArmor.ROSE_CHESTPLATE.get())
+                .add(HCArmor.RED_GOLD_CHESTPLATE.get())
                 .add(HCArmor.HOLY_STEEL_CHESTPLATE.get())
                 .add(HCArmor.ENDER_CHESTPLATE.get())
                 .add(HCArmor.EMPEROR_S_CHESTPLATE.get())
@@ -262,6 +264,7 @@ public class HCItemTagProvider extends ItemTagsProvider {// 物品标签提供�
                 .add(HCArmor.SILVER_LEGGINGS.get())
                 .add(HCArmor.POSEIDON_LEGGINGS.get())
                 .add(HCArmor.ROSE_LEGGINGS.get())
+                .add(HCArmor.RED_GOLD_LEGGINGS.get())
                 .add(HCArmor.HOLY_STEEL_LEGGINGS.get())
                 .add(HCArmor.ENDER_LEGGINGS.get())
                 .add(HCArmor.EMPEROR_S_LEGGINGS.get())
@@ -277,6 +280,7 @@ public class HCItemTagProvider extends ItemTagsProvider {// 物品标签提供�
                 .add(HCArmor.SILVER_BOOTS.get())
                 .add(HCArmor.POSEIDON_BOOTS.get())
                 .add(HCArmor.ROSE_BOOTS.get())
+                .add(HCArmor.RED_GOLD_BOOTS.get())
                 .add(HCArmor.HOLY_STEEL_BOOTS.get())
                 .add(HCArmor.ENDER_BOOTS.get())
                 .add(HCArmor.EMPEROR_S_BOOTS.get())
@@ -303,6 +307,7 @@ public class HCItemTagProvider extends ItemTagsProvider {// 物品标签提供�
                 .add(HCItems.OVERWORLD_UPGRADE_TEMPLATE.get())
                 .add(HCItems.NETHER_UPGRADE_TEMPLATE.get())
                 .add(HCItems.END_UPGRADE_TEMPLATE.get())
+                .add(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get())
         ;
     }
 }

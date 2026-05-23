@@ -1,21 +1,23 @@
 package com.ysmhmcgames.ihc_more_ore.data;
 
+import com.ysmhmcgames.ihc_more_ore.IgnatiusHCsMoreOre;
 import com.ysmhmcgames.ihc_more_ore.blocks.HCBlock;
-import com.ysmhmcgames.ihc_more_ore.item.HCArmor;
-import com.ysmhmcgames.ihc_more_ore.item.HCItems;
-import com.ysmhmcgames.ihc_more_ore.item.HCOreItem;
-import com.ysmhmcgames.ihc_more_ore.item.HCTools;
+import com.ysmhmcgames.ihc_more_ore.item.*;
 import com.ysmhmcgames.ihc_more_ore.util.HCTags;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.CompletableFuture;
 
 public class HCRecipeProvider extends RecipeProvider implements IConditionBuilder {// 配方提供者
@@ -1892,13 +1894,13 @@ public class HCRecipeProvider extends RecipeProvider implements IConditionBuilde
 
 
         // 合金框架 有序 工作台
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCBlock.ALLOY_FURNACE_FRAMEWORK_BLOCK,1)
-                .pattern(" A ")
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCBlock.ALLOY_FURNACE_FRAMEWORK_BLOCK,5)
+                .pattern("OAO")
                 .pattern("AOA")
-                .pattern(" A ")
+                .pattern("OAO")
                 .define('A', Items.IRON_INGOT)
-                .define('O', HCBlock.TITANIUM_BLOCK)
-                .unlockedBy("has_titanium_block",has(HCBlock.TITANIUM_BLOCK))
+                .define('O', HCOreItem.TITANIUM_INGOT)
+                .unlockedBy("has_titanium_ingot",has(HCOreItem.TITANIUM_INGOT))
                 .save(recipeOutput);
         // 合金熔炉核心 有序 工作台
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCBlock.ALLOY_FURNACE_CORE_BLOCK,1)
@@ -2086,5 +2088,235 @@ public class HCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .save(recipeOutput);
 
 
+        /*=================================*/
+        // 闪金熟牛排 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_COOKED_BEEF,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.COOKED_BEEF)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金熟羊排 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_COOKED_MUTTON,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.COOKED_MUTTON)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金熟猪排 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_COOKED_PORKCHOP,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.COOKED_PORKCHOP)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金熟鸡肉 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_COOKED_CHICKEN,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.COOKED_CHICKEN)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金熟兔肉 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_COOKED_RABBIT,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.COOKED_RABBIT)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金熟鳕鱼 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_COOKED_COD,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.COOKED_COD)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金熟鲑鱼 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_COOKED_SALMON,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.COOKED_SALMON)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金面包 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_BREAD,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.BREAD)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金烤马铃薯 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_BAKED_POTATO,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.BAKED_POTATO)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金甜菜根 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_BEETROOT,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.BEETROOT)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金西瓜片 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_MELON_SLICE,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.MELON_SLICE)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金干海带 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_DRIED_KELP,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.DRIED_KELP)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金曲奇 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_COOKIE,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.COOKIE)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 闪金河豚 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCFoodItem.FLASH_GOLD_PUFFERFISH,8)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .define('X', Items.PUFFERFISH)
+                .define('A', HCOreItem.FLASH_GOLD_DUST)
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput);
+
+        // 红金修补套件 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCOreItem.RED_GOLD_REPAIR_KIT,1)
+                .pattern(" X ")
+                .pattern("XAX")
+                .pattern(" X ")
+                .define('X', HCOreItem.RED_GOLD_INGOT)
+                .define('A', HCOreItem.FLASH_GOLD_INGOT)
+                .unlockedBy("has_red_gold_ingot",has(HCOreItem.RED_GOLD_INGOT))
+                .save(recipeOutput);
+
+        // 闪金窥基 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AHMagicItem.FLASH_GOLD_ENDOSCOPE,1)
+                .pattern(" X ")
+                .pattern("XAX")
+                .pattern(" X ")
+                .define('X', HCOreItem.FLASH_GOLD_INGOT)
+                .define('A', HCTags.Items.GLASS_KEY)
+                .unlockedBy("has_flash_gold_ingot",has(HCOreItem.FLASH_GOLD_INGOT))
+                .save(recipeOutput);
+
+
+        // 红金块 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCBlock.RED_GOLD_BLOCK.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', HCOreItem.RED_GOLD_INGOT.get())
+                .unlockedBy("has_red_gold_ingot",has(HCOreItem.RED_GOLD_INGOT))
+                .save(recipeOutput,"ignatiushcsmoreore:red_gold_block_from_red_gold_ingot");
+        // 红金锭 无序 工作台
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HCOreItem.RED_GOLD_INGOT.get(),9)
+                .requires(HCBlock.RED_GOLD_BLOCK)
+                .unlockedBy("has_red_gold_block",has(HCBlock.RED_GOLD_BLOCK))
+                .save(recipeOutput,"ignatiushcsmoreore:red_gold_ingot_from_red_gold_block");
+
+        // 闪金脆块 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCBlock.FLASH_GOLD_FRAGILE_BLOCK.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', HCOreItem.FLASH_GOLD_DUST.get())
+                .unlockedBy("has_flash_gold_dust",has(HCOreItem.FLASH_GOLD_DUST))
+                .save(recipeOutput,"ignatiushcsmoreore:flash_gold_fragile_block_from_flash_gold_dust");
+        // 闪金粉 无序 工作台
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HCOreItem.FLASH_GOLD_DUST.get(),9)
+                .requires(HCBlock.FLASH_GOLD_FRAGILE_BLOCK)
+                .unlockedBy("has_flash_gold_fragile_block",has(HCBlock.FLASH_GOLD_FRAGILE_BLOCK))
+                .save(recipeOutput,"ignatiushcsmoreore:flash_gold_dust_from_flash_gold_fragile_block");
+
+        /*=================================*/
+        // 红金头盔 锻造台
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.GOLDEN_HELMET),
+                        Ingredient.of(HCOreItem.RED_GOLD_REPAIR_KIT.get()),
+                        RecipeCategory.MISC,
+                        HCArmor.RED_GOLD_HELMET.get()
+                ).unlocks("has_red_gold_upgrade_smithing_template",has(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get()))
+                .save(recipeOutput,"ignatiushcsmoreore:red_gold_helmet");
+
+        // 红金护甲 锻造台
+        SmithingTransformRecipeBuilder.smithing(
+                Ingredient.of(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get()),
+                Ingredient.of(Items.GOLDEN_CHESTPLATE),
+                Ingredient.of(HCOreItem.RED_GOLD_REPAIR_KIT.get()),
+                RecipeCategory.MISC,
+                HCArmor.RED_GOLD_CHESTPLATE.get()
+                ).unlocks("has_red_gold_upgrade_smithing_template",has(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get()))
+                .save(recipeOutput,"ignatiushcsmoreore:red_gold_chestplate");
+
+        // 红金护腿 锻造台
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.GOLDEN_LEGGINGS),
+                        Ingredient.of(HCOreItem.RED_GOLD_REPAIR_KIT.get()),
+                        RecipeCategory.MISC,
+                        HCArmor.RED_GOLD_LEGGINGS.get()
+                ).unlocks("has_red_gold_upgrade_smithing_template",has(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get()))
+                .save(recipeOutput,"ignatiushcsmoreore:red_gold_leggings");
+
+        // 红金靴子 锻造台
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.GOLDEN_BOOTS),
+                        Ingredient.of(HCOreItem.RED_GOLD_REPAIR_KIT.get()),
+                        RecipeCategory.MISC,
+                        HCArmor.RED_GOLD_BOOTS.get()
+                ).unlocks("has_red_gold_upgrade_smithing_template",has(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get()))
+                .save(recipeOutput,"ignatiushcsmoreore:red_gold_boots");
     }
 }

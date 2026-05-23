@@ -9,6 +9,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
@@ -46,6 +47,8 @@ public class SickleItem extends SwordItem {
                 // 如果还在冷却中，返回"通过"，不执行技能
                 return InteractionResultHolder.pass(sickle);
             }
+            // 每次使用扣除10点耐久
+            sickle.hurtAndBreak(5, player, EquipmentSlot.MAINHAND);
 
             // 执行范围攻击技能
             performAreaOfEffectAttack(level, player);

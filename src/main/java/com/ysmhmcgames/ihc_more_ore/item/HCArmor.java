@@ -93,6 +93,20 @@ public class HCArmor {
             () -> new HCArmorItem(HCArmorMaterials.ROSE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(36))));
 
+    // 红金装备
+    public static final DeferredItem<ArmorItem> RED_GOLD_HELMET = ARMOR.register("red_gold_helmet",
+            () -> new HCArmorItem(HCArmorMaterials.RED_GOLD_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(30))));// 耐久系数
+    public static final DeferredItem<ArmorItem> RED_GOLD_CHESTPLATE = ARMOR.register("red_gold_chestplate",
+            () -> new HCArmorItem(HCArmorMaterials.RED_GOLD_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(30))));
+    public static final DeferredItem<ArmorItem> RED_GOLD_LEGGINGS = ARMOR.register("red_gold_leggings",
+            () -> new HCArmorItem(HCArmorMaterials.RED_GOLD_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(30))));
+    public static final DeferredItem<ArmorItem> RED_GOLD_BOOTS = ARMOR.register("red_gold_boots",
+            () -> new HCArmorItem(HCArmorMaterials.RED_GOLD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(30))));
+
     // 圣钢装备
     public static final DeferredItem<ArmorItem> HOLY_STEEL_HELMET = ARMOR.register("holy_steel_helmet",
             () -> new HCArmorItem(HCArmorMaterials.HOLY_STEEL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,

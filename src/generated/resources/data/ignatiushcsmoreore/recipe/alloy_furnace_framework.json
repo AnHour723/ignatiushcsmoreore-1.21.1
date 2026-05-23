@@ -6,16 +6,16 @@
       "item": "minecraft:iron_ingot"
     },
     "O": {
-      "item": "ignatiushcsmoreore:titanium_block"
+      "item": "ignatiushcsmoreore:titanium_ingot"
     }
   },
   "pattern": [
-    " A ",
+    "OAO",
     "AOA",
-    " A "
+    "OAO"
   ],
   "result": {
-    "count": 1,
+    "count": 5,
     "id": "ignatiushcsmoreore:alloy_furnace_framework"
   }
 }

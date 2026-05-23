@@ -81,6 +81,8 @@ public class HCBlockStateProvider extends BlockStateProvider {// 方块状态提
         blockWithItem(HCBlock.OVERWORLD_ORE);//===================主界矿 模型===================
 
         blockWithItem(HCBlock.FLASH_GOLD_BLOCK);// 闪金块 模型
+        blockWithItem(HCBlock.FLASH_GOLD_FRAGILE_BLOCK);// 闪金脆块 模型
+        blockWithItem(HCBlock.RED_GOLD_BLOCK);// 红金块 模型
 
         blockWithItem(HCBlock.HEYAN_ORE);// 赫岩矿 模型
         blockWithItem(HCBlock.BLACK_CRYSTALS_ORE);// 黑晶矿 模型

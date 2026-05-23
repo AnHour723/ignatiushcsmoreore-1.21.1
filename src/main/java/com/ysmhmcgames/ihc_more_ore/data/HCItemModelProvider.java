@@ -1,21 +1,21 @@
 package com.ysmhmcgames.ihc_more_ore.data;
 
 import com.ysmhmcgames.ihc_more_ore.IgnatiusHCsMoreOre;
-import com.ysmhmcgames.ihc_more_ore.item.HCArmor;
-import com.ysmhmcgames.ihc_more_ore.item.HCItems;
-import com.ysmhmcgames.ihc_more_ore.item.HCOreItem;
-import com.ysmhmcgames.ihc_more_ore.item.HCTools;
+import com.ysmhmcgames.ihc_more_ore.item.*;
+import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.LinkedHashMap;
@@ -118,6 +118,9 @@ public class HCItemModelProvider extends ItemModelProvider {// 物品模型提�
         simpleOreItem(HCOreItem.SOUL_STEEL_INGOT);// 灵魂钢锭 物品模型
 
         simpleOreItem(HCOreItem.FLASH_GOLD_INGOT);// 闪金锭 物品模型
+        simpleOreItem(HCOreItem.FLASH_GOLD_DUST);// 闪金粉 物品模型
+        simpleOreItem(HCOreItem.RED_GOLD_INGOT);// 红金锭 物品模型
+        simpleOreItem(HCOreItem.RED_GOLD_REPAIR_KIT);// 红金修补套件 物品模型
 
         simpleOreItem(HCOreItem.HEYAN);// 赫岩 物品模型
         simpleOreItem(HCOreItem.BLACK_CRYSTALS);// 黑晶 物品模型
@@ -176,6 +179,8 @@ public class HCItemModelProvider extends ItemModelProvider {// 物品模型提�
         simpleItem(HCItems.NETHER_UPGRADE_TEMPLATE);// 升级图纸  主界 -> 下界    物品模型
         simpleItem(HCItems.END_UPGRADE_TEMPLATE);// 升级图纸  下界 -> 终界    物品模型
 
+        simpleItem(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE);// 升级模板  金 -> 红金    物品模型
+
         simpleItem(HCItems.POLE_BOW_UPGRADE_TEMPLATE);// 武器锻造图纸  风暴弓 -> 两级弓    物品模型
 
         simpleItem(HCItems.LANHUAYING_MUSIC_DISC);// 唱片  蓝花楹
@@ -194,6 +199,27 @@ public class HCItemModelProvider extends ItemModelProvider {// 物品模型提�
         simpleItem(HCItems.QUANTUM_AXE_INFORMATION_SPHERE);// 量子斧头信息球 物品模型
         simpleItem(HCItems.QUANTUM_SHOVEL_INFORMATION_SPHERE);// 量子锹信息球 物品模型
         simpleItem(HCItems.QUANTUM_HOE_INFORMATION_SPHERE);// 量子锄头信息球 物品模型
+
+        /*============================================================*/
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_COOKED_BEEF);// 闪金熟牛排 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_COOKED_MUTTON);// 闪金熟羊排 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_COOKED_PORKCHOP);// 闪金熟猪排 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_COOKED_CHICKEN);// 闪金熟鸡肉 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_COOKED_RABBIT);// 闪金熟兔肉 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_COOKED_COD);// 闪金熟鳕鱼 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_COOKED_SALMON);// 闪金熟鲑鱼 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_BREAD);// 闪金面包 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_BAKED_POTATO);// 闪金烤马铃薯 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_BEETROOT);// 闪金甜菜根 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_MELON_SLICE);// 闪金西瓜片 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_DRIED_KELP);// 闪金干海带 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_COOKIE);// 闪金曲奇 物品模型
+        simpleFoodItem(HCFoodItem.FLASH_GOLD_PUFFERFISH);// 闪金河豚 物品模型
+
+
+        /*============================================================*/
+        simpleMagicItem(AHMagicItem.FLASH_GOLD_ENDOSCOPE);// 闪金窥基
+        simpleMagicItem(AHMagicItem.QUANTUM_BADGE);// 量子徽章
 
         /*============================================================*/
         // 铝工具
@@ -393,6 +419,12 @@ public class HCItemModelProvider extends ItemModelProvider {// 物品模型提�
         trimmedArmorItem(HCArmor.ROSE_LEGGINGS);
         trimmedArmorItem(HCArmor.ROSE_BOOTS);
 
+        // 红金装备
+        trimmedArmorItem(HCArmor.RED_GOLD_HELMET);
+        trimmedArmorItem(HCArmor.RED_GOLD_CHESTPLATE);
+        trimmedArmorItem(HCArmor.RED_GOLD_LEGGINGS);
+        trimmedArmorItem(HCArmor.RED_GOLD_BOOTS);
+
         // 圣钢装备
         trimmedArmorItem(HCArmor.HOLY_STEEL_HELMET);
         trimmedArmorItem(HCArmor.HOLY_STEEL_CHESTPLATE);
@@ -495,7 +527,46 @@ public class HCItemModelProvider extends ItemModelProvider {// 物品模型提�
         );
     }
 
+    private void simpleFoodItem(DeferredItem<?> deferredItem){
+        ResourceLocation item = deferredItem.getId();
+        String itemName = item.getPath();
 
+        // 1. 模型名称就是物品名称（不包含路径）
+        // 模型文件：models/item/itemName.json
+        ItemModelBuilder builder = this.getBuilder(itemName)
+                .parent(new ModelFile.UncheckedModelFile("item/generated"));
+
+        // 2. 纹理路径包含 foods/ 子目录
+        // 引用：textures/item/ore/itemName.png
+        builder.texture(
+                "layer0",
+                ResourceLocation.fromNamespaceAndPath(
+                        item.getNamespace(),
+                        "item/foods/" + itemName
+                )
+        );
+
+    }
+    private void simpleMagicItem(DeferredItem<?> deferredItem){
+        ResourceLocation item = deferredItem.getId();
+        String itemName = item.getPath();
+
+        // 1. 模型名称就是物品名称（不包含路径）
+        // 模型文件：models/item/itemName.json
+        ItemModelBuilder builder = this.getBuilder(itemName)
+                .parent(new ModelFile.UncheckedModelFile("item/generated"));
+
+        // 2. 纹理路径包含 foods/ 子目录
+        // 引用：textures/item/ore/itemName.png
+        builder.texture(
+                "layer0",
+                ResourceLocation.fromNamespaceAndPath(
+                        item.getNamespace(),
+                        "item/magic_item/" + itemName
+                )
+        );
+
+    }
 
 //    public ItemModelBuilder basicItem(ResourceLocation item) {
 //        return (ItemModelBuilder)((ItemModelBuilder)((ItemModelBuilder)this.getBuilder(item.toString())).parent(new ModelFile.UncheckedModelFile("item/generated"))).texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), "item/ore/" + item.getPath()));

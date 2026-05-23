@@ -58,6 +58,8 @@ public class HCBlockLootTableProvider extends BlockLootSubProvider {// 方块掉
         dropSelf(HCBlock.HOLY_STEEL_BLOCK.get());// 圣钢块掉落物表
 
         dropSelf(HCBlock.FLASH_GOLD_BLOCK.get());// 闪金块掉落物表
+        dropSelf(HCBlock.FLASH_GOLD_FRAGILE_BLOCK.get());// 闪金脆块掉落物表
+        dropSelf(HCBlock.RED_GOLD_BLOCK.get());// 红金块掉落物表
 
         dropSelf(HCBlock.BLACK_CRYSTALS_BLOCK.get());// 黑晶块掉落物表
 

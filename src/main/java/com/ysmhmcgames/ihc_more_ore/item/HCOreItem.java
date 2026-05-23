@@ -198,6 +198,18 @@ public class HCOreItem {
     public static final DeferredItem<Item> FLASH_GOLD_INGOT= ORE_ITEMS.register("flash_gold_ingot",
             ()-> new Item(new Item.Properties()));
 
+    // 闪金粉
+    public static final DeferredItem<Item> FLASH_GOLD_DUST= ORE_ITEMS.register("flash_gold_dust",
+            ()-> new Item(new Item.Properties()));
+
+    // 红金锭
+    public static final DeferredItem<Item> RED_GOLD_INGOT= ORE_ITEMS.register("red_gold_ingot",
+            ()-> new Item(new Item.Properties()));
+
+    // 红金修补套件
+    public static final DeferredItem<Item> RED_GOLD_REPAIR_KIT= ORE_ITEMS.register("red_gold_repair_kit",
+            ()-> new Item(new Item.Properties()));
+
     // 赫岩
     public static final DeferredItem<Item> HEYAN= ORE_ITEMS.register("heyan",
             ()-> new Item(new Item.Properties()));

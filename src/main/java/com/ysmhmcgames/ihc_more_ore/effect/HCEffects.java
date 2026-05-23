@@ -44,12 +44,24 @@ public class HCEffects {
     public static final Holder<MobEffect> YIN_EFFECT = MOB_EFFECTS.register("yin",
             () -> new YinEffect(MobEffectCategory.NEUTRAL,0xffffff));
 
+    // 防火
     public static final Holder<MobEffect> FIREPROOF_EFFECT = MOB_EFFECTS.register("fireproof",
             () -> new FireproofEffect(MobEffectCategory.BENEFICIAL,0xe65b3b));
+    // 防寒
     public static final Holder<MobEffect> COLD_RESISTANT_EFFECT = MOB_EFFECTS.register("cold_resistant",
             () -> new ColdResistantEffect(MobEffectCategory.BENEFICIAL,0x40aadb));
+    // 圣域
     public static final Holder<MobEffect> SANCTUARY_EFFECT = MOB_EFFECTS.register("sanctuary",
             () -> new SanctuaryEffect(MobEffectCategory.BENEFICIAL,0xF5F5DC));
+    // 量子化
+    public static final Holder<MobEffect> QUANTIFICATION_EFFECT = MOB_EFFECTS.register("quantification",
+            () -> new QuantificationEffect(MobEffectCategory.BENEFICIAL,0x800080));
+    // 闪耀
+    public static final Holder<MobEffect> GLISTENING_EFFECT = MOB_EFFECTS.register("glistening",
+            () -> new GlisteningEffect(MobEffectCategory.BENEFICIAL,0xFAFAD2));
+    // 脆弱
+    public static final Holder<MobEffect> FRAIL_EFFECT = MOB_EFFECTS.register("frail",
+            () -> new FrailEffect(MobEffectCategory.BENEFICIAL,0xD3D3D3));
 
 
     public static void register(IEventBus eventBus){

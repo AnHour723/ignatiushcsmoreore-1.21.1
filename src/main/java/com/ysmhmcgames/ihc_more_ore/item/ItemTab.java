@@ -123,4 +123,30 @@ public class ItemTab {
 
                     }))
                     .build());
+
+    public static final Supplier<CreativeModeTab> MENGMAONI_S_TAB = MODE_TAB.register("mengmaoni_s_food_tab",
+            ()->CreativeModeTab.builder()
+                    .title(Component.translatable("create_tab.mengmaoni_s_food_tab"))
+                    .icon(()-> HCFoodItem.FLASH_GOLD_COOKED_BEEF.get().getDefaultInstance())// 以什么物品的图片作为tag
+                    .displayItems(((itemDisplayParameters, output) -> {// 将物品加入该tab
+
+                        for (Holder<Item> holder : HCFoodItem.ITEMS.getEntries()) {// 遍历延迟注册器
+                            output.accept(holder.value());
+                        }
+
+                    }))
+                    .build());
+
+    public static final Supplier<CreativeModeTab> ANHOUR_S_TAB = MODE_TAB.register("an_hour_s_magical_items_tab",
+            ()->CreativeModeTab.builder()
+                    .title(Component.translatable("create_tab.an_hour_s_magical_items_tab"))
+                    .icon(()-> AHMagicItem.FLASH_GOLD_ENDOSCOPE.get().getDefaultInstance())// 以什么物品的图片作为tag
+                    .displayItems(((itemDisplayParameters, output) -> {// 将物品加入该tab
+
+                        for (Holder<Item> holder : AHMagicItem.ITEMS.getEntries()) {// 遍历延迟注册器
+                            output.accept(holder.value());
+                        }
+
+                    }))
+                    .build());
 }

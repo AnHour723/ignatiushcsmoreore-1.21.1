@@ -55,6 +55,9 @@
   "item.ignatiushcsmoreore.soul_essence": "Soul essence",
   "item.ignatiushcsmoreore.soul_steel_ingot": "Soul steel ingot",
   "item.ignatiushcsmoreore.flash_gold_ingot": "Flash gold ingot",
+  "item.ignatiushcsmoreore.flash_gold_dust": "Flash gold dust",
+  "item.ignatiushcsmoreore.red_gold_ingot": "Red gold ingot",
+  "item.ignatiushcsmoreore.red_gold_repair_kit": "Red gold repair kit",
   "item.ignatiushcsmoreore.heyan": "Heyan",
   "item.ignatiushcsmoreore.black_crystals": "Black crystals",
   "item.ignatiushcsmoreore.hell_s_stone": "Hell's stone",
@@ -129,6 +132,8 @@
   "block.ignatiushcsmoreore.thoughts_ore": "Thoughts ore",
   "block.ignatiushcsmoreore.overworld_ore": "Overworld ore",
   "block.ignatiushcsmoreore.flash_gold_block": "Flash gold block",
+  "block.ignatiushcsmoreore.flash_gold_fragile_block": "Flash gold fragile block",
+  "block.ignatiushcsmoreore.red_gold_block": "Red gold block",
   "block.ignatiushcsmoreore.heyan_ore": "Heyan ore",
   "block.ignatiushcsmoreore.black_crystals_ore": "Black crystals ore",
   "block.ignatiushcsmoreore.black_crystals_block": "Black crystals block",
@@ -378,6 +383,11 @@
   "item.ignatiushcsmoreore.rose_leggings": "Rose leggings",
   "item.ignatiushcsmoreore.rose_boots": "Rose boots",
 
+  "item.ignatiushcsmoreore.red_gold_helmet": "Red gold helmet",
+  "item.ignatiushcsmoreore.red_gold_chestplate": "Red gold chestplate",
+  "item.ignatiushcsmoreore.red_gold_leggings": "Red gold leggings",
+  "item.ignatiushcsmoreore.red_gold_boots": "Red gold boots",
+
   "item.ignatiushcsmoreore.holy_steel_helmet": "Holy steel helmet",
   "item.ignatiushcsmoreore.holy_steel_chestplate": "Holy steel chestplate",
   "item.ignatiushcsmoreore.holy_steel_leggings": "Holy steel leggings",
@@ -423,8 +433,24 @@
   "item.ignatiushcsmoreore.prismatic_colorful_leggings": "Prismatic colorful leggings",
   "item.ignatiushcsmoreore.prismatic_colorful_boots": "Prismatic colorful boots",
 
+  "item.ignatiushcsmoreore.flash_gold_cooked_beef": "Flash Gold Cooked Beef",
+  "item.ignatiushcsmoreore.flash_gold_cooked_mutton": "Flash Gold Cooked Mutton",
+  "item.ignatiushcsmoreore.flash_gold_cooked_porkchop": "Flash Gold Cooked Porkchop",
+  "item.ignatiushcsmoreore.flash_gold_cooked_chicken": "Flash Gold Cooked Chicken",
+  "item.ignatiushcsmoreore.flash_gold_cooked_rabbit": "Flash Gold Cooked Rabbit",
+  "item.ignatiushcsmoreore.flash_gold_cooked_cod": "Flash Gold Cooked Cod",
+  "item.ignatiushcsmoreore.flash_gold_cooked_salmon": "Flash Gold Cooked Salmon",
+  "item.ignatiushcsmoreore.flash_gold_bread": "Flash Gold Bread",
+  "item.ignatiushcsmoreore.flash_gold_baked_potato": "Flash Gold Baked Potato",
+  "item.ignatiushcsmoreore.flash_gold_beetroot": "Flash Gold Beetroot",
+  "item.ignatiushcsmoreore.flash_gold_melon_slice": "Flash Gold Melon Slice",
+  "item.ignatiushcsmoreore.flash_gold_dried_kelp": "Flash Gold Dried Kelp",
+  "item.ignatiushcsmoreore.flash_gold_cookie": "Flash Gold Cookie",
+  "item.ignatiushcsmoreore.flash_gold_pufferfish": "Flash Gold Pufferfish",
 
 
+  "item.ignatiushcsmoreore.flash_gold_endoscope": "Flash Gold Endoscope",
+  "item.ignatiushcsmoreore.quantum_badge": "Quantum Badge",
 
 
   "effect.ignatiushcsmoreore.bleeding": "Bleeding",
@@ -433,10 +459,15 @@
   "effect.ignatiushcsmoreore.fireproof": "Fireproof",
   "effect.ignatiushcsmoreore.cold_resistant": "Cold resistant",
   "effect.ignatiushcsmoreore.sanctuary": "Sanctuary",
+  "effect.ignatiushcsmoreore.quantification": "Quantification",
+  "effect.ignatiushcsmoreore.glistening": "Glistening",
+  "effect.ignatiushcsmoreore.frail": "Frail",
 
-  "create_tab.more_ore_tab": "IgnatiusHC's More ore",
-  "create_tab.feng_s_tool_tab": "Feng's tool tab",
-  "create_tab.jangtanglalala_s_groceries_tab": "Jangtanglalala's groceries tab",
+  "create_tab.more_ore_tab": "IgnatiusHC's More Ore",
+  "create_tab.feng_s_tool_tab": "Feng's Tool Tab",
+  "create_tab.jangtanglalala_s_groceries_tab": "Jangtanglalala's Groceries Tab",
+  "create_tab.mengmaoni_s_food_tab": "Mengmaoni's Food Tab",
+  "create_tab.an_hour_s_magical_items_tab": "An_hour's Magical Items Tab",
 
   "entity.mccourse.yin_arrow": "Yin arrow",
   "entity.mccourse.yang_arrow": "Yang arrow",
@@ -449,7 +480,11 @@
 
 
   "text.alloy_furnace_core.info": "Incorrect structure!",
+  "text.flash_gold_endoscope.info": "There are no targets nearby!",
+  "text.home_coming.info": "Teleported to the birth point!",
+  "text.home_coming.warning": "Spawn point retrieval error, please make sure the spawn point is in the main world!",
 
+  "item_text.home_coming.info": "Usage Notes: This item will teleport you to the spawn point coordinates in the Overworld. If the spawn point is not in the Overworld, it will also teleport you to the corresponding location in the Overworld based on the coordinates of other dimensions.",
 
   "item.ignatiushcsmoreore.steel_stick": "Steel stick",
   "item.ignatiushcsmoreore.tilama_stick": "Tilama stick",
@@ -506,6 +541,12 @@
   "upgrade_template.ignatiushcsmoreore.pole_upgradeTemplateName": "Weapon Forging",
   "upgrade_template.ignatiushcsmoreore.bow_equipment": " Storm Bow",
   "upgrade_template.ignatiushcsmoreore.pole_ore": " Pole Ingot",
+
+
+  "item.ignatiushcsmoreore.red_gold_upgrade_smithing_template": "Red Gold Smithing Template",
+  "upgrade.ignatiushcsmoreore.red_gold_upgrade": "Red Gold Upgrade",
+  "item.ignatiushcsmoreore.smithing_template.red_gold_upgrade.applies_to": "Golden Equipment",
+  "item.ignatiushcsmoreore.smithing_template.red_gold_upgrade.ingredients": "Red Gold Repair Kit",
 
 
   "item.ignatiushcsmoreore.lanhuaying_ai_music_disc": "Lan hua ying-AI",

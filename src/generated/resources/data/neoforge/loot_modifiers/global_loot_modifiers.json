@@ -40,7 +40,13 @@
     "ignatiushcsmoreore:pole_bow_upgrade_template_from_end_city_treasure",
     "ignatiushcsmoreore:glass_crystallization_template_from_pillager_outpost",
     "ignatiushcsmoreore:lanhuaying_ai_music_disc_from_stronghold_corridor",
-    "ignatiushcsmoreore:lanhuaying_music_disc_from_stronghold_corridor"
+    "ignatiushcsmoreore:lanhuaying_music_disc_from_stronghold_corridor",
+    "ignatiushcsmoreore:red_gold_upgrade_smithing_template_from_bastion_bridge",
+    "ignatiushcsmoreore:red_gold_upgrade_smithing_template_from_bastion_hoglin_stable",
+    "ignatiushcsmoreore:red_gold_upgrade_smithing_template_from_bastion_other",
+    "ignatiushcsmoreore:red_gold_upgrade_smithing_template_from_bastion_treasure",
+    "ignatiushcsmoreore:red_gold_upgrade_smithing_template_from_nether_bridge",
+    "ignatiushcsmoreore:red_gold_upgrade_smithing_template_from_ruined_portal"
   ],
   "replace": false
 }
