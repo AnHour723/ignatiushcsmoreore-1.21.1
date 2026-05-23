@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "ignatiushcsmoreore:flash_gold_dust"
+    },
+    "X": {
+      "item": "minecraft:cookie"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XAX",
+    "XXX"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ignatiushcsmoreore:flash_gold_cookie"
+  }
+}

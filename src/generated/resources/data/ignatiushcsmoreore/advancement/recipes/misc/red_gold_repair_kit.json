@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_gold_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ignatiushcsmoreore:red_gold_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ignatiushcsmoreore:red_gold_repair_kit"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_red_gold_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ignatiushcsmoreore:red_gold_repair_kit"
+    ]
+  }
+}
