@@ -32,7 +32,7 @@ public class ProfaneBloodBlock extends Block {
             // 获取玩家主手物品
             ItemStack mainHandItem = player.getMainHandItem();
 
-            // 检查主手是否为钻石
+            // 检查主手是否为玻璃结晶模板
             if (mainHandItem.is(HCItems.GLASS_CRYSTALLIZATION_TEMPLATE)) {
                 // 播放音效
                 level.playSound(null, pos,

@@ -234,21 +234,21 @@ public class HCBlockTagProvider extends BlockTagsProvider {// 方块标签提供
 
                 ;
 
-        // 添加需要下届合金挖掘等级才能挖的东西  --  标签
+        // 添加需要下界合金挖掘等级才能挖的东西  --  标签
         tag(HCTags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(HCBlock.QUANTUM_DOMAIN.get())// 3.设置该方块(量子域)为下届合金等级挖掘
+                .add(HCBlock.QUANTUM_DOMAIN.get())// 3.设置该方块(量子域)为下界合金等级挖掘
                 .add(HCBlock.PRISMATIC_COLORFUL_ORE.get())// 棱彩矿
                 .add(HCBlock.POLE_ORE.get())// 极点矿
                 .add(HCBlock.NETHER_POLE_ORE.get())// 下届极点矿
                 .add(HCBlock.END_POLE_ORE.get())// 终界极点矿
 
                 ;
-        // 添加 下届合金(5级) 挖掘等级不能挖的东西  --  标签
+        // 添加 下界合金(5级) 挖掘等级不能挖的东西  --  标签
         tag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
-                .remove(HCTags.Blocks.NEEDS_NETHERITE_TOOL)// 4.因为继承了钻石不能挖掘的物品，所以移除需要下届合金能挖掘的物品出禁用表
+                .remove(HCTags.Blocks.NEEDS_NETHERITE_TOOL)// 4.因为继承了钻石不能挖掘的物品，所以移除需要下界合金能挖掘的物品出禁用表
 
-                .add(HCBlock.OVERWORLD_ORE.get())// 主界矿 (需要等级大于下届合金等级，但是上文获取钻等级后则移除了继承钻石等级的矿石)
+                .add(HCBlock.OVERWORLD_ORE.get())// 主界矿 (需要等级大于下界合金等级，但是上文获取钻等级后则移除了继承钻石等级的矿石)
                 .add(HCBlock.COLLAPSING_BLOCK.get())// 坍缩嵌块
                 .add(HCBlock.NETHER_ORE.get())// 下界矿
                 .add(HCBlock.END_ORE.get())// 终界矿

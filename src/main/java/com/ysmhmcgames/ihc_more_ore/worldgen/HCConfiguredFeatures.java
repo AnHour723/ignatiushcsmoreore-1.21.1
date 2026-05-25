@@ -102,13 +102,13 @@ public class HCConfiguredFeatures {
                 OreConfiguration.target(stoneReplaceables, HCBlock.TIN_ORE.get().defaultBlockState()),// 规则:用锡矿石替换
                 OreConfiguration.target(deepslateReplaceables, HCBlock.DEEPSLATE_TIN_ORE.get().defaultBlockState())
         );
-        register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTinOres, 12));// 替换类型为ORE 规则为用锡矿石替换深浅层石头 矿脉中矿石数量最大值为10
+        register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTinOres, 12));// 替换类型为ORE 规则为用锡矿石替换深浅层石头 矿脉中矿石数量最大值为12
         // 铝 的生成
         List<OreConfiguration.TargetBlockState> overworldAluminumOres = List.of(
                 OreConfiguration.target(stoneReplaceables, HCBlock.ALUMINUM_ORE.get().defaultBlockState()),// 规则:用铝矿石替换
                 OreConfiguration.target(deepslateReplaceables, HCBlock.DEEPSLATE_ALUMINUM_ORE.get().defaultBlockState())
         );
-        register(context, OVERWORLD_ALUMINUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAluminumOres, 12));// 替换类型为ORE 规则为用铝矿石替换深浅层石头 矿脉中矿石数量最大值为10
+        register(context, OVERWORLD_ALUMINUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAluminumOres, 12));// 替换类型为ORE 规则为用铝矿石替换深浅层石头 矿脉中矿石数量最大值为12
         // 银 的生成
         List<OreConfiguration.TargetBlockState> overworldSilverOres = List.of(
                 OreConfiguration.target(stoneReplaceables, HCBlock.SILVER_ORE.get().defaultBlockState()),// 规则:用银矿石替换

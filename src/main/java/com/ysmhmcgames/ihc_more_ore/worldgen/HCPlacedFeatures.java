@@ -81,7 +81,7 @@ public class HCPlacedFeatures {
         register(context, TIN_ORE_PLACED_KEY, configuredFeature.getOrThrow(HCConfiguredFeatures.OVERWORLD_TIN_ORE_KEY),
                 /* 运用复制过来的原版的生成逻辑代码(方法)
                 uniform 均匀分布     VerticalAnchor.absolute()垂直锚点绝对值
-                含义：均匀生成到-64~80高度间
+                含义：均匀生成到-24~72高度间
                 */
                 HCOrePlacement.commonOrePlacement(15, HeightRangePlacement.uniform(VerticalAnchor.absolute(-24),VerticalAnchor.absolute(72))));
 
@@ -184,7 +184,7 @@ public class HCPlacedFeatures {
         register(context, NETHER_POLE_ORE_PLACED_KEY, configuredFeature.getOrThrow(HCConfiguredFeatures.NETHER_POLE_ORE_KEY),
                 HCOrePlacement.commonOrePlacement(3,HeightRangePlacement.uniform(VerticalAnchor.absolute(32),VerticalAnchor.absolute(127))));
 
-        // 下届矿 的生成
+        // 下界矿 的生成
         register(context, NETHER_ORE_PLACED_KEY, configuredFeature.getOrThrow(HCConfiguredFeatures.NETHER_ORE_KEY),
                 HCOrePlacement.commonOrePlacement(1,HeightRangePlacement.uniform(VerticalAnchor.absolute(80),VerticalAnchor.absolute(127))));
 

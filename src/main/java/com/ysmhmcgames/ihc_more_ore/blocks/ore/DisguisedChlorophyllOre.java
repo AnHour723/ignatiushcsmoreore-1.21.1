@@ -25,7 +25,7 @@ public class DisguisedChlorophyllOre extends Block {
 
     @Override
     protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        // 转换周围方块为钻石块
+        // 转换周围方块为叶绿矿
         convertSurroundingBlocks(level, pos);
 
 

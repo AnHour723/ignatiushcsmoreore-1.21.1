@@ -7,6 +7,7 @@ import com.ysmhmcgames.ihc_more_ore.item.HCTools;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -84,6 +85,8 @@ public class PoleBowItem extends BowItem {
                         if (itemstack.isEmpty()) {
                             player.getInventory().removeItem(itemstack);
                         }
+                        // 消耗耐久
+                        stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
                     }
 
                     level.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);
