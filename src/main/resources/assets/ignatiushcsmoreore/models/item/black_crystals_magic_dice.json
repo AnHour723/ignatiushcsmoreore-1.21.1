@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ignatiushcsmoreore:item/black_crystals_roll_null"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "ignatiushcsmoreore:dice_data": 1
+      },
+      "model": "ignatiushcsmoreore:item/black_crystals_roll_1"
+    },{
+      "predicate": {
+        "ignatiushcsmoreore:dice_data": 2
+      },
+      "model": "ignatiushcsmoreore:item/black_crystals_roll_2"
+    },{
+      "predicate": {
+        "ignatiushcsmoreore:dice_data": 3
+      },
+      "model": "ignatiushcsmoreore:item/black_crystals_roll_3"
+    },{
+      "predicate": {
+        "ignatiushcsmoreore:dice_data": 4
+      },
+      "model": "ignatiushcsmoreore:item/black_crystals_roll_4"
+    },{
+      "predicate": {
+        "ignatiushcsmoreore:dice_data": 5
+      },
+      "model": "ignatiushcsmoreore:item/black_crystals_roll_5"
+    },{
+      "predicate": {
+        "ignatiushcsmoreore:dice_data": 6
+      },
+      "model": "ignatiushcsmoreore:item/black_crystals_roll_6"
+    }
+  ]
+}
+

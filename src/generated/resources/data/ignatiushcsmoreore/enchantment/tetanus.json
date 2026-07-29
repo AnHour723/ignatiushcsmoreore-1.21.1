@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 3,
+  "description": {
+    "translate": "enchantment.ignatiushcsmoreore.tetanus"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "ignatiushcsmoreore:tetanus"
+        },
+        "enchanted": "attacker"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 7
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 7
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#ignatiushcsmoreore:is_tetanus",
+  "weight": 3
+}

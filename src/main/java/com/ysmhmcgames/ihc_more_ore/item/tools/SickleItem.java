@@ -1,8 +1,11 @@
 package com.ysmhmcgames.ihc_more_ore.item.tools;
 
 import com.ysmhmcgames.ihc_more_ore.effect.HCEffects;
+import com.ysmhmcgames.ihc_more_ore.enchantment.HCEnchantments;
 import net.minecraft.client.Minecraft;
+import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -11,11 +14,14 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
@@ -39,6 +45,9 @@ public class SickleItem extends SwordItem {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         // 获取玩家手中的镰刀物品
         ItemStack sickle = player.getItemInHand(hand);
+        // 获取附魔注册表
+        var enchantmentRegistry = level.registryAccess().registryOrThrow(Registries.ENCHANTMENT);
+
 
         // 只在服务器端执行逻辑（避免客户端-服务器不同步）
         if (!level.isClientSide) {
@@ -47,15 +56,41 @@ public class SickleItem extends SwordItem {
                 // 如果还在冷却中，返回"通过"，不执行技能
                 return InteractionResultHolder.pass(sickle);
             }
-            // 每次使用扣除10点耐久
+            // 每次使用扣除5点耐久
             sickle.hurtAndBreak(5, player, EquipmentSlot.MAINHAND);
 
-            // 执行范围攻击技能
-            performAreaOfEffectAttack(level, player);
 
+            // 获取 精通(Safe Harvest) 附魔等级
+            Holder<Enchantment> safeHarvestHolder = enchantmentRegistry.getHolderOrThrow(HCEnchantments.SAFE_HARVEST);
+            int lvlSafeHarvest = sickle.getEnchantmentLevel(safeHarvestHolder);
+
+            // 获取 趁手(handy) 附魔等级
+            Holder<Enchantment> handyHolder = enchantmentRegistry.getHolderOrThrow(HCEnchantments.HANDY);
+            int lvlHandy = sickle.getEnchantmentLevel(handyHolder);
+
+            // 将 ResourceKey 转换为 Holder
+            // 获取 撕裂(tear) 附魔等级
+            Holder<Enchantment> tearHolder = enchantmentRegistry.getHolderOrThrow(HCEnchantments.TEAR);
+            int lvlTear = sickle.getEnchantmentLevel(tearHolder);
+
+            // 获取 火焰附加(fire aspect) 附魔等级
+            Holder<Enchantment> fireAspectHolder = enchantmentRegistry.getHolderOrThrow(Enchantments.FIRE_ASPECT);
+            int isFire = sickle.getEnchantmentLevel(fireAspectHolder);
+            // 执行范围攻击技能 => 旋转横扫
+            performAreaOfEffectAttack(level, player, lvlSafeHarvest > 0, lvlHandy, lvlTear, isFire);
+
+            // 获取附魔注册表
+//            var enchantmentRegistry = level.registryAccess().registryOrThrow(Registries.ENCHANTMENT);
+            // 将 ResourceKey 转换为 Holder
+            // 获取 精通(proficient) 附魔等级
+            Holder<Enchantment> proficientHolder = enchantmentRegistry.getHolderOrThrow(HCEnchantments.PROFICIENT);
+            int lvlProficient = sickle.getEnchantmentLevel(proficientHolder);
+            //System.out.println(lvl);
             // 设置冷却时间
             // 这个镰刀物品将在60ticks内无法再次使用右键技能
-            player.getCooldowns().addCooldown(this, CD);
+            if(lvlProficient >= 5)
+                lvlProficient = 5;
+            player.getCooldowns().addCooldown(this, CD - lvlProficient * 10);// 冷却计算公式: 初始CD - 精通附魔等级 * 0.5s
 
             // 播放技能效果
             playSkillEffects(level, player);
@@ -67,18 +102,20 @@ public class SickleItem extends SwordItem {
         // 客户端：返回消耗结果（播放动画等）
         return InteractionResultHolder.consume(sickle);
     }
-    // 执行范围攻击
-    private void performAreaOfEffectAttack(Level level, Player player) {
+    // 执行旋转横扫攻击
+    private void performAreaOfEffectAttack(Level level, Player player, boolean isSafe, int lvlHandy, int lvlTear, int isFire) {
         // 计算攻击区域
         // AABB：轴对齐边界框，定义一个立方体区域
         // inflate：扩展区域，这里以玩家为中心创建5x4x5的区域 (向六个方向等量扩展)
+        // 拓展区域为 初始边界 + 趁手附魔等级
+        float maxLvlHandy = Math.min(lvlHandy, 10);
         AABB attackArea = player.getBoundingBox()
-                .inflate(AOE_RADIUS, 2.0, AOE_RADIUS);
+                .inflate(AOE_RADIUS + maxLvlHandy, 2.0 + maxLvlHandy, AOE_RADIUS + maxLvlHandy);
         // 获取区域内的所有生物实体
         List<LivingEntity> targets = level.getEntitiesOfClass(
                 LivingEntity.class,  // 只获取生物实体
                 attackArea,          // 攻击区域
-                entity -> shouldAttack(entity, player)  // 过滤条件
+                entity -> shouldAttack(entity, player, isSafe)  // 过滤条件
         );
         // 计算伤害
         // 获取玩家的攻击力属性值
@@ -90,6 +127,9 @@ public class SickleItem extends SwordItem {
                     level.damageSources().playerAttack(player),  // 伤害来源：玩家
                     playerDamage                                   // 伤害值
             );
+            // 如果有火焰附加，则点燃目标
+            target.setRemainingFireTicks(isFire * 4 * 20);
+
             // 添加击退效果
             double dx = target.getX() - player.getX();
             double dz = target.getZ() - player.getZ();
@@ -110,7 +150,7 @@ public class SickleItem extends SwordItem {
             // 可选：添加负面效果
             target.addEffect(new MobEffectInstance(
                     HCEffects.BLEEDING_EFFECT,  // 流血效果
-                    20,                // 持续时间：1秒（20ticks）
+                    20 + lvlTear * 20,                // 持续时间：1秒（20ticks） + 1 * 撕裂附魔等级 秒
                     0                   // 等级：I级
             ));
         }
@@ -123,12 +163,23 @@ public class SickleItem extends SwordItem {
 //        }
     }
     // 判断是否应该攻击这个实体
-    private boolean shouldAttack(LivingEntity target, Player player) {
+    private boolean shouldAttack(LivingEntity target, Player player, boolean isSafe) {
+        boolean isPlayer = false;
+        boolean isAlliedTo = false;
+        if(isSafe){
+            isPlayer = target instanceof Player;
+        }
+        if(isSafe){
+            isAlliedTo = target instanceof TamableAnimal tamable && tamable.isTame();
+        }
+
+
         return target != player &&                     // 不是玩家自己
                 target.isAlive() &&                     // 目标还活着
-                !player.isAlliedTo(target) &&           // 不是盟友（如驯服的狼）
+                !isAlliedTo &&           // 在有安全横扫的条件下 不是盟友（如驯服的狼）
                 target.attackable() &&                  // 可以被攻击
-                target.distanceTo(player) <= AOE_RADIUS; // 在攻击范围内
+                target.distanceTo(player) <= AOE_RADIUS && // 在攻击范围内
+                !isPlayer; // 在有安全横扫的条件下 目标不是玩家单位
     }
     // 播放技能特效
     private void playSkillEffects(Level level, Player player) {
@@ -196,6 +247,7 @@ public class SickleItem extends SwordItem {
 
             // 跳过盟友和死亡目标
             if (player.isAlliedTo(target) || !target.isAlive()) continue;
+
 
             // 造成全额伤害（没有衰减）
             target.hurt(

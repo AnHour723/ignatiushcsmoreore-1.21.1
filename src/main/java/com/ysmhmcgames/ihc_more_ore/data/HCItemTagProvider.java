@@ -26,14 +26,14 @@ public class HCItemTagProvider extends ItemTagsProvider {// 物品标签提供�
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-        tag(ItemTags.FIRE_ASPECT_ENCHANTABLE)
+        tag(ItemTags.FIRE_ASPECT_ENCHANTABLE) // 对于火焰附加附魔
                 .remove(HCTools.BLAZING_FIRE_SWORD.get())
                 .remove(HCTools.BLAZING_FIRE_SICKLE.get())
                 .remove(HCTools.ICE_CRYSTAL_SICKLE.get())
                 .remove(HCTools.ICE_CRYSTAL_SWORD.get())
                 ;
 
-        tag(HCTags.Items.IS_BLUEPRINT)
+        tag(HCTags.Items.IS_BLUEPRINT) // 蓝图类tag
                 .add(HCItems.QUANTUM_UPGRADE_TEMPLATE.get())
                 .add(HCItems.PRISMATIC_COLORFUL_UPGRADE_TEMPLATE.get())
                 .add(HCItems.COLLAPSING_UPGRADE_TEMPLATE.get())
@@ -183,7 +183,7 @@ public class HCItemTagProvider extends ItemTagsProvider {// 物品标签提供�
                 .add(HCTools.END_SHOVEL.get()) // 终界
         ;
 
-        tag(HCTags.Items.GLASS_KEY)
+        tag(HCTags.Items.GLASS_KEY)// 玻璃类tag
                 .add(Items.GLASS)
                 .add(Items.WHITE_STAINED_GLASS)
                 .add(Items.ORANGE_STAINED_GLASS)
@@ -204,7 +204,13 @@ public class HCItemTagProvider extends ItemTagsProvider {// 物品标签提供�
                 .add(Items.TINTED_GLASS)
         ;
 
-        tag(HCTags.Items.SICKLE)
+        tag(HCTags.Items.SICKLE)// 镰刀类tag(便于支持附魔)
+                .add(HCTools.WOODEN_SICKLE.get())
+                .add(HCTools.STONE_SICKLE.get())
+                .add(HCTools.IRON_SICKLE.get())
+                .add(HCTools.GOLDEN_SICKLE.get())
+                .add(HCTools.DIAMOND_SICKLE.get())
+                .add(HCTools.NETHERITE_SICKLE.get())
                 .add(HCTools.QUANTUM_SICKLE.get())
                 .add(HCTools.TIN_SICKLE.get())
                 .add(HCTools.ALUMINUM_SICKLE.get())
@@ -225,6 +231,14 @@ public class HCItemTagProvider extends ItemTagsProvider {// 物品标签提供�
                 .add(HCTools.COLLAPSING_SICKLE.get()) // 坍缩
                 .add(HCTools.NETHER_SICKLE.get()) // 下界
         ;
+
+        tag(HCTags.Items.IS_TETANUS)// 支持破伤风附魔tag
+                .addTag(HCTags.Items.SICKLE)
+                .addTag(ItemTags.SWORDS)
+                .addTag(ItemTags.PICKAXES)
+                .addTag(ItemTags.AXES)
+                .addTag(ItemTags.SHOVELS)
+                .addTag(ItemTags.HOES);
 
         tag(ItemTags.HEAD_ARMOR)// 属于头盔类(便于支持附魔)
                 .add(HCArmor.ALUMINUM_HELMET.get())

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:red_gold_ingot"
+    },
+    "Y": {
+      "item": "minecraft:netherrack"
+    },
+    "Z": {
+      "item": "ignatiushcsmoreore:red_gold_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "XZX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ignatiushcsmoreore:red_gold_upgrade_smithing_template"
+  }
+}

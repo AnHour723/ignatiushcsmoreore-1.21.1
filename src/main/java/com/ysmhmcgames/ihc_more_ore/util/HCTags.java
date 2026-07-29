@@ -41,15 +41,21 @@ public class HCTags {
         // 创建一个tag
         public static final TagKey<Item> MORE_ORE = createTag("more_ore");
 
-
+        // 镰刀分类tag
         public static final TagKey<Item> SICKLE = createTag("sickle");
 
-
+        // 玻璃分类tag
         public static final TagKey<Item> GLASS_KEY = createTag("glass_key");
 
+        // 是否是燃料tag
         public static final TagKey<Item> IS_FUEL = createTag("is_fuel");
 
+        // 是否是蓝图tag
         public static final TagKey<Item> IS_BLUEPRINT = createTag("is_blueprint");
+
+        // 是否支持破伤风词条tag
+        public static final TagKey<Item> IS_TETANUS = createTag("is_tetanus");
+
 
         private static TagKey<Item> createTag(String name){
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(IgnatiusHCsMoreOre.MODID,name));

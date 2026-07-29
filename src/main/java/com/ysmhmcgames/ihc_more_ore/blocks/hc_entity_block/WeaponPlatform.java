@@ -35,6 +35,7 @@ public class WeaponPlatform extends BaseEntityBlock {
     public static final VoxelShape SHAPE = Block.box(0.0,0.0,0.0,16.0,16.0,16.0);
     // 创建 方块编码器
     public static final MapCodec<WeaponPlatform> CODEC = simpleCodec(WeaponPlatform::new);
+
     public static final BooleanProperty HAS_BLUEPRINT = BooleanProperty.create("has_blueprint");
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 

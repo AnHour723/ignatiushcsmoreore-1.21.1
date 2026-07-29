@@ -21,7 +21,7 @@ public class FlashGoldEndoscope extends Item {
     public static final int CD = 600;
     public static final double AOE_RADIUS = 7.0;
     public FlashGoldEndoscope(Properties properties) {
-        super(properties.durability(30));
+        super(properties.durability(30));// 设置耐久
     }
 
     @Override
@@ -30,7 +30,7 @@ public class FlashGoldEndoscope extends Item {
         ItemStack stack = player.getItemInHand(usedHand);
         // 计算选中区域
         // AABB：轴对齐边界框，定义一个立方体区域
-        // inflate：扩展区域，这里以玩家为中心创建5x4x5的区域 (向六个方向等量扩展)
+        // inflate：扩展区域，这里以玩家为中心创建N*N*N的区域 (向六个方向等量扩展)
         AABB selectArea = player.getBoundingBox()
                 .inflate(AOE_RADIUS, AOE_RADIUS, AOE_RADIUS);
         // 获取区域内的所有生物实体

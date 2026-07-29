@@ -171,6 +171,12 @@
   "block.ignatiushcsmoreore.weapon_platform": "Weapon platform",
 
 
+  "item.ignatiushcsmoreore.wooden_sickle": "Wooden sickle",
+  "item.ignatiushcsmoreore.stone_sickle": "Stone sickle",
+  "item.ignatiushcsmoreore.golden_sickle": "Golden sickle",
+  "item.ignatiushcsmoreore.iron_sickle": "Iron sickle",
+  "item.ignatiushcsmoreore.diamond_sickle": "Diamond sickle",
+  "item.ignatiushcsmoreore.netherite_sickle": "Netherite sickle",
 
   "item.ignatiushcsmoreore.aluminum_sickle": "Aluminum sickle",
   "item.ignatiushcsmoreore.aluminum_sword": "Aluminum sword",
@@ -557,5 +563,108 @@
   "item.ignatiushcsmoreore.fuchen_music_disc.desc": "jiangtanglalala - Fu chen",
 
   "enchantment.ignatiushcsmoreore.element_collection": "Element Collection",
-  "enchantment.ignatiushcsmoreore.soul_harvest": "Soul Harvest"
+  "enchantment.ignatiushcsmoreore.soul_harvest": "Soul Harvest",
+  "enchantment.ignatiushcsmoreore.safe_harvest": "Safe Harvest",
+  "enchantment.ignatiushcsmoreore.tear": "Tear",
+  "enchantment.ignatiushcsmoreore.handy": "Handy",
+  "enchantment.ignatiushcsmoreore.proficient": "Proficient",
+  "enchantment.ignatiushcsmoreore.tetanus": "Tetanus",
+
+
+
+  "advancements.ignatiushcsmoreore.the_beginning_of_the_alloy.title": "Age of Alloys",
+  "advancements.ignatiushcsmoreore.the_beginning_of_the_alloy.desc": "Acquire a titanium ingot to usher in the era of alloys~",
+
+
+
+  "text.shift.dice.wooden.one": "when throwing one point:get Lucky I effect for 10 seconds",
+  "text.shift.dice.wooden.two": "when throwing two points:get Bad Lucky I effect for 10 seconds",
+  "text.shift.dice.wooden.three": "when throwing three points:get Lucky II effect for 10 seconds",
+  "text.shift.dice.wooden.four": "when throwing four points:get Bad Lucky II effect for 10 seconds",
+  "text.shift.dice.wooden.five": "when throwing five points:get Bad Lucky III effect for 10 seconds",
+  "text.shift.dice.wooden.six": "when throwing six points:get Lucky III effect for 10 seconds",
+  "text.shift.dice.wooden.finally": "Damage seems to be caused by wood",
+
+  "text.shift.dice.iron.one": "when throwing one point:Causing 3 points of damage to everyone within the surrounding five grids",
+  "text.shift.dice.iron.two": "when throwing two points:Get resistance enhancement I effect for 20 seconds",
+  "text.shift.dice.iron.three": "when throwing three points:Nothing happened",
+  "text.shift.dice.iron.four": "when throwing four points:Get 3 iron particles",
+  "text.shift.dice.iron.five": "when throwing five points:Extra deduction for dice durability",
+  "text.shift.dice.iron.six": "when throwing six points:Get Life Recovery III effect for 10 seconds",
+  "text.shift.dice.iron.finally": "In the end, he will bless you",
+
+  "text.shift.dice.diamond.one": "when throwing one point:Get Life Recovery III effect for 3 seconds",
+  "text.shift.dice.diamond.two": "when throwing two points:Get a diamond",
+  "text.shift.dice.diamond.three": "when throwing three points:Restore the secondary item with 2 durability points",
+  "text.shift.dice.diamond.four": "when throwing four points:Get blindness effect for 10 minutes",
+  "text.shift.dice.diamond.five": "when throwing five points:Clear all effects",
+  "text.shift.dice.diamond.six": "when throwing six points:Get 12 obsidian stones",
+  "text.shift.dice.diamond.finally": "In the end, he will blend into your most handy weapon",
+
+  "text.shift.dice.netherite.one": "when throwing one point:Serve the Power",
+  "text.shift.dice.netherite.two": "when throwing two points:Get a set of Hell Rocks",
+  "text.shift.dice.netherite.three": "when throwing three points:Get a set of fluorite powder",
+  "text.shift.dice.netherite.four": "when throwing four points:Suffered significant damage",
+  "text.shift.dice.netherite.five": "when throwing five points:Get an ancient relic",
+  "text.shift.dice.netherite.six": "when throwing six points:Causing significant damage to all surrounding creatures",
+  "text.shift.dice.netherite.finally": "He is the ultimate power",
+
+  "text.shift.dice.quantum.one": "when throwing one point:Get a quantum domain",
+  "text.shift.dice.quantum.two": "when throwing two points:Get an invisible block",
+  "text.shift.dice.quantum.three": "when throwing three points:Get stealth effect for 10 minutes",
+  "text.shift.dice.quantum.four": "when throwing four points:Damaged dice",
+  "text.shift.dice.quantum.five": "when throwing five points:Double the total points",
+  "text.shift.dice.quantum.six": "when throwing six points:Restore dice to full durability",
+  "text.shift.dice.quantum.finally": "It seems to have stored some power",
+
+  "text.shift.dice.black_crystals.one": "when throwing one point:Get fire prevention effect I for 120 seconds",
+  "text.shift.dice.black_crystals.two": "when throwing two points:Get fire resistance effect I for 120 seconds",
+  "text.shift.dice.black_crystals.three": "when throwing three points:Clear satiety level",
+  "text.shift.dice.black_crystals.four": "when throwing four points:Nothing happened",
+  "text.shift.dice.black_crystals.five": "when throwing five points:Get a diamond",
+  "text.shift.dice.black_crystals.six": "when throwing six points:Restore some durability of dice",
+  "text.shift.dice.black_crystals.finally": "How do you feel that something is not good",
+
+  "text.shift.dice.red_lotus.one": "when throwing one point:Ignite oneself",
+  "text.shift.dice.red_lotus.two": "when throwing two points:knock down the flame",
+  "text.shift.dice.red_lotus.three": "when throwing three points:Get fire resistance effect I for 10 minutes",
+  "text.shift.dice.red_lotus.four": "when throwing four points:Clear all buffs",
+  "text.shift.dice.red_lotus.five": "when throwing five points:Get the anti cold effect I for 10 minutes",
+  "text.shift.dice.red_lotus.six": "when throwing six points:Ignite the surrounding organisms within 5 compartments",
+  "text.shift.dice.red_lotus.finally": "In the end, he is the power of Nirvana",
+
+  "text.shift.dice.ender.one": "when throwing one point:Displacement towards the positive x-axis direction by 10 grids",
+  "text.shift.dice.ender.two": "when throwing two points:Displacement towards the negative x-axis by 10 grids",
+  "text.shift.dice.ender.three": "when throwing three points:Displacement towards the positive y-axis direction by 5 grids",
+  "text.shift.dice.ender.four": "when throwing four points:Displacement towards the negative y-axis by 5 grids",
+  "text.shift.dice.ender.five": "when throwing five points:Displacement towards the positive z-axis direction by 10 grids",
+  "text.shift.dice.ender.six": "when throwing six points:Displacement towards the negative z-axis direction by 10 grids",
+  "text.shift.dice.ender.finally": "In the end, he will lose his way",
+
+
+  "item.ignatiushcsmoreore.wooden_magic_dice": "Wooden magic dice",
+  "item.ignatiushcsmoreore.iron_magic_dice": "Iron magic dice",
+  "item.ignatiushcsmoreore.diamond_magic_dice": "Diamond magic dice",
+  "item.ignatiushcsmoreore.netherite_magic_dice": "Netherite magic dice",
+  "item.ignatiushcsmoreore.quantum_magic_dice": "Quantum magic dice",
+  "item.ignatiushcsmoreore.flash_gold_magic_dice": "Flash gold magic dice",
+  "item.ignatiushcsmoreore.black_crystals_magic_dice": "Black crystals magic dice",
+  "item.ignatiushcsmoreore.red_lotus_magic_dice": "Red lotus magic dice",
+  "item.ignatiushcsmoreore.ender_magic_dice": "Ender magic dice",
+
+
+  "text.shift.dice.flash_fold.one": "When you roll a one: take two points of blood damage",
+  "text.shift.dice.flash_fold.two": "When you roll a two: restore 4 health",
+  "text.shift.dice.flash_fold.three": "When you roll a three: Restore 1 dice durability",
+  "text.shift.dice.flash_fold.four": "When you roll a four: reset your own hunger level",
+  "text.shift.dice.flash_fold.five": "When you roll a five: restore 4 points of hunger for yourself",
+  "text.shift.dice.flash_fold.six": "When you roll a six: get a gold ingot",
+  "text.shift.dice.flash_fold.finally": "In the end, you'll get all the shine!",
+
+  "text.shift.dice": "<Hold SHIFT to show more info>",
+
+  "dice_data.ignatiushcsmoreore.msg": "Rolled a number",
+  "dice_data.ignatiushcsmoreore.info": "The last roll:",
+  "dice_total_data.ignatiushcsmoreore.info": "Total points rolled:"
+
 }

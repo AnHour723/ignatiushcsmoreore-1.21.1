@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-    "ignatiushcsmoreore:element_collection"
+    "ignatiushcsmoreore:element_collection",
+    "ignatiushcsmoreore:soul_harvest",
+    "ignatiushcsmoreore:safe_harvest",
+    "ignatiushcsmoreore:tear",
+    "ignatiushcsmoreore:handy",
+    "ignatiushcsmoreore:proficient",
+    "ignatiushcsmoreore:tetanus"
   ]
 }

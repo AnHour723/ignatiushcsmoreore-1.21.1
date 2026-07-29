@@ -171,6 +171,12 @@
   "block.ignatiushcsmoreore.weapon_platform": "武器台",
 
 
+  "item.ignatiushcsmoreore.wooden_sickle": "木镰刀",
+  "item.ignatiushcsmoreore.stone_sickle": "石镰刀",
+  "item.ignatiushcsmoreore.golden_sickle": "金镰刀",
+  "item.ignatiushcsmoreore.iron_sickle": "铁镰刀",
+  "item.ignatiushcsmoreore.diamond_sickle": "钻石镰刀",
+  "item.ignatiushcsmoreore.netherite_sickle": "下界合金镰刀",
 
   "item.ignatiushcsmoreore.aluminum_sickle": "铝镰刀",
   "item.ignatiushcsmoreore.aluminum_sword": "铝剑",
@@ -364,14 +370,14 @@
   "item.ignatiushcsmoreore.aluminum_boots": "铝靴子",
 
   "item.ignatiushcsmoreore.tin_helmet": "锡头盔",
-  "item.ignatiushcsmoreore.tin_chestplate": "锡头盔",
-  "item.ignatiushcsmoreore.tin_leggings": "锡头盔",
-  "item.ignatiushcsmoreore.tin_boots": "锡头盔",
+  "item.ignatiushcsmoreore.tin_chestplate": "锡胸甲",
+  "item.ignatiushcsmoreore.tin_leggings": "锡裤腿",
+  "item.ignatiushcsmoreore.tin_boots": "锡靴子",
 
   "item.ignatiushcsmoreore.silver_helmet": "银头盔",
-  "item.ignatiushcsmoreore.silver_chestplate": "银头盔",
-  "item.ignatiushcsmoreore.silver_leggings": "银头盔",
-  "item.ignatiushcsmoreore.silver_boots": "银头盔",
+  "item.ignatiushcsmoreore.silver_chestplate": "银胸甲",
+  "item.ignatiushcsmoreore.silver_leggings": "银裤腿",
+  "item.ignatiushcsmoreore.silver_boots": "银靴子",
 
   "item.ignatiushcsmoreore.poseidon_helmet": "海神头盔",
   "item.ignatiushcsmoreore.poseidon_chestplate": "海神胸甲",
@@ -560,6 +566,106 @@
   "item.ignatiushcsmoreore.fuchen_music_disc.desc": "jiangtanglalala - 浮沉",
 
   "enchantment.ignatiushcsmoreore.element_collection": "元素采集",
-  "enchantment.ignatiushcsmoreore.soul_harvest": "灵魂收割"
+  "enchantment.ignatiushcsmoreore.soul_harvest": "灵魂收割",
+  "enchantment.ignatiushcsmoreore.safe_harvest": "安全收割",
+  "enchantment.ignatiushcsmoreore.tear": "撕裂",
+  "enchantment.ignatiushcsmoreore.handy": "趁手",
+  "enchantment.ignatiushcsmoreore.proficient": "精通",
+  "enchantment.ignatiushcsmoreore.tetanus": "破伤风",
+
+
+  "advancements.ignatiushcsmoreore.the_beginning_of_the_alloy.title": "合金时代",
+  "advancements.ignatiushcsmoreore.the_beginning_of_the_alloy.desc": "获取一个钛锭来开启合金的时代吧~",
+
+
+
+  "item.ignatiushcsmoreore.wooden_magic_dice": "木骰子",
+  "item.ignatiushcsmoreore.iron_magic_dice": "铁骰子",
+  "item.ignatiushcsmoreore.diamond_magic_dice": "钻石骰子",
+  "item.ignatiushcsmoreore.netherite_magic_dice": "下界合金骰子",
+  "item.ignatiushcsmoreore.quantum_magic_dice": "量子骰子",
+  "item.ignatiushcsmoreore.flash_gold_magic_dice": "闪金骰子",
+  "item.ignatiushcsmoreore.black_crystals_magic_dice": "黑晶骰子",
+  "item.ignatiushcsmoreore.red_lotus_magic_dice": "红莲骰子",
+  "item.ignatiushcsmoreore.ender_magic_dice": "末影骰子",
+
+
+  "text.shift.dice.flash_fold.one": "掷出一点时:受到两滴血伤害",
+  "text.shift.dice.flash_fold.two": "掷出二点时:回复四点血量",
+  "text.shift.dice.flash_fold.three": "掷出三点时:恢复一点骰子耐久",
+  "text.shift.dice.flash_fold.four": "掷出四点时:清空自身饱食度",
+  "text.shift.dice.flash_fold.five": "掷出五点时:恢复自身四点饱食度",
+  "text.shift.dice.flash_fold.six": "掷出六点时:获得一个金锭",
+  "text.shift.dice.flash_fold.finally": "最终, 你将获得所有的闪耀!",
+
+  "text.shift.dice.wooden.one": "掷出一点时:获得幸运I效果10秒",
+  "text.shift.dice.wooden.two": "掷出二点时:获得霉运I效果10秒",
+  "text.shift.dice.wooden.three": "掷出三点时:获得幸运II效果10秒",
+  "text.shift.dice.wooden.four": "掷出四点时:获得霉运II效果10秒",
+  "text.shift.dice.wooden.five": "掷出五点时:获得霉运III效果10秒",
+  "text.shift.dice.wooden.six": "掷出六点时:获得幸运III效果10秒",
+  "text.shift.dice.wooden.finally": "损坏似乎会有木材",
+
+  "text.shift.dice.iron.one": "掷出一点时:对周围五格内所有人造成3点伤害",
+  "text.shift.dice.iron.two": "掷出二点时:获得抗性提升I效果20秒",
+  "text.shift.dice.iron.three": "掷出三点时:无事发生",
+  "text.shift.dice.iron.four": "掷出四点时:获得3个铁粒",
+  "text.shift.dice.iron.five": "掷出五点时:额外扣除骰子一点耐久",
+  "text.shift.dice.iron.six": "掷出六点时:获得生命恢复III效果10秒",
+  "text.shift.dice.iron.finally": "最终, 他会庇佑你",
+
+  "text.shift.dice.diamond.one": "掷出一点时:获得生命回复III效果3秒",
+  "text.shift.dice.diamond.two": "掷出二点时:获得一个钻石",
+  "text.shift.dice.diamond.three": "掷出三点时:恢复副手物品2点耐久",
+  "text.shift.dice.diamond.four": "掷出四点时:获得失明效果10分钟",
+  "text.shift.dice.diamond.five": "掷出五点时:清除所有效果",
+  "text.shift.dice.diamond.six": "掷出六点时:获得12个黑曜石",
+  "text.shift.dice.diamond.finally": "最终,他会融入你最趁手的武器之中",
+
+  "text.shift.dice.netherite.one": "掷出一点时:为力量服务",
+  "text.shift.dice.netherite.two": "掷出二点时:获得一组地狱岩",
+  "text.shift.dice.netherite.three": "掷出三点时:获得一组萤石粉",
+  "text.shift.dice.netherite.four": "掷出四点时:受到大量伤害",
+  "text.shift.dice.netherite.five": "掷出五点时:获得一个远古残骸",
+  "text.shift.dice.netherite.six": "掷出六点时:让周围所有生物受到大量伤害",
+  "text.shift.dice.netherite.finally": "他是最终的力量",
+
+  "text.shift.dice.quantum.one": "掷出一点时:获得一个量子域",
+  "text.shift.dice.quantum.two": "掷出二点时:获得一个不可见方块",
+  "text.shift.dice.quantum.three": "掷出三点时:获得隐身效果10分钟",
+  "text.shift.dice.quantum.four": "掷出四点时:损毁骰子",
+  "text.shift.dice.quantum.five": "掷出五点时:总点数翻倍",
+  "text.shift.dice.quantum.six": "掷出六点时:恢复骰子至满耐久",
+  "text.shift.dice.quantum.finally": "好像储存了什么力量",
+
+  "text.shift.dice.black_crystals.one": "掷出一点时:获得防火I效果120秒",
+  "text.shift.dice.black_crystals.two": "掷出二点时:获得抗火I效果120秒",
+  "text.shift.dice.black_crystals.three": "掷出三点时:清空饱食度",
+  "text.shift.dice.black_crystals.four": "掷出四点时:无事发生",
+  "text.shift.dice.black_crystals.five": "掷出五点时:获得一个钻石",
+  "text.shift.dice.black_crystals.six": "掷出六点时:骰子恢复一点耐久",
+  "text.shift.dice.black_crystals.finally": "怎么感觉有点不好的事情",
+
+  "text.shift.dice.red_lotus.one": "掷出一点时:点燃自己",
+  "text.shift.dice.red_lotus.two": "掷出二点时:熄灭火焰",
+  "text.shift.dice.red_lotus.three": "掷出三点时:获得抗火I效果10分钟",
+  "text.shift.dice.red_lotus.four": "掷出四点时:清空所有buff",
+  "text.shift.dice.red_lotus.five": "掷出五点时:获得防寒I效果10分钟",
+  "text.shift.dice.red_lotus.six": "掷出六点时:点燃周围5格内生物",
+  "text.shift.dice.red_lotus.finally": "最终，他是涅槃的力量",
+
+  "text.shift.dice.ender.one": "掷出一点时:向x轴正方向位移10格",
+  "text.shift.dice.ender.two": "掷出二点时:向x轴负方向位移10格",
+  "text.shift.dice.ender.three": "掷出三点时:向y轴正方向位移5格",
+  "text.shift.dice.ender.four": "掷出四点时:向y轴负方向位移5格",
+  "text.shift.dice.ender.five": "掷出五点时:向z轴正方向位移10格",
+  "text.shift.dice.ender.six": "掷出六点时:向z轴负方向位移10格",
+  "text.shift.dice.ender.finally": "最终，他会迷失方向",
+
+  "text.shift.dice": "<按住shift显示更多信息>",
+
+  "dice_data.ignatiushcsmoreore.msg": "掷出了点数",
+  "dice_data.ignatiushcsmoreore.info": "上次掷出的点数:",
+  "dice_total_data.ignatiushcsmoreore.info": "掷出的总点数:"
 
 }

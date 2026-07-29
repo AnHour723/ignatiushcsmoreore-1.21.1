@@ -14,7 +14,7 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
 public class QuantumBadge extends Item {
-    public static final int CD = 600; // 设置cd为30s
+    public static final int CD = 60; // 设置cd为3s
 
     public QuantumBadge(Properties properties) {
         super(properties.durability(50));

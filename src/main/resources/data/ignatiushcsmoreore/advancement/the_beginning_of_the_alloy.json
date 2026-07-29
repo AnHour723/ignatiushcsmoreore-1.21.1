@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          "ignatiushcsmoreore:titanium_ingot"
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+
+    "frame": "task",
+    "description": {
+      "translate": "advancements.ignatiushcsmoreore.the_beginning_of_the_alloy.desc"
+    },
+    "title": {
+      "translate": "advancements.ignatiushcsmoreore.the_beginning_of_the_alloy.title"
+    },
+    "icon": {
+      "id": "ignatiushcsmoreore:titanium_ingot"
+    },
+    "hidden": false,
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "ignatiushcsmoreore:textures/block/ore/titanium_block.png"
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ]
+}

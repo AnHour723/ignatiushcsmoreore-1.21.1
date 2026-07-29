@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "ignatiushcsmoreore:diamond_magic_dice"
+  },
+  "result": {
+    "count": 1,
+    "id": "ignatiushcsmoreore:netherite_magic_dice"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

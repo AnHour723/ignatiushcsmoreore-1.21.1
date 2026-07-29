@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "ignatiushcsmoreore:end_core"
+    },
+    "Y": {
+      "item": "ignatiushcsmoreore:end_upgrade_template"
+    },
+    "Z": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "XZX",
+    "ZYZ",
+    "XZX"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ignatiushcsmoreore:end_upgrade_template"
+  }
+}

@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -2318,5 +2319,235 @@ public class HCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         HCArmor.RED_GOLD_BOOTS.get()
                 ).unlocks("has_red_gold_upgrade_smithing_template",has(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE.get()))
                 .save(recipeOutput,"ignatiushcsmoreore:red_gold_boots");
+
+
+        // 木镰刀
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCTools.WOODEN_SICKLE.get())
+                .pattern("XXX")
+                .pattern("  Y")
+                .pattern(" Y ")
+                .define('X', ItemTags.PLANKS)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_planks",has(ItemTags.PLANKS))
+                .save(recipeOutput);
+        // 石镰刀
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCTools.STONE_SICKLE.get())
+                .pattern("XXX")
+                .pattern("  Y")
+                .pattern(" Y ")
+                .define('X', Items.COBBLESTONE)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_cobblestone",has(Items.COBBLESTONE))
+                .save(recipeOutput);
+        // 铁镰刀
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCTools.IRON_SICKLE.get())
+                .pattern("XXX")
+                .pattern("  Y")
+                .pattern(" Y ")
+                .define('X', Items.IRON_INGOT)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT))
+                .save(recipeOutput);
+        // 金镰刀
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCTools.GOLDEN_SICKLE.get())
+                .pattern("XXX")
+                .pattern("  Y")
+                .pattern(" Y ")
+                .define('X', Items.GOLD_INGOT)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_gold_ingot",has(Items.GOLD_INGOT))
+                .save(recipeOutput);
+        // 钻石镰刀
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCTools.DIAMOND_SICKLE.get())
+                .pattern("XXX")
+                .pattern("  Y")
+                .pattern(" Y ")
+                .define('X', Items.DIAMOND)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_diamond",has(Items.DIAMOND))
+                .save(recipeOutput);
+        // 下届合金镰刀 锻造台
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(HCTools.DIAMOND_SICKLE),
+                        Ingredient.of(Items.NETHERITE_INGOT),
+                        RecipeCategory.MISC,
+                        HCTools.NETHERITE_SICKLE.get()
+                ).unlocks("has_netherite_upgrade_smithing_template",has(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
+                .save(recipeOutput,"ignatiushcsmoreore:netherite_sickle");
+
+
+        // 灵煤制火把 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.TORCH, 16)
+                .pattern("X")
+                .pattern("Y")
+                .define('X', HCOreItem.SPIRITUAL_COAL)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_spiritual_coal",has(HCOreItem.SPIRITUAL_COAL))
+                .save(recipeOutput,"ignatiushcsmoreore:torch_for_spiritual");
+
+        // 火药 无序 工作台
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GUNPOWDER,3)
+                .requires(HCOreItem.SALTPETRE)
+                .requires(ItemTags.COALS)
+                .unlockedBy("has_saltpetre",has(HCOreItem.SALTPETRE))
+                .save(recipeOutput, "ignatiushcsmoreore:gunpowder_for_saltpetre");
+
+
+        // 末地水晶 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.END_CRYSTAL, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', HCOreItem.VIOLET_GEMSTONE)
+                .define('Y', HCBlock.VOID_CRYSTAL_BLOCK)
+                .unlockedBy("has_void_crystal_block",has(HCBlock.VOID_CRYSTAL_BLOCK))
+                .save(recipeOutput, "ignatiushcsmoreore:end_crystal_for_violet_gemstone");
+
+        // 红金锻造模板 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE, 2)
+                .pattern("XZX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', HCOreItem.RED_GOLD_INGOT)
+                .define('Y', Items.NETHERRACK)
+                .define('Z', HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE)
+                .unlockedBy("has_red_gold_upgrade_smithing_template",has(HCItems.RED_GOLD_UPGRADE_SMITHING_TEMPLATE))
+                .save(recipeOutput, "ignatiushcsmoreore:red_gold_upgrade_smithing_template_for_crafting");
+
+        // 木骰子 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AHMagicItem.WOODEN_MAGIC_DICE, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', ItemTags.PLANKS)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_planks",has(ItemTags.PLANKS))
+                .save(recipeOutput, "ignatiushcsmoreore:wooden_magic_dice_for_crafting");
+        // 铁骰子 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AHMagicItem.IRON_MAGIC_DICE, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', Items.IRON_INGOT)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT))
+                .save(recipeOutput, "ignatiushcsmoreore:iron_magic_dice_for_crafting");
+        // 钻石骰子 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AHMagicItem.DIAMOND_MAGIC_DICE, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', Items.DIAMOND)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_diamond",has(Items.DIAMOND))
+                .save(recipeOutput, "ignatiushcsmoreore:diamond_magic_dice_for_crafting");
+        // 量子骰子 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AHMagicItem.QUANTUM_MAGIC_DICE, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', HCOreItem.QUANTUM_INGOT)
+                .define('Y', HCItems.QUANTUM_INFORMATION_SPHERE)
+                .unlockedBy("has_quantum_information_sphere",has(HCItems.QUANTUM_INFORMATION_SPHERE))
+                .save(recipeOutput, "ignatiushcsmoreore:quantum_magic_dice_for_crafting");
+        // 闪金骰子 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AHMagicItem.FLASH_GOLD_MAGIC_DICE, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', HCOreItem.FLASH_GOLD_INGOT)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_flash_gold_ingot",has(HCOreItem.FLASH_GOLD_INGOT))
+                .save(recipeOutput, "ignatiushcsmoreore:flash_gold_magic_dice_for_crafting");
+        // 黑晶骰子 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AHMagicItem.BLACK_CRYSTALS_MAGIC_DICE, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', HCOreItem.BLACK_CRYSTALS)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_black_crystals",has(HCOreItem.BLACK_CRYSTALS))
+                .save(recipeOutput, "ignatiushcsmoreore:black_crystals_magic_dice_for_crafting");
+        // 红莲骰子 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AHMagicItem.RED_LOTUS_MAGIC_DICE, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', HCOreItem.REFINED_RED_LOTUS)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_refined_red_lotus",has(HCOreItem.REFINED_RED_LOTUS))
+                .save(recipeOutput, "ignatiushcsmoreore:red_lotus_magic_dice_for_crafting");
+        // 末影骰子 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AHMagicItem.ENDER_MAGIC_DICE, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', HCOreItem.ENDER_INGOT)
+                .define('Y', Items.STICK)
+                .unlockedBy("has_ender_ingot",has(HCOreItem.ENDER_INGOT))
+                .save(recipeOutput, "ignatiushcsmoreore:ender_magic_dice_for_crafting");
+        // 下届合金骰子 锻造台
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(AHMagicItem.DIAMOND_MAGIC_DICE),
+                        Ingredient.of(Items.NETHERITE_INGOT),
+                        RecipeCategory.MISC,
+                        AHMagicItem.NETHERITE_MAGIC_DICE.get()
+                ).unlocks("has_netherite_ingot",has(Items.NETHERITE_INGOT))
+                .save(recipeOutput,"ignatiushcsmoreore:netherite_magic_dice_for_crafting");
+
+
+        // 棱彩升级图纸 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCItems.PRISMATIC_COLORFUL_UPGRADE_TEMPLATE, 2)
+                .pattern("XXX")
+                .pattern("ZYZ")
+                .pattern("XXX")
+                .define('X', HCOreItem.PRISMATIC_COLORFUL_INGOT)
+                .define('Y', HCItems.PRISMATIC_COLORFUL_UPGRADE_TEMPLATE)
+                .define('Z', Items.PAPER)
+                .unlockedBy("has_prismatic_colorful_upgrade_template",has(HCItems.PRISMATIC_COLORFUL_UPGRADE_TEMPLATE))
+                .save(recipeOutput, "ignatiushcsmoreore:prismatic_colorful_upgrade_template_for_crafting");
+        // 坍缩升级图纸 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCItems.COLLAPSING_UPGRADE_TEMPLATE, 2)
+                .pattern("XXX")
+                .pattern("ZYZ")
+                .pattern("XXX")
+                .define('X', HCOreItem.COLLAPSING_INGOT)
+                .define('Y', HCItems.COLLAPSING_UPGRADE_TEMPLATE)
+                .define('Z', Items.PAPER)
+                .unlockedBy("has_collapsing_upgrade_template",has(HCItems.COLLAPSING_UPGRADE_TEMPLATE))
+                .save(recipeOutput, "ignatiushcsmoreore:collapsing_upgrade_template_for_crafting");
+        // 主界升级图纸 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCItems.OVERWORLD_UPGRADE_TEMPLATE, 2)
+                .pattern("XZX")
+                .pattern("ZYZ")
+                .pattern("XZX")
+                .define('X', HCOreItem.OVERWORLD_CORE)
+                .define('Y', HCItems.OVERWORLD_UPGRADE_TEMPLATE)
+                .define('Z', Items.PAPER)
+                .unlockedBy("has_overworld_upgrade_template",has(HCItems.OVERWORLD_UPGRADE_TEMPLATE))
+                .save(recipeOutput, "ignatiushcsmoreore:overworld_upgrade_template_for_crafting");
+        // 下界升级图纸 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCItems.NETHER_UPGRADE_TEMPLATE, 2)
+                .pattern("XZX")
+                .pattern("ZYZ")
+                .pattern("XZX")
+                .define('X', HCOreItem.NETHER_CORE)
+                .define('Y', HCItems.NETHER_UPGRADE_TEMPLATE)
+                .define('Z', Items.PAPER)
+                .unlockedBy("has_nether_upgrade_template",has(HCItems.NETHER_UPGRADE_TEMPLATE))
+                .save(recipeOutput, "ignatiushcsmoreore:nether_upgrade_template_for_crafting");
+        // 终界升级图纸 有序 工作台
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HCItems.END_UPGRADE_TEMPLATE, 2)
+                .pattern("XZX")
+                .pattern("ZYZ")
+                .pattern("XZX")
+                .define('X', HCOreItem.END_CORE)
+                .define('Y', HCItems.END_UPGRADE_TEMPLATE)
+                .define('Z', Items.PAPER)
+                .unlockedBy("has_end_upgrade_template",has(HCItems.END_UPGRADE_TEMPLATE))
+                .save(recipeOutput, "ignatiushcsmoreore:end_upgrade_template_for_crafting");
+
     }
 }

@@ -222,6 +222,13 @@ public class HCItemModelProvider extends ItemModelProvider {// 物品模型提�
         simpleMagicItem(AHMagicItem.QUANTUM_BADGE);// 量子徽章
 
         /*============================================================*/
+        //原版材质镰刀
+        handheldItem(HCTools.WOODEN_SICKLE.get());
+        handheldItem(HCTools.STONE_SICKLE.get());
+        handheldItem(HCTools.IRON_SICKLE.get());
+        handheldItem(HCTools.GOLDEN_SICKLE.get());
+        handheldItem(HCTools.DIAMOND_SICKLE.get());
+        handheldItem(HCTools.NETHERITE_SICKLE.get());
         // 铝工具
         handheldItem(HCTools.ALUMINUM_SWORD.get());
         handheldItem(HCTools.ALUMINUM_SICKLE.get());

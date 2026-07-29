@@ -3,6 +3,7 @@ package com.ysmhmcgames.ihc_more_ore;
 import com.ysmhmcgames.ihc_more_ore.blocks.HCBlock;
 import com.ysmhmcgames.ihc_more_ore.blocks.entity.HCBlockEntity;
 import com.ysmhmcgames.ihc_more_ore.blocks.foods.HCFoods;
+import com.ysmhmcgames.ihc_more_ore.data_attachment.HCComponents;
 import com.ysmhmcgames.ihc_more_ore.effect.HCEffects;
 import com.ysmhmcgames.ihc_more_ore.enchantment.HCEnchantmentEffects;
 import com.ysmhmcgames.ihc_more_ore.entity.HCEntities;
@@ -73,6 +74,8 @@ public class IgnatiusHCsMoreOre {
         HCSounds.register(modEventBus);// 声音注册
 
         HCLootModifiers.register(modEventBus);// 战利品表注册
+
+        HCComponents.COMPONENTS.register(modEventBus);// 物品数据 注册
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

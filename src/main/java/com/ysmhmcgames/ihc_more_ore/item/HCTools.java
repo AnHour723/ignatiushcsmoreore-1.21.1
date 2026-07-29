@@ -41,6 +41,32 @@ public class HCTools {
     // 声明总注册类型
     public static final DeferredRegister.Items TOOLS = DeferredRegister.createItems(IgnatiusHCsMoreOre.MODID);
 
+    // 创建原版材质镰刀
+    // 木制
+    public static final DeferredItem<SickleItem> WOODEN_SICKLE = TOOLS.register("wooden_sickle",
+            ()-> new SickleItem(Tiers.WOOD, new Item.Properties()// SickleItem()第一个参数为矿石模组工具等级，第二个参数为属性方法
+                    .attributes(SickleItem.createAttributes(Tiers.WOOD,2.0f,-1.0f))));
+    // 石质
+    public static final DeferredItem<SickleItem> STONE_SICKLE = TOOLS.register("stone_sickle",
+            ()-> new SickleItem(Tiers.STONE, new Item.Properties()// SickleItem()第一个参数为矿石模组工具等级，第二个参数为属性方法
+                    .attributes(SickleItem.createAttributes(Tiers.STONE,2.0f,-1.0f))));
+    // 金制
+    public static final DeferredItem<SickleItem> GOLDEN_SICKLE = TOOLS.register("golden_sickle",
+            ()-> new SickleItem(Tiers.GOLD, new Item.Properties()// SickleItem()第一个参数为矿石模组工具等级，第二个参数为属性方法
+                    .attributes(SickleItem.createAttributes(Tiers.GOLD,2.0f,-1.0f))));
+    // 铁制
+    public static final DeferredItem<SickleItem> IRON_SICKLE = TOOLS.register("iron_sickle",
+            ()-> new SickleItem(Tiers.IRON, new Item.Properties()// SickleItem()第一个参数为矿石模组工具等级，第二个参数为属性方法
+                    .attributes(SickleItem.createAttributes(Tiers.IRON, 2.0f,-1.0f))));
+    // 钻石制
+    public static final DeferredItem<SickleItem> DIAMOND_SICKLE = TOOLS.register("diamond_sickle",
+            ()-> new SickleItem(Tiers.DIAMOND, new Item.Properties()// SickleItem()第一个参数为矿石模组工具等级，第二个参数为属性方法
+                    .attributes(SickleItem.createAttributes(Tiers.DIAMOND,2.0f,-1.0f))));
+    // 下界合金制
+    public static final DeferredItem<SickleItem> NETHERITE_SICKLE = TOOLS.register("netherite_sickle",
+            ()-> new SickleItem(Tiers.NETHERITE, new Item.Properties()// SickleItem()第一个参数为矿石模组工具等级，第二个参数为属性方法
+                    .attributes(SickleItem.createAttributes(Tiers.NETHERITE,2.0f,-1.0f))));
+
     // 创建铝工具
     public static final DeferredItem<SickleItem> ALUMINUM_SICKLE = TOOLS.register("aluminum_sickle",
             ()-> new SickleItem(HCToolTiers.ALUMINUM, new Item.Properties()// SickleItem()第一个参数为矿石模组工具等级，第二个参数为属性方法

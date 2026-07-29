@@ -1,6 +1,11 @@
-// 1.21.1	2026-02-10T17:18:52.8841553	Registries
+// 1.21.1	2026-07-29T14:56:42.501678	Registries
 cb2e16ecabd08bc12aeaadecc5c3f7f94514eb6b data/ignatiushcsmoreore/enchantment/element_collection.json
+abb6512cf5daca2719f0da517ff94e75d1babf29 data/ignatiushcsmoreore/enchantment/handy.json
+d96fb2ae2f5b9160c9dabb7e90fabcd62d286dd6 data/ignatiushcsmoreore/enchantment/proficient.json
+c7669fb8b616b06c4839199b0fcb2628ea8df79c data/ignatiushcsmoreore/enchantment/safe_harvest.json
 945ac78658b66cd1b1b1b4af5ec86a44b97f814b data/ignatiushcsmoreore/enchantment/soul_harvest.json
+c7b47fbb2ea1d1d4387276ef7ad08a09d6c57e92 data/ignatiushcsmoreore/enchantment/tear.json
+c32db9d4d3c9387e66aa07e0bffe0645f4e8316a data/ignatiushcsmoreore/enchantment/tetanus.json
 1fd3fc3eaaa55a75da1c650333f77a62c5153588 data/ignatiushcsmoreore/neoforge/biome_modifier/add_aluminum_ore.json
 0f30bcf4094f71ebc5fce5feb819b4eea1dcfec7 data/ignatiushcsmoreore/neoforge/biome_modifier/add_black_crystals_ore.json
 35467406239a1e52c13621622d3e03c8d418fd4b data/ignatiushcsmoreore/neoforge/biome_modifier/add_collapsing_block.json
